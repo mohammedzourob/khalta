@@ -87,7 +87,7 @@
 										<div class="main-mail-star">
 											<i class="typcn typcn-star"></i>
 										</div>
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/5.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/5.jpg')}}"></div>
 										<div class="main-mail-body">
 											<div class="main-mail-from">
 												Adrian Monino
@@ -110,7 +110,7 @@
 										<div class="main-mail-star active">
 											<i class="typcn typcn-star"></i>
 										</div>
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/2.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/2.jpg')}}"></div>
 										<div class="main-mail-body">
 											<div class="main-mail-from">
 												Albert Ansing
@@ -130,7 +130,7 @@
 										<div class="main-mail-star">
 											<i class="typcn typcn-star"></i>
 										</div>
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/9.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/9.jpg')}}"></div>
 										<div class="main-mail-body">
 											<div class="main-mail-from">
 												Carla Guden
@@ -153,7 +153,7 @@
 										<div class="main-mail-star">
 											<i class="typcn typcn-star"></i>
 										</div>
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/10.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/10.jpg')}}"></div>
 										<div class="main-mail-body">
 											<div class="main-mail-from">
 												Reven Galeon
@@ -173,7 +173,7 @@
 										<div class="main-mail-star">
 											<i class="typcn typcn-star"></i>
 										</div>
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/12.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/12.jpg')}}"></div>
 										<div class="main-mail-body">
 											<div class="main-mail-from">
 												Elisse Tan
@@ -193,7 +193,7 @@
 										<div class="main-mail-star">
 											<i class="typcn typcn-star"></i>
 										</div>
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/14.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/14.jpg')}}"></div>
 										<div class="main-mail-body">
 											<div class="main-mail-from">
 												Marianne Audrey
@@ -235,7 +235,7 @@
 										<div class="main-mail-star">
 											<i class="typcn typcn-star"></i>
 										</div>
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/15.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/15.jpg')}}"></div>
 										<div class="main-mail-body">
 											<div class="main-mail-from">
 												Raffy Godinez
@@ -255,7 +255,7 @@
 										<div class="main-mail-star active">
 											<i class="typcn typcn-star"></i>
 										</div>
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/7.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/7.jpg')}}"></div>
 										<div class="main-mail-body">
 											<div class="main-mail-from">
 												Allan Cadungog
@@ -275,7 +275,7 @@
 										<div class="main-mail-star">
 											<i class="typcn typcn-star"></i>
 										</div>
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/10.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/10.jpg')}}"></div>
 										<div class="main-mail-body">
 											<div class="main-mail-from">
 												Alfie Salinas
@@ -295,7 +295,7 @@
 										<div class="main-mail-star">
 											<i class="typcn typcn-star"></i>
 										</div>
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/1.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/1.jpg')}}"></div>
 										<div class="main-mail-body">
 											<div class="main-mail-from">
 												Jove Guden
@@ -357,9 +357,9 @@
 @endsection
 @section('js')
 <!-- Moment js -->
-<script src="{{URL::asset('assets/plugins/raphael/raphael.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/raphael/raphael.min.js')}}"></script>
 <!--- Internal Check-all-mail js -->
-<script src="{{URL::asset('assets/js/check-all-mail.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/check-all-mail.js')}}"></script>
 <!--Internal Apexchart js-->
-<script src="{{URL::asset('assets/js/apexcharts.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/apexcharts.js')}}"></script>
 @endsection

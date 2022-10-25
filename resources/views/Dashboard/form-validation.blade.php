@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
 <!--- Internal Select2 css-->
-<link href="{{URL::asset('assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -231,9 +231,9 @@
 @endsection
 @section('js')
 <!--Internal  Select2 js -->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!--Internal  Parsley.min js -->
-<script src="{{URL::asset('assets/plugins/parsleyjs/parsley.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/parsleyjs/parsley.min.js')}}"></script>
 <!-- Internal Form-validation js -->
-<script src="{{URL::asset('assets/js/form-validation.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/form-validation.js')}}"></script>
 @endsection

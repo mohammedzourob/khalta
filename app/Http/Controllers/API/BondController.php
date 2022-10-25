@@ -7,6 +7,8 @@ use App\Models\Bond;
 use App\Models\Invoices;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 use Illuminate\Support\Facades\Validator;
 
 class BondController extends Controller
@@ -25,6 +27,8 @@ class BondController extends Controller
         $bond->exchange_amount = request('exchange_amount');
         $bond->exchange_reason = request('exchange_reason');
         $bond->date_of_application = request('date_of_application');
+        $bond->user_id = Auth::user()->id;
+
 
         $bond->save();
 

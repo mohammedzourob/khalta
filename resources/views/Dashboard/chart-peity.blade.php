@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
 <!-- Internal Morris Css-->
-<link href="{{URL::asset('assets/plugins/morris.js/morris.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/morris.js/morris.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -251,11 +251,11 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal jQuery Peity js -->
-<script src="{{URL::asset('assets/plugins/peity/jquery.peity.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/peity/jquery.peity.min.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!-- Internal Peity js -->
-<script src="{{URL::asset('assets/js/chart.peity.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/chart.peity.js')}}"></script>
 @endsection

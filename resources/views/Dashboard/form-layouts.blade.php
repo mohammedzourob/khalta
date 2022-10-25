@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
 <!--- Internal Select2 css-->
-<link href="{{URL::asset('assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -251,7 +251,7 @@
 												<label class="main-content-label tx-11 tx-medium tx-gray-600">Card Number</label>
 												<div class="pos-relative">
 													<input class="form-control pd-r-80" required="" type="text">
-													<div class="d-flex pos-absolute t-5 r-10"><img alt="" class="wd-30 mg-r-5" src="{{URL::asset('assets/img/visa.png')}}"> <img alt="" class="wd-30" src="{{URL::asset('assets/img/mastercard.png')}}"></div>
+													<div class="d-flex pos-absolute t-5 r-10"><img alt="" class="wd-30 mg-r-5" src="{{URL::asset('public/assets/img/visa.png')}}"> <img alt="" class="wd-30" src="{{URL::asset('public/assets/img/mastercard.png')}}"></div>
 												</div>
 											</div>
 											<div class="form-group">
@@ -327,7 +327,7 @@
 @endsection
 @section('js')
 <!--Internal  Select2 js -->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!-- Form-layouts js -->
-<script src="{{URL::asset('assets/js/form-layouts.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/form-layouts.js')}}"></script>
 @endsection

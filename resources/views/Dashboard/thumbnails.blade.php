@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('css')
 <!---Internal  Prism css-->
-<link href="{{URL::asset('assets/plugins/prism/prism.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/prism/prism.css')}}" rel="stylesheet">
 <!--- Custom-scroll -->
-<link href="{{URL::asset('assets/plugins/custom-scroll/jquery.mCustomScrollbar.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/custom-scroll/jquery.mCustomScrollbar.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -55,16 +55,16 @@
 									<div class="example">
 										<div class="row">
 											<div class="col-6 col-md-3">
-												<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('assets/img/photos/9.jpg')}}">
+												<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('public/assets/img/photos/9.jpg')}}">
 											</div>
 											<div class="col-6 col-md-3">
-												<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('assets/img/photos/13.jpg')}}">
+												<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('public/assets/img/photos/13.jpg')}}">
 											</div>
 											<div class="col-6 col-md-3 mg-t-10 mg-sm-t-0">
-												<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('assets/img/photos/14.jpg')}}">
+												<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('public/assets/img/photos/14.jpg')}}">
 											</div>
 											<div class="col-6 col-md-3 mg-t-10 mg-sm-t-0">
-												<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('assets/img/photos/15.jpg')}}">
+												<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('public/assets/img/photos/15.jpg')}}">
 											</div>
 										</div>
 									</div>
@@ -76,16 +76,16 @@
 <!-- Prism Precode -->
 <figure class="highlight clip-widget" id="images2"><pre><code class="language-markup"><script type="html-dashlead/script"><div class="row">
 	<div class="col-6 col-md-3">
-		<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('assets/img/photos/9.jpg')}}">
+		<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('public/assets/img/photos/9.jpg')}}">
 	</div>
 	<div class="col-6 col-md-3">
-		<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('assets/img/photos/13.jpg')}}">
+		<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('public/assets/img/photos/13.jpg')}}">
 	</div>
 	<div class="col-6 col-md-3 mg-t-10 mg-sm-t-0">
-		<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('assets/img/photos/14.jpg')}}">
+		<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('public/assets/img/photos/14.jpg')}}">
 	</div>
 	<div class="col-6 col-md-3 mg-t-10 mg-sm-t-0">
-		<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('assets/img/photos/15.jpg')}}">
+		<img alt="Responsive image" class="img-thumbnail" src="{{URL::asset('public/assets/img/photos/15.jpg')}}">
 	</div>
 </div></script></code></pre>
 <div class="clipboard-icon" data-clipboard-target="#images2"><i class="las la-clipboard"></i></div>
@@ -106,8 +106,8 @@
 								<div class="text-wrap">
 									<div class="example">
 										<div class="clearfix">
-										  <img src="{{URL::asset('assets/img/photos/10.jpg')}}" class="float-sm-left wd-100p wd-sm-200" alt="img">
-										  <img src="{{URL::asset('assets/img/photos/11.jpg')}}" class="float-sm-right wd-100p wd-sm-200 mg-t-10 mg-sm-t-0" alt="img">
+										  <img src="{{URL::asset('public/assets/img/photos/10.jpg')}}" class="float-sm-left wd-100p wd-sm-200" alt="img">
+										  <img src="{{URL::asset('public/assets/img/photos/11.jpg')}}" class="float-sm-right wd-100p wd-sm-200 mg-t-10 mg-sm-t-0" alt="img">
 										</div>
 									</div>
 									<ul class="nav nav-tabs html-source" id="html-source-code2" role="tablist">
@@ -117,8 +117,8 @@
 									</ul>
 <!-- Prism Precode -->
 <figure class="highlight clip-widget" id="images3"><pre><code class="language-markup"><script type="html-dashlead/script"><div class="clearfix">
-  <img src="{{URL::asset('assets/img/photos/10.jpg')}}" class="float-sm-left wd-100p wd-sm-200" alt="img">
-  <img src="{{URL::asset('assets/img/photos/11.jpg')}}" class="float-sm-right wd-100p wd-sm-200 mg-t-10 mg-sm-t-0" alt="img">
+  <img src="{{URL::asset('public/assets/img/photos/10.jpg')}}" class="float-sm-left wd-100p wd-sm-200" alt="img">
+  <img src="{{URL::asset('public/assets/img/photos/11.jpg')}}" class="float-sm-right wd-100p wd-sm-200 mg-t-10 mg-sm-t-0" alt="img">
 </div></script></code></pre>
 	<div class="clipboard-icon" data-clipboard-target="#images3"><i class="las la-clipboard"></i></div>
 </figure>
@@ -141,7 +141,7 @@
 											<div class="col-xl-4 col-lg-4">
 												<div class="img-thumbnail mb-3">
 													<a href="#">
-														<img src="{{URL::asset('assets/img/photos/4.jpg')}}" alt="thumb1" class="thumbimg wd-100p">
+														<img src="{{URL::asset('public/assets/img/photos/4.jpg')}}" alt="thumb1" class="thumbimg wd-100p">
 													</a>
 													<div class="caption">
 														<h5>Thumbnail label</h5>
@@ -156,7 +156,7 @@
 											<div class="col-xl-4 col-lg-4">
 												<div class="img-thumbnail mb-3">
 													<a href="#">
-														<img src="{{URL::asset('assets/img/photos/9.jpg')}}" alt="thumb1" class="thumbimg  wd-100p">
+														<img src="{{URL::asset('public/assets/img/photos/9.jpg')}}" alt="thumb1" class="thumbimg  wd-100p">
 													</a>
 													<div class="caption">
 														<h5>Thumbnail label</h5>
@@ -171,7 +171,7 @@
 											<div class="col-xl-4 col-lg-4">
 												<div class="img-thumbnail mb-3">
 													<a href="#">
-														<img src="{{URL::asset('assets/img/photos/8.jpg')}}" alt="thumb1" class="thumbimg  wd-100p">
+														<img src="{{URL::asset('public/assets/img/photos/8.jpg')}}" alt="thumb1" class="thumbimg  wd-100p">
 													</a>
 													<div class="caption">
 														<h5>Thumbnail label</h5>
@@ -195,7 +195,7 @@
 	<div class="col-xl-4 col-lg-4">
 		<div class="img-thumbnail  mb-3">
 			<a href="#">
-				<img src="{{URL::asset('assets/img/photos/4.jpg')}}" alt="thumb1" class="thumbimg wd-100p">
+				<img src="{{URL::asset('public/assets/img/photos/4.jpg')}}" alt="thumb1" class="thumbimg wd-100p">
 			</a>
 			<div class="caption">
 				<h5>Thumbnail label</h5>
@@ -210,7 +210,7 @@
 	<div class="col-xl-4 col-lg-4">
 		<div class="img-thumbnail  mb-3">
 			<a href="#">
-				<img src="{{URL::asset('assets/img/photos/9.jpg')}}" alt="thumb1" class="thumbimg  wd-100p">
+				<img src="{{URL::asset('public/assets/img/photos/9.jpg')}}" alt="thumb1" class="thumbimg  wd-100p">
 			</a>
 			<div class="caption">
 				<h5>Thumbnail label</h5>
@@ -225,7 +225,7 @@
 	<div class="col-xl-4 col-lg-4">
 		<div class="img-thumbnail  mb-3">
 			<a href="#">
-				<img src="{{URL::asset('assets/img/photos/8.jpg')}}" alt="thumb1" class="thumbimg  wd-100p">
+				<img src="{{URL::asset('public/assets/img/photos/8.jpg')}}" alt="thumb1" class="thumbimg  wd-100p">
 			</a>
 			<div class="caption">
 				<h5>Thumbnail label</h5>
@@ -259,7 +259,7 @@
 								</div>
 								<div class="text-wrap">
 									<div class="example">
-										<div><img alt="Responsive image" class="img-fluid" src="{{URL::asset('assets/img/photos/7.jpg')}}"></div>
+										<div><img alt="Responsive image" class="img-fluid" src="{{URL::asset('public/assets/img/photos/7.jpg')}}"></div>
 									</div>
 									<ul class="nav nav-tabs html-source" id="html-source-code4" role="tablist">
 										<li class="nav-item">
@@ -267,7 +267,7 @@
 										</li>
 									</ul>
 <!-- Prism Precode -->
-<figure class="highlight clip-widget" id="images1"><pre><code class="language-markup"><script type="html-dashlead/script"><div><img alt="Responsive image" class="img-fluid" src="{{URL::asset('assets/img/media/7.jpg')}}"></div>
+<figure class="highlight clip-widget" id="images1"><pre><code class="language-markup"><script type="html-dashlead/script"><div><img alt="Responsive image" class="img-fluid" src="{{URL::asset('public/assets/img/media/7.jpg')}}"></div>
 </script></code></pre>
 <div class="clipboard-icon" data-clipboard-target="#images1"><i class="las la-clipboard"></i></div>
 </figure>
@@ -286,7 +286,7 @@
 									<div class="text-wrap">
 										<div class="example">
 											<figure class="pos-relative mg-b-0">
-												<img alt="Responsive image" class="img-fit-cover" src="{{URL::asset('assets/img/photos/12.jpg')}}">
+												<img alt="Responsive image" class="img-fit-cover" src="{{URL::asset('public/assets/img/photos/12.jpg')}}">
 												<figcaption class="pos-absolute a-0 pd-25 bg-black-5 tx-white-8">
 													<h6 class="tx-14 tx-sm-16 tx-white tx-semibold mg-b-15 mg-sm-b-20">What Does Royalty-Free Mean?</h6>
 													<p class="mg-b-0">Royalty free means you just need to pay for rights to use the item once per end product.
@@ -301,7 +301,7 @@
 										</ul>
 <!-- Prism Precode -->
 <figure class="highlight clip-widget" id="images4"><pre><code class="language-markup"><script type="html-dashlead/script"><figure class="pos-relative mg-b-0">
-<img alt="Responsive image" class="img-fit-cover" src="{{URL::asset('assets/img/photos/12.jpg')}}">
+<img alt="Responsive image" class="img-fit-cover" src="{{URL::asset('public/assets/img/photos/12.jpg')}}">
 <figcaption class="pos-absolute a-0 pd-25 bg-black-5 tx-white-8">
 <h6 class="tx-14 tx-sm-16 tx-white tx-semibold mg-b-15 mg-sm-b-20">What Does Royalty-Free Mean?</h6>
 <p class="mg-b-0">Royalty free means you just need to pay for rights
@@ -325,12 +325,12 @@ to use the item once per end product. You dont need to pay additional or ongoing
 @endsection
 @section('js')
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!-- Internal Jquery.mCustomScrollbar js-->
-<script src="{{URL::asset('assets/plugins/custom-scroll/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/custom-scroll/jquery.mCustomScrollbar.concat.min.js')}}"></script>
 <!--Internal  Clipboard js-->
-<script src="{{URL::asset('assets/plugins/clipboard/clipboard.min.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/clipboard/clipboard.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/clipboard/clipboard.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/clipboard/clipboard.js')}}"></script>
 <!-- Internal Prism js-->
-<script src="{{URL::asset('assets/plugins/prism/prism.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/prism/prism.js')}}"></script>
 @endsection

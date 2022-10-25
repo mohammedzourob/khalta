@@ -5,13 +5,13 @@
 {{--        <a class="desktop-logo logo-light active" href="{{ url('/dashboard' . $page='') }}"><img src="{{url("logo/logo.png")}}" class="main-logo" alt="logo" style="width: 150px;"></a>--}}
 {{--        <a class="desktop-logo logo-dark active" href="{{ url('/dashboard' . $page='') }}"><img src="{{url("logo/logo.png")}}" class="main-logo dark-theme" alt="logo"></a>--}}
 {{--        <a class="logo-icon mobile-logo icon-light active" href="{{ url('/dashboard' . $page='') }}"><img src="{{url("logo/logo.png")}}" class="logo-icon" alt="logo"></a>--}}
-{{--        <a class="logo-icon mobile-logo icon-dark active" href="{{ url('/dashboard' . $page='index') }}"><img src="{{URL::asset('assets/img/brand/favicon-white.png')}}" class="logo-icon dark-theme" alt="logo"></a>--}}
+{{--        <a class="logo-icon mobile-logo icon-dark active" href="{{ url('/dashboard' . $page='index') }}"><img src="{{URL::asset('public/assets/img/brand/favicon-white.png')}}" class="logo-icon dark-theme" alt="logo"></a>--}}
     </div>
     <div class="main-sidemenu">
         <div class="app-sidebar__user clearfix">
             <div class="dropdown user-pro-body">
                 <div class="">
-                    <img alt="user-img" class="avatar avatar-xl brround" src="{{URL::asset('assets/img/faces/6.jpg')}}"><span class="avatar-status profile-status bg-green"></span>
+                    <img alt="user-img" class="avatar avatar-xl brround" src="{{URL::asset('public/assets/img/faces/6.jpg')}}"><span class="avatar-status profile-status bg-green"></span>
                 </div>
                 <div class="user-info">
                     <h4 class="font-weight-semibold mt-3 mb-0"> {{ Auth::user()->name }}</h4>

@@ -29,7 +29,7 @@
 {{--                                        <input type="text" class="form-control"   placeholder="Search employee" id="search">--}}
                                         <div class="input-group-prepend">
                  <span class="input-group-text" id="basic-addon1">
-{{-- <img src="https://assets.tokopedia.net/assets-tokopedia-  lite/v2/zeus/kratos/af2f34c3.svg" alt="">--}}
+{{-- <img src="https://public/assets.tokopedia.net/public/assets-tokopedia-  lite/v2/zeus/kratos/af2f34c3.svg" alt="">--}}
 </span>
                                         </div>
                                     </div>
@@ -56,13 +56,13 @@
 
 
     <!-- Internal Nice-select js-->
-    <script src="{{URL::asset('assets/plugins/jquery-nice-select/js/jquery.nice-select.js')}}"></script>
-    <script src="{{URL::asset('assets/plugins/jquery-nice-select/js/nice-select.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/jquery-nice-select/js/jquery.nice-select.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/jquery-nice-select/js/nice-select.js')}}"></script>
 
     <!--Internal  Parsley.min js -->
-    <script src="{{URL::asset('assets/plugins/parsleyjs/parsley.min.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/parsleyjs/parsley.min.js')}}"></script>
     <!-- Internal Form-validation js -->
-    <script src="{{URL::asset('assets/js/form-validation.js')}}"></script>
+    <script src="{{URL::asset('public/assets/js/form-validation.js')}}"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 {{-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> --}}
 {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>--}}

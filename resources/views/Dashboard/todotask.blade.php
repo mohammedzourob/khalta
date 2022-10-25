@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
 <!-- Internal Gallery css -->
-<link href="{{URL::asset('assets/plugins/gallery/gallery.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/gallery/gallery.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -60,7 +60,7 @@
 								<div class="card mg-b-20">
 									<div class="card-body p-0">
 										<div class="todo-widget-header d-flex pb-2 pd-20">
-											<div class="drop-down-profile" data-toggle="dropdown"><img alt="" class="rounded-circle avatar avatar-md " src="{{URL::asset('assets/img/faces/1.jpg')}}"><span class="assigned-task bg-purple">9</span></div>
+											<div class="drop-down-profile" data-toggle="dropdown"><img alt="" class="rounded-circle avatar avatar-md " src="{{URL::asset('public/assets/img/faces/1.jpg')}}"><span class="assigned-task bg-purple">9</span></div>
 											<div class="dropdown-menu tx-13">
 												<div class="main-header-profile">
 													<div class="tx-16 h5 mg-b-0">Petey Cruiser</div>
@@ -109,7 +109,7 @@
 								<div class="card mg-b-20">
 									<div class="card-body p-0">
 										<div class="todo-widget-header d-flex pb-2 pd-20">
-											<div class="drop-down-profile" data-toggle="dropdown"><img alt="" class="rounded-circle avatar avatar-md " src="{{URL::asset('assets/img/faces/12.jpg')}}"><span class="assigned-task bg-info">2</span></div>
+											<div class="drop-down-profile" data-toggle="dropdown"><img alt="" class="rounded-circle avatar avatar-md " src="{{URL::asset('public/assets/img/faces/12.jpg')}}"><span class="assigned-task bg-info">2</span></div>
 											<div class="dropdown-menu tx-13">
 												<div class="main-header-profile">
 													<div class="tx-16 h5 mg-b-0">Petey Cruiser</div>
@@ -158,7 +158,7 @@
 								<div class="card mg-b-20">
 									<div class="card-body p-0">
 										<div class="todo-widget-header d-flex pb-2 pd-20">
-											<div class="drop-down-profile" data-toggle="dropdown"><img alt="" class="rounded-circle avatar avatar-md " src="{{URL::asset('assets/img/faces/9.jpg')}}"><span class="assigned-task bg-danger">6</span></div>
+											<div class="drop-down-profile" data-toggle="dropdown"><img alt="" class="rounded-circle avatar avatar-md " src="{{URL::asset('public/assets/img/faces/9.jpg')}}"><span class="assigned-task bg-danger">6</span></div>
 											<div class="dropdown-menu tx-13">
 												<div class="main-header-profile">
 													<div class="tx-16 h5 mg-b-0">Petey Cruiser</div>
@@ -207,7 +207,7 @@
 								<div class="card mg-b-20 mg-lg-b-0">
 									<div class="card-body p-0">
 										<div class="todo-widget-header d-flex pb-2 pd-20">
-											<div class="drop-down-profile" data-toggle="dropdown"><img alt="" class="rounded-circle avatar avatar-md " src="{{URL::asset('assets/img/faces/4.jpg')}}"><span class="assigned-task bg-info">9</span></div>
+											<div class="drop-down-profile" data-toggle="dropdown"><img alt="" class="rounded-circle avatar avatar-md " src="{{URL::asset('public/assets/img/faces/4.jpg')}}"><span class="assigned-task bg-info">9</span></div>
 											<div class="dropdown-menu tx-13">
 												<div class="main-header-profile">
 													<div class="tx-16 h5 mg-b-0">Petey Cruiser</div>
@@ -256,7 +256,7 @@
 								<div class="card mg-b-20 mg-lg-b-0">
 									<div class="card-body p-0">
 										<div class="todo-widget-header d-flex pb-2 pd-20">
-											<div class=" drop-down-profile" data-toggle="dropdown"><img alt="" class="rounded-circle avatar avatar-md" src="{{URL::asset('assets/img/faces/15.jpg')}}"><span class="assigned-task bg-primary">7</span></div>
+											<div class=" drop-down-profile" data-toggle="dropdown"><img alt="" class="rounded-circle avatar avatar-md" src="{{URL::asset('public/assets/img/faces/15.jpg')}}"><span class="assigned-task bg-primary">7</span></div>
 											<div class="dropdown-menu tx-13">
 												<div class="main-header-profile">
 													<div class="tx-16 h5 mg-b-0">Petey Cruiser</div>
@@ -305,7 +305,7 @@
 								<div class="card mg-b-20 ">
 									<div class="card-body p-0">
 										<div class="todo-widget-header d-flex pb-2 pd-20">
-											<div class="drop-down-profile" data-toggle="dropdown"><img alt="" class="rounded-circle avatar avatar-md " src="{{URL::asset('assets/img/faces/5.jpg')}}"><span class="assigned-task bg-info">4</span></div>
+											<div class="drop-down-profile" data-toggle="dropdown"><img alt="" class="rounded-circle avatar avatar-md " src="{{URL::asset('public/assets/img/faces/5.jpg')}}"><span class="assigned-task bg-info">4</span></div>
 											<div class="dropdown-menu tx-13">
 												<div class="main-header-profile">
 													<div class="tx-16 h5 mg-b-0">Petey Cruiser</div>

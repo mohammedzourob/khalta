@@ -57,8 +57,8 @@ class Schedule_of_workController extends Controller
         $work->name =  $request->name ;
         $work->email =$request->email;
         $work->date = $request->date;
-
         $work->publisher = Auth::User()->name;
+        $work->user_id = Auth::User()->id;
         $work->status = "1" ;
 
 
@@ -77,8 +77,8 @@ class Schedule_of_workController extends Controller
         $notification->status = "0";
 
         $notification->save();
-        
-        
+
+
 
 
         return parent::success( $work);

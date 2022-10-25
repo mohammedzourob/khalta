@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('css')
 <!---Internal  Owl Carousel css-->
-<link href="{{URL::asset('assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
 <!--- Internal Sweet-Alert css-->
-<link href="{{URL::asset('assets/plugins/sweet-alert/sweetalert.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/sweet-alert/sweetalert.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -193,14 +193,14 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/rating/ratings.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/rating/ratings.js')}}"></script>
 <!--Internal  Sweet-Alert js-->
-<script src="{{URL::asset('assets/plugins/sweet-alert/sweetalert.min.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/sweet-alert/jquery.sweet-alert.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/sweet-alert/sweetalert.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/sweet-alert/jquery.sweet-alert.js')}}"></script>
 <!-- Sweet-alert js  -->
-<script src="{{URL::asset('assets/plugins/sweet-alert/sweetalert.min.js')}}"></script>
-<script src="{{URL::asset('assets/js/sweet-alert.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/sweet-alert/sweetalert.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/sweet-alert.js')}}"></script>
 @endsection

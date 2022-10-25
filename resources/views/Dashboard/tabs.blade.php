@@ -1,11 +1,11 @@
 @extends('layouts.master')
 @section('css')
 <!---Internal  Prism css-->
-<link href="{{URL::asset('assets/plugins/prism/prism.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/prism/prism.css')}}" rel="stylesheet">
 <!---Internal Input tags css-->
-<link href="{{URL::asset('assets/plugins/inputtags/inputtags.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/inputtags/inputtags.css')}}" rel="stylesheet">
 <!--- Custom-scroll -->
-<link href="{{URL::asset('assets/plugins/custom-scroll/jquery.mCustomScrollbar.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/custom-scroll/jquery.mCustomScrollbar.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -487,7 +487,7 @@
 										<div class="tab-pane" id="default-tab1" role="tabpanel" aria-labelledby="js-tab">
 <!---Prism Pre code-->
 <figure class="highlight mb-0" id="element3"><pre><code class="language-markup"><script type="prismsmix/javascript"><!---Tabs JS-->
-src="{{URL::asset('assets/plugins/tabs/jquery.multipurpose_tabcontent.js')}}"</script></code></pre>
+src="{{URL::asset('public/assets/plugins/tabs/jquery.multipurpose_tabcontent.js')}}"</script></code></pre>
 <div class="clipboard-icon" data-clipboard-target="#element5"><i class="las la-clipboard"></i></div>
 </figure>
 										</div>
@@ -496,7 +496,7 @@ src="{{URL::asset('assets/plugins/tabs/jquery.multipurpose_tabcontent.js')}}"</s
 										<div class="tab-pane" id="default-tab2" role="tabpanel" aria-labelledby="js-tab1">
 <!---Prism Pre code-->
 <figure class="highlight mb-0" id="element4"><pre><code class="language-markup"><script type="prismsmix/javascript"><!---Tabs scripts-->
-src="{{URL::asset('assets/js/tabs.js')}}"</script></code></pre>
+src="{{URL::asset('public/assets/js/tabs.js')}}"</script></code></pre>
 <div class="clipboard-icon" data-clipboard-target="#element5"><i class="las la-clipboard"></i></div>
 </figure>
 										</div>
@@ -516,19 +516,19 @@ src="{{URL::asset('assets/js/tabs.js')}}"</script></code></pre>
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!-- Internal Jquery.mCustomScrollbar js-->
-<script src="{{URL::asset('assets/plugins/custom-scroll/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/custom-scroll/jquery.mCustomScrollbar.concat.min.js')}}"></script>
 <!-- Internal Input tags js-->
-<script src="{{URL::asset('assets/plugins/inputtags/inputtags.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/inputtags/inputtags.js')}}"></script>
 <!--- Tabs JS-->
-<script src="{{URL::asset('assets/plugins/tabs/jquery.multipurpose_tabcontent.js')}}"></script>
-<script src="{{URL::asset('assets/js/tabs.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/tabs/jquery.multipurpose_tabcontent.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/tabs.js')}}"></script>
 <!--Internal  Clipboard js-->
-<script src="{{URL::asset('assets/plugins/clipboard/clipboard.min.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/clipboard/clipboard.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/clipboard/clipboard.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/clipboard/clipboard.js')}}"></script>
 <!-- Internal Prism js-->
-<script src="{{URL::asset('assets/plugins/prism/prism.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/prism/prism.js')}}"></script>
 @endsection

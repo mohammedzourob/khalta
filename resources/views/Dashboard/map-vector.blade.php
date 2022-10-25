@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
 <!--Internal  jqvmap Css-->
-<link href="{{URL::asset('assets/plugins/jqvmap/jqvmap.min.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/jqvmap/jqvmap.min.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -117,17 +117,17 @@
 @endsection
 @section('js')
 <!--Internal  Vector-maps js -->
-<script src="{{URL::asset('assets/plugins/jqvmap/jquery.vmap.min.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/jqvmap/maps/jquery.vmap.world.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/jqvmap/maps/jquery.vmap.canada.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/jqvmap/maps/jquery.vmap.algeria.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/jqvmap/maps/jquery.vmap.argentina.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/jqvmap/maps/jquery.vmap.europe.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/jqvmap/maps/jquery.vmap.germany.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/jqvmap/maps/jquery.vmap.russia.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/jqvmap/maps/jquery.vmap.france.js')}}"></script>
-<script src="{{URL::asset('assets/js/vector-map.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jqvmap/jquery.vmap.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jqvmap/maps/jquery.vmap.world.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jqvmap/maps/jquery.vmap.canada.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jqvmap/maps/jquery.vmap.algeria.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jqvmap/maps/jquery.vmap.argentina.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jqvmap/maps/jquery.vmap.europe.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jqvmap/maps/jquery.vmap.germany.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jqvmap/maps/jquery.vmap.russia.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jqvmap/maps/jquery.vmap.france.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/vector-map.js')}}"></script>
 <!-- Internal Vector-sampledata js -->
-<script src="{{URL::asset('assets/js/jquery.vmap.sampledata.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/jquery.vmap.sampledata.js')}}"></script>
 @endsection

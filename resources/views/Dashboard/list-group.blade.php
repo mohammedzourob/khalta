@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
 <!---Internal  Prism css-->
-<link href="{{URL::asset('assets/plugins/prism/prism.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/prism/prism.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -220,7 +220,7 @@
 										<div class="list-group">
 											<a class="list-group-item list-group-item-action flex-column align-items-start active" href="#">
 												<span class="d-flex">
-													<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/3.jpg')}}">
+													<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/3.jpg')}}">
 													<div class="">
 														<div class="d-flex w-100 justify-content-between">
 															<h5 class="mb-2 tx-14">List group item heading</h5><small>3 days ago</small>
@@ -231,7 +231,7 @@
 											</a>
 											<a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
 												<span class="d-flex">
-													<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/8.jpg')}}">
+													<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/8.jpg')}}">
 													<div class="">
 														<div class="d-flex w-100 justify-content-between">
 															<h5 class="mb-2 tx-14">List group item heading</h5><small>3 days ago</small>
@@ -242,7 +242,7 @@
 											</a>
 											<a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
 												<span class="d-flex">
-													<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/11.jpg')}}">
+													<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/11.jpg')}}">
 													<div class="">
 														<div class="d-flex w-100 justify-content-between">
 															<h5 class="mb-2 tx-14">List group item heading</h5><small>3 days ago</small>
@@ -296,7 +296,7 @@
 											<div class="list-group-item pd-y-20">
 												<div class="media">
 													<div class="d-flex mg-l-10 wd-50">
-														<img class="ml-4 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/17.jpg')}}" alt="avatar">
+														<img class="ml-4 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/17.jpg')}}" alt="avatar">
 													</div>
 													<div class="media-body">
 														<div class="media-body d-flex">
@@ -310,7 +310,7 @@
 											<div class="list-group-item pd-y-20">
 												<div class="media">
 													<div class="d-flex mg-l-10 wd-50">
-														<img class="ml-4 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/5.jpg')}}" alt="avatar">
+														<img class="ml-4 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/5.jpg')}}" alt="avatar">
 													</div>
 													<div class="media-body">
 														<div class="media-body d-flex">
@@ -324,7 +324,7 @@
 											<div class="list-group-item pd-y-20">
 												<div class="media">
 													<div class="d-flex mg-l-10 wd-50">
-														<img class="ml-4 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/12.jpg')}}" alt="avatar">
+														<img class="ml-4 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/12.jpg')}}" alt="avatar">
 													</div>
 													<div class="media-body">
 														<div class="media-body d-flex">
@@ -347,7 +347,7 @@
 	<div class="list-group-item pd-y-20">
 		<div class="media">
 			<div class="d-flex mg-l-10 wd-50">
-				<img class="ml-4 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/17.jpg')}}" alt="avatar">
+				<img class="ml-4 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/17.jpg')}}" alt="avatar">
 			</div>
 			<div class="media-body">
 				<div class="media-body d-flex">
@@ -361,7 +361,7 @@
 	<div class="list-group-item pd-y-20">
 		<div class="media">
 			<div class="d-flex mg-l-10 wd-50">
-				<img class="ml-4 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/5.jpg')}}" alt="avatar">
+				<img class="ml-4 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/5.jpg')}}" alt="avatar">
 			</div>
 			<div class="media-body">
 				<div class="media-body d-flex">
@@ -375,7 +375,7 @@
 	<div class="list-group-item pd-y-20">
 		<div class="media">
 			<div class="d-flex mg-r-10 wd-50">
-				<img class="ml-4 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/12.jpg')}}" alt="avatar">
+				<img class="ml-4 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/12.jpg')}}" alt="avatar">
 			</div>
 			<div class="media-body">
 				<div class="media-body d-flex">
@@ -407,7 +407,7 @@
 									<div class="example">
 										<ul class="list-group wd-md-100p users-list-group">
 											<li class="list-group-item d-flex align-items-center">
-												<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/5.jpg')}}">
+												<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/5.jpg')}}">
 												<div>
 													<h6 class="tx-15 mb-1 tx-inverse tx-semibold mg-b-0">Adrian Monino</h6><span class="d-block tx-13 text-muted">Premium Member</span>
 												</div>
@@ -421,7 +421,7 @@
 												</div>
 											</li>
 											<li class="list-group-item d-flex align-items-center">
-												<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/6.jpg')}}">
+												<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/6.jpg')}}">
 												<div>
 													<h6 class="tx-15 mb-1 tx-inverse tx-semibold mg-b-0">Joel Mendez</h6><span class="d-block tx-13 text-muted">Premium Member</span>
 												</div>
@@ -435,7 +435,7 @@
 												</div>
 											</li>
 											<li class="list-group-item d-flex align-items-center">
-												<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/15.jpg')}}">
+												<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/15.jpg')}}">
 												<div>
 													<h6 class="tx-15 mb-1 tx-inverse tx-semibold mg-b-0">Joel Mendez</h6><span class="d-block tx-13 text-muted">Premium Member</span>
 												</div>
@@ -449,7 +449,7 @@
 												</div>
 											</li>
 											<li class="list-group-item d-flex align-items-center">
-												<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/12.jpg')}}">
+												<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/12.jpg')}}">
 												<div>
 													<h6 class="tx-15 mb-1 tx-inverse tx-semibold mg-b-0">Marianne Audrey</h6><span class="d-block tx-13 text-muted">Premium Member</span>
 												</div>
@@ -472,7 +472,7 @@
 <!---Prism Pre code-->
 <figure class="highlight clip-widget" id="list08"><pre><code class="language-markup"><script type="html-dashlead/script"><ul class="list-group wd-md-100p users-list-group">
 	<li class="list-group-item d-flex align-items-center">
-		<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/5.jpg')}}">
+		<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/5.jpg')}}">
 		<div>
 			<h6 class="tx-15 mb-1 tx-inverse tx-semibold mg-b-0">Adrian Monino</h6><span class="d-block tx-13 text-muted">Premium Member</span>
 		</div>
@@ -486,7 +486,7 @@
 		</div>
 	</li>
 	<li class="list-group-item d-flex align-items-center">
-		<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/6.jpg')}}">
+		<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/6.jpg')}}">
 		<div>
 			<h6 class="tx-15 mb-1 tx-inverse tx-semibold mg-b-0">Joel Mendez</h6><span class="d-block tx-13 text-muted">Premium Member</span>
 		</div>
@@ -500,7 +500,7 @@
 		</div>
 	</li>
 	<li class="list-group-item d-flex align-items-center">
-		<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/6.jpg')}}">
+		<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/6.jpg')}}">
 		<div>
 			<h6 class="tx-15 mb-1 tx-inverse tx-semibold mg-b-0">Joel Mendez</h6><span class="d-block tx-13 text-muted">Premium Member</span>
 		</div>
@@ -514,7 +514,7 @@
 		</div>
 	</li>
 	<li class="list-group-item d-flex align-items-center">
-		<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('assets/img/faces/12.jpg')}}">
+		<img alt="" class="ml-3 rounded-circle avatar-md" src="{{URL::asset('public/assets/img/faces/12.jpg')}}">
 		<div>
 			<h6 class="tx-15 mb-1 tx-inverse tx-semibold mg-b-0">Marianne Audrey</h6><span class="d-block tx-13 text-muted">Premium Member</span>
 		</div>
@@ -545,14 +545,14 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!-- Internal Jquery.mCustomScrollbar js-->
-<script src="{{URL::asset('assets/plugins/custom-scroll/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/custom-scroll/jquery.mCustomScrollbar.concat.min.js')}}"></script>
 <!--Internal  Clipboard js-->
-<script src="{{URL::asset('assets/plugins/clipboard/clipboard.min.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/clipboard/clipboard.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/clipboard/clipboard.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/clipboard/clipboard.js')}}"></script>
 <!-- Internal Prism js-->
-<script src="{{URL::asset('assets/plugins/prism/prism.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/prism/prism.js')}}"></script>
 @endsection

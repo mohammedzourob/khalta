@@ -54,7 +54,7 @@
 												A
 											</div>
 											<div class="main-contact-item selected">
-												<div class="main-img-user online"><img alt="avatar" src="{{URL::asset('assets/img/faces/2.jpg')}}"></div>
+												<div class="main-img-user online"><img alt="avatar" src="{{URL::asset('public/assets/img/faces/2.jpg')}}"></div>
 												<div class="main-contact-body">
 													<h6>Abigail Johnson</h6><span class="phone">+1-234-567-890</span>
 												</div>
@@ -65,7 +65,7 @@
 												</a>
 											</div>
 											<div class="main-contact-item">
-												<div class="main-img-user"><img alt="avatar" src="{{URL::asset('assets/img/faces/3.jpg')}}"></div>
+												<div class="main-img-user"><img alt="avatar" src="{{URL::asset('public/assets/img/faces/3.jpg')}}"></div>
 												<div class="main-contact-body">
 													<h6>Archie Cantones</h6><span>archie@cantones.com</span>
 												</div>
@@ -105,7 +105,7 @@
 												B
 											</div>
 											<div class="main-contact-item">
-												<div class="main-img-user"><img alt="avatar" src="{{URL::asset('assets/img/faces/4.jpg')}}"></div>
+												<div class="main-img-user"><img alt="avatar" src="{{URL::asset('public/assets/img/faces/4.jpg')}}"></div>
 												<div class="main-contact-body">
 													<h6>Brandon Dilao</h6><span>+1-234-567-890</span>
 												</div>
@@ -116,7 +116,7 @@
 												</a>
 											</div>
 											<div class="main-contact-item">
-												<div class="main-img-user online"><img alt="avatar" src="{{URL::asset('assets/img/faces/5.jpg')}}"></div>
+												<div class="main-img-user online"><img alt="avatar" src="{{URL::asset('public/assets/img/faces/5.jpg')}}"></div>
 												<div class="main-contact-body">
 													<h6>Britney Labares</h6><span>+1-234-567-890</span>
 												</div>
@@ -143,7 +143,7 @@
 												C
 											</div>
 											<div class="main-contact-item">
-												<div class="main-img-user"><img alt="avatar" src="{{URL::asset('assets/img/faces/6.jpg')}}"></div>
+												<div class="main-img-user"><img alt="avatar" src="{{URL::asset('public/assets/img/faces/6.jpg')}}"></div>
 												<div class="main-contact-body">
 													<h6>Camille Audrey</h6><span>+1-234-567-890</span>
 												</div>
@@ -154,7 +154,7 @@
 												</a>
 											</div>
 											<div class="main-contact-item">
-												<div class="main-img-user online"><img alt="avatar" src="{{URL::asset('assets/img/faces/7.jpg')}}"></div>
+												<div class="main-img-user online"><img alt="avatar" src="{{URL::asset('public/assets/img/faces/7.jpg')}}"></div>
 												<div class="main-contact-body">
 													<h6>Christian Lerio</h6><span>+1-234-567-890</span>
 												</div>
@@ -165,7 +165,7 @@
 												</a>
 											</div>
 											<div class="main-contact-item">
-												<div class="main-img-user online"><img alt="avatar" src="{{URL::asset('assets/img/faces/8.jpg')}}"></div>
+												<div class="main-img-user online"><img alt="avatar" src="{{URL::asset('public/assets/img/faces/8.jpg')}}"></div>
 												<div class="main-contact-body">
 													<h6>Christopher Segovia</h6><span>+1-234-567-890</span>
 												</div>
@@ -179,7 +179,7 @@
 												D
 											</div>
 											<div class="main-contact-item">
-												<div class="main-img-user online"><img alt="avatar" src="{{URL::asset('assets/img/faces/9.jpg')}}"></div>
+												<div class="main-img-user online"><img alt="avatar" src="{{URL::asset('public/assets/img/faces/9.jpg')}}"></div>
 												<div class="main-contact-body">
 													<h6>Darius Clayton</h6><span>+1-234-567-890</span>
 												</div>
@@ -190,7 +190,7 @@
 												</a>
 											</div>
 											<div class="main-contact-item">
-												<div class="main-img-user"><img alt="avatar" src="{{URL::asset('assets/img/faces/10.jpg')}}"></div>
+												<div class="main-img-user"><img alt="avatar" src="{{URL::asset('public/assets/img/faces/10.jpg')}}"></div>
 												<div class="main-contact-body">
 													<h6>Dyanne Aceron</h6><span>+1-234-567-890</span>
 												</div>
@@ -201,7 +201,7 @@
 												</a>
 											</div>
 											<div class="main-contact-item">
-												<div class="main-img-user online"><img alt="avatar" src="{{URL::asset('assets/img/faces/11.jpg')}}"></div>
+												<div class="main-img-user online"><img alt="avatar" src="{{URL::asset('public/assets/img/faces/11.jpg')}}"></div>
 												<div class="main-contact-body">
 													<h6>Divina Gracia</h6><span>+1-234-567-890</span>
 												</div>
@@ -224,7 +224,7 @@
 								<div class="main-contact-info-header pt-3">
 									<div class="media">
 										<div class="main-img-user">
-											<img alt="avatar" src="{{URL::asset('assets/img/faces/6.jpg')}}"> <a href=""><i class="fe fe-camera"></i></a>
+											<img alt="avatar" src="{{URL::asset('public/assets/img/faces/6.jpg')}}"> <a href=""><i class="fe fe-camera"></i></a>
 										</div>
 										<div class="media-body">
 											<h5>Petey Cruiser</h5>
@@ -298,5 +298,5 @@
 @endsection
 @section('js')
 <!--Internal  Contact js -->
-<script src="{{URL::asset('assets/js/contact.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/contact.js')}}"></script>
 @endsection

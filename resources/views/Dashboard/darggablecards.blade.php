@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('css')
 <!---Internal  Owl Carousel css-->
-<link href="{{URL::asset('assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
 <!---Internal  Darggable css-->
-<link href="{{URL::asset('assets/plugins/darggable/jquery-ui-darggable.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/darggable/jquery-ui-darggable.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -48,7 +48,7 @@
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consictetur...</p>
 							</div>
 							<div class="card custom-card card-draggable">
-								<img alt="Image" class="img-fluid card-img-top" src="{{URL::asset('assets/img/photos/1.jpg')}}">
+								<img alt="Image" class="img-fluid card-img-top" src="{{URL::asset('public/assets/img/photos/1.jpg')}}">
 								<div class="card-body">
 									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 								</div>
@@ -87,7 +87,7 @@
 								<div class="card-body">
 									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 								</div>
-								<img alt="Image" class="img-fluid card-img-top" src="{{URL::asset('assets/img/photos/3.jpg')}}">
+								<img alt="Image" class="img-fluid card-img-top" src="{{URL::asset('public/assets/img/photos/3.jpg')}}">
 							</div>
 						</div>
 						<div class="col-xl-4 col-sm-12 col-md-12 col-lg-4">
@@ -95,7 +95,7 @@
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consictetur...</p>
 							</div>
 							<div class="card custom-card card-draggable">
-								<img alt="Image" class="card-img img-fluid card-img-top" src="{{URL::asset('assets/img/photos/6.jpg')}}">
+								<img alt="Image" class="card-img img-fluid card-img-top" src="{{URL::asset('public/assets/img/photos/6.jpg')}}">
 								<div class="card-img-overlay pd-30 bg-black-4 d-flex flex-column justify-content-center">
 									<p class="tx-white tx-medium mg-b-15">The Ghost Town</p>
 									<p class="tx-white-7 tx-13">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consictetur...</p>
@@ -111,7 +111,7 @@
 								</div>
 							</div>
 							<div class="card custom-card card-draggable">
-								<img alt="Image" class="img-fluid card-img-top" src="{{URL::asset('assets/img/photos/1.jpg')}}">
+								<img alt="Image" class="img-fluid card-img-top" src="{{URL::asset('public/assets/img/photos/1.jpg')}}">
 								<div class="card-body">
 									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 								</div>
@@ -127,10 +127,10 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!--- Internal Darggable js-->
-<script src="{{URL::asset('assets/plugins/darggable/jquery-ui-darggable.min.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/darggable/darggable.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/darggable/jquery-ui-darggable.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/darggable/darggable.js')}}"></script>
 @endsection

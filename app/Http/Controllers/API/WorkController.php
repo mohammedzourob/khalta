@@ -25,12 +25,7 @@ class WorkController extends Controller
         $user_id=auth('api')->user()->id;
 
 
-            $work=Work::where('status',"1")->where('contract_id',$id)
-//                ->whereHas('contract', function($q) use(  $user_id) {
-//                    $q->where("user_id",$user_id);
-//
-//                })
-                ->with('image') ->orderBy('id', 'DESC')->get();
+            $work=Work::where('status',"1")->where('contract_id',$id)->with('contract:id,code') ->orderBy('id', 'DESC')->get();
 
 
         return parent::success($work);
@@ -77,22 +72,40 @@ class WorkController extends Controller
         $work->date = request('date');
 
         $work->publisher = $user_id->name;
+        $work->user_id = Auth::User()->id;
         $work->status = "0";
+//
+//        if ($request->hasFile('image')) {
+//            $files=$request->file('image');
+//            $photosPath = [];
 
+
+//            foreach ($files as $file) {
+//                $path = explode('/', $file->move('public'))[1];
+//                $work->work_id = $work->id;
+//                $photosPath[] = new Work_image([
+//                    'image'=>$path,
+//                    'work_id'=>$work
+//
+//                ]);
+//                $work->image()->saveMany($photosPath);
+//
+//            }
+//
+//
+//        }
+
+            if ($request->file('image') ) {
+                $name = Str::random(12);
+                $path = $request->file('image')->move('public/api/work',
+
+                    $name . time() . '.' . $request->file('image')->getClientOriginalExtension());
+                $work->image= $path;
+            }
         $work->save();
 
-        $files = $request->image;
 
-        if ($files != 0) {
-            foreach ($files as $file) {
-                $img = new Work_image();
-                $img->work_id = $work->id;
-                $name = Str::random(12);
-                $path = $file->move('api/Work', $name . time() . '.' . $file->getClientOriginalExtension());
-                $img->image = $path;
-                $img->save();
-            }
-        }
+
 
         $id=$work->id;
         $contract_id=$work->contract_id;

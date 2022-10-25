@@ -111,7 +111,7 @@
 								<div>
 									<h6 class="card-title">Time Counting From 0</h6>
 								</div>
-								<img src="{{URL::asset('assets/img/media/illustrate.png')}}" alt="counter-image" class="wd-160 ht-160 ">
+								<img src="{{URL::asset('public/assets/img/media/illustrate.png')}}" alt="counter-image" class="wd-160 ht-160 ">
 								<div class="pb-0 mt-3">
 									<span id="timer-countup" class="tx-26 mb-0"></span>
 								</div>
@@ -124,7 +124,7 @@
 								<div>
 									<h6 class="card-title">Time Counting From 60 to 20</h6>
 								</div>
-								<img src="{{URL::asset('assets/img/media/illustrate1.png')}}" alt="counter-image" class="wd-160 ht-160 ">
+								<img src="{{URL::asset('public/assets/img/media/illustrate1.png')}}" alt="counter-image" class="wd-160 ht-160 ">
 								<div class="mt-3">
 									<span id="timer-countinbetween" class="tx-26 mb-0"></span>
 								</div>
@@ -137,7 +137,7 @@
 								<div>
 									<h6 class="card-title">Time 1 minute counter</h6>
 								</div>
-								<img src="{{URL::asset('assets/img/media/illustrate2.png')}}" alt="counter-image" class="wd-160 ht-160 ">
+								<img src="{{URL::asset('public/assets/img/media/illustrate2.png')}}" alt="counter-image" class="wd-160 ht-160 ">
 								<div class="mt-3">
 									<span id="timer-countercallback" class="tx-26 mb-0"></span>
 								</div>
@@ -170,13 +170,13 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!--Internal Counters -->
-<script src="{{URL::asset('assets/plugins/counters/waypoints.min.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/counters/counterup.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/counters/waypoints.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/counters/counterup.min.js')}}"></script>
 <!--Internal Time Counter -->
-<script src="{{URL::asset('assets/plugins/counters/jquery.missofis-countdown.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/counters/counter.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/counters/jquery.missofis-countdown.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/counters/counter.js')}}"></script>
 @endsection

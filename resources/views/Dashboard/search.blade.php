@@ -136,11 +136,11 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!-- Internal Rating js-->
-<script src="{{URL::asset('assets/plugins/rating/jquery.rating-stars.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/rating/jquery.barrating.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/rating/ratings.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/rating/jquery.rating-stars.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/rating/jquery.barrating.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/rating/ratings.js')}}"></script>
 @endsection

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
 <!-- Internal Gallery css -->
-<link href="{{URL::asset('assets/plugins/gallery/gallery.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/gallery/gallery.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -43,49 +43,49 @@
 				<!-- Gallery -->
 				<div class="demo-gallery">
 					<ul id="lightgallery" class="list-unstyled row row-sm pr-0">
-						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('assets/img/photos/1.jpg')}}" data-src="{{URL::asset('assets/img/photos/1.jpg')}}" data-sub-html="<h4>Gallery Image 1</h4>" >
+						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('public/assets/img/photos/1.jpg')}}" data-src="{{URL::asset('public/assets/img/photos/1.jpg')}}" data-sub-html="<h4>Gallery Image 1</h4>" >
 							<a href="">
-								<img class="img-responsive" src="{{URL::asset('assets/img/photos/1.jpg')}}" alt="Thumb-1">
+								<img class="img-responsive" src="{{URL::asset('public/assets/img/photos/1.jpg')}}" alt="Thumb-1">
 							</a>
 						</li>
-						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('assets/img/photos/2.jpg')}}" data-src="{{URL::asset('assets/img/photos/2.jpg')}}" data-sub-html="<h4>Gallery Image 2</h4>" >
+						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('public/assets/img/photos/2.jpg')}}" data-src="{{URL::asset('public/assets/img/photos/2.jpg')}}" data-sub-html="<h4>Gallery Image 2</h4>" >
 							<a href="">
-								<img class="img-responsive" src="{{URL::asset('assets/img/photos/2.jpg')}}" alt="Thumb-1">
+								<img class="img-responsive" src="{{URL::asset('public/assets/img/photos/2.jpg')}}" alt="Thumb-1">
 							</a>
 						</li>
-						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('assets/img/photos/3.jpg')}}" data-src="{{URL::asset('assets/img/photos/3.jpg')}}" data-sub-html="<h4>Gallery Image 3</h4>" >
+						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('public/assets/img/photos/3.jpg')}}" data-src="{{URL::asset('public/assets/img/photos/3.jpg')}}" data-sub-html="<h4>Gallery Image 3</h4>" >
 							<a href="">
-								<img class="img-responsive" src="{{URL::asset('assets/img/photos/3.jpg')}}" alt="Thumb-1">
+								<img class="img-responsive" src="{{URL::asset('public/assets/img/photos/3.jpg')}}" alt="Thumb-1">
 							</a>
 						</li>
-						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('assets/img/photos/4.jpg')}}" data-src="{{URL::asset('assets/img/photos/4.jpg')}}" data-sub-html="<h4>Gallery Image 4</h4>" >
+						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('public/assets/img/photos/4.jpg')}}" data-src="{{URL::asset('public/assets/img/photos/4.jpg')}}" data-sub-html="<h4>Gallery Image 4</h4>" >
 							<a href="">
-								<img class="img-responsive" src="{{URL::asset('assets/img/photos/4.jpg')}}" alt="Thumb-1">
+								<img class="img-responsive" src="{{URL::asset('public/assets/img/photos/4.jpg')}}" alt="Thumb-1">
 							</a>
 						</li>
-						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('assets/img/photos/5.jpg')}}" data-src="{{URL::asset('assets/img/photos/5.jpg')}}" data-sub-html="<h4>Gallery Image 5</h4>" >
+						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('public/assets/img/photos/5.jpg')}}" data-src="{{URL::asset('public/assets/img/photos/5.jpg')}}" data-sub-html="<h4>Gallery Image 5</h4>" >
 							<a href="">
-								<img class="img-responsive" src="{{URL::asset('assets/img/photos/5.jpg')}}" alt="Thumb-1">
+								<img class="img-responsive" src="{{URL::asset('public/assets/img/photos/5.jpg')}}" alt="Thumb-1">
 							</a>
 						</li>
-						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('assets/img/photos/6.jpg')}}" data-src="{{URL::asset('assets/img/photos/6.jpg')}}" data-sub-html="<h4>Gallery Image 6</h4>" >
+						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('public/assets/img/photos/6.jpg')}}" data-src="{{URL::asset('public/assets/img/photos/6.jpg')}}" data-sub-html="<h4>Gallery Image 6</h4>" >
 							<a href="">
-								<img class="img-responsive" src="{{URL::asset('assets/img/photos/6.jpg')}}" alt="Thumb-1">
+								<img class="img-responsive" src="{{URL::asset('public/assets/img/photos/6.jpg')}}" alt="Thumb-1">
 							</a>
 						</li>
-						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('assets/img/photos/7.jpg')}}" data-src="{{URL::asset('assets/img/photos/7.jpg')}}" data-sub-html="<h4>Gallery Image 7</h4>" >
+						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('public/assets/img/photos/7.jpg')}}" data-src="{{URL::asset('public/assets/img/photos/7.jpg')}}" data-sub-html="<h4>Gallery Image 7</h4>" >
 							<a href="">
-								<img class="img-responsive" src="{{URL::asset('assets/img/photos/7.jpg')}}" alt="Thumb-1">
+								<img class="img-responsive" src="{{URL::asset('public/assets/img/photos/7.jpg')}}" alt="Thumb-1">
 							</a>
 						</li>
-						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('assets/img/photos/8.jpg')}}" data-src="{{URL::asset('assets/img/photos/8.jpg')}}" data-sub-html="<h4>Gallery Image 8</h4>" >
+						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('public/assets/img/photos/8.jpg')}}" data-src="{{URL::asset('public/assets/img/photos/8.jpg')}}" data-sub-html="<h4>Gallery Image 8</h4>" >
 							<a href="">
-								<img class="img-responsive" src="{{URL::asset('assets/img/photos/8.jpg')}}" alt="Thumb-1">
+								<img class="img-responsive" src="{{URL::asset('public/assets/img/photos/8.jpg')}}" alt="Thumb-1">
 							</a>
 						</li>
-						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('assets/img/photos/9.jpg')}}" data-src="{{URL::asset('assets/img/photos/9.jpg')}}" data-sub-html="<h4>Gallery Image 9</h4>" >
+						<li class="col-sm-6 col-lg-4" data-responsive="{{URL::asset('public/assets/img/photos/9.jpg')}}" data-src="{{URL::asset('public/assets/img/photos/9.jpg')}}" data-sub-html="<h4>Gallery Image 9</h4>" >
 							<a href="">
-								<img class="img-responsive" src="{{URL::asset('assets/img/photos/9.jpg')}}" alt="Thumb-1">
+								<img class="img-responsive" src="{{URL::asset('public/assets/img/photos/9.jpg')}}" alt="Thumb-1">
 							</a>
 						</li>
 					</ul>
@@ -122,9 +122,9 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Gallery js -->
-<script src="{{URL::asset('assets/plugins/gallery/lightgallery-all.min.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/gallery/jquery.mousewheel.min.js')}}"></script>
-<script src="{{URL::asset('assets/js/gallery.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/gallery/lightgallery-all.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/gallery/jquery.mousewheel.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/gallery.js')}}"></script>
 @endsection

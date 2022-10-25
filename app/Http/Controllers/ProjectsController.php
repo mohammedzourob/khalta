@@ -103,7 +103,8 @@ class ProjectsController extends Controller
 
       if ($request->file('icon') ) {
           $name = Str::random(12);
-          $path = $request->file('icon')->move('api\logo',
+          $path = $request->file('icon')->move('public/api/logo',
+
               $name . time() . '.' . $request->file('icon')->getClientOriginalExtension());
           $projects->icon= $path;
       }

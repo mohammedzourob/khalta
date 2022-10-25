@@ -1,20 +1,20 @@
 @extends('layouts.master')
 @section('css')
 		<!---Internal  Owl Carousel css-->
-		<link href="{{URL::asset('assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+		<link href="{{URL::asset('public/assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
 
 		<!-- Internal RatingThemes css-->
-		<link rel="stylesheet" href="{{URL::asset('assets/plugins/rating/ratings.css')}}">
-		<link rel="stylesheet" href="{{URL::asset('assets/plugins/rating/themes/bars-1to10.css')}}">
-		<link rel="stylesheet" href="{{URL::asset('assets/plugins/rating/themes/bars-movie.css')}}">
-		<link rel="stylesheet" href="{{URL::asset('assets/plugins/rating/themes/bars-square.css')}}">
-		<link rel="stylesheet" href="{{URL::asset('assets/plugins/rating/themes/bars-pill.css')}}">
-		<link rel="stylesheet" href="{{URL::asset('assets/plugins/rating/themes/bars-reversed.css')}}">
-		<link rel="stylesheet" href="{{URL::asset('assets/plugins/rating/themes/bars-horizontal.css')}}">
-		<link rel="stylesheet" href="{{URL::asset('assets/plugins/rating/themes/fontawesome-stars.css')}}">
-		<link rel="stylesheet" href="{{URL::asset('assets/plugins/rating/themes/css-stars.css')}}">
-		<link rel="stylesheet" href="{{URL::asset('assets/plugins/rating/themes/bootstrap-stars.css')}}">
-		<link rel="stylesheet" href="{{URL::asset('assets/plugins/rating/themes/fontawesome-stars-o.css')}}">
+		<link rel="stylesheet" href="{{URL::asset('public/assets/plugins/rating/ratings.css')}}">
+		<link rel="stylesheet" href="{{URL::asset('public/assets/plugins/rating/themes/bars-1to10.css')}}">
+		<link rel="stylesheet" href="{{URL::asset('public/assets/plugins/rating/themes/bars-movie.css')}}">
+		<link rel="stylesheet" href="{{URL::asset('public/assets/plugins/rating/themes/bars-square.css')}}">
+		<link rel="stylesheet" href="{{URL::asset('public/assets/plugins/rating/themes/bars-pill.css')}}">
+		<link rel="stylesheet" href="{{URL::asset('public/assets/plugins/rating/themes/bars-reversed.css')}}">
+		<link rel="stylesheet" href="{{URL::asset('public/assets/plugins/rating/themes/bars-horizontal.css')}}">
+		<link rel="stylesheet" href="{{URL::asset('public/assets/plugins/rating/themes/fontawesome-stars.css')}}">
+		<link rel="stylesheet" href="{{URL::asset('public/assets/plugins/rating/themes/css-stars.css')}}">
+		<link rel="stylesheet" href="{{URL::asset('public/assets/plugins/rating/themes/bootstrap-stars.css')}}">
+		<link rel="stylesheet" href="{{URL::asset('public/assets/plugins/rating/themes/fontawesome-stars-o.css')}}">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -379,11 +379,11 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!-- Internal Rating js-->
-<script src="{{URL::asset('assets/plugins/rating/jquery.rating-stars.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/rating/jquery.barrating.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/rating/ratings.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/rating/jquery.rating-stars.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/rating/jquery.barrating.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/rating/ratings.js')}}"></script>
 @endsection

@@ -8,7 +8,7 @@ class Schedule_of_work extends Model
 {
 
     protected $fillable = [
-        'contract_id','name','email','date','publisher','status','viewing_status'
+        'contract_id','name','email','date','publisher','user_id','status','viewing_status'
 
     ];
     protected $table = 'schedule_of_work';
@@ -19,8 +19,13 @@ class Schedule_of_work extends Model
 //        'name' => 'required',
 
     ];
+
     public function contract()
     {
         return $this->belongsTo('App\Models\Contracts','contract_id');
+    }
+    public function users()
+    {
+        return $this->belongsTo('App\Models\user','user_id');
     }
 }

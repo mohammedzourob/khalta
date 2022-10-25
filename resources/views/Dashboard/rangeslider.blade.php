@@ -1,8 +1,8 @@
 @extends('layouts.master')
 @section('css')
 <!-- Internal Ion.rangeSlider css -->
-<link href="{{URL::asset('assets/plugins/ion-rangeslider/css/ion.rangeSlider.css')}}" rel="stylesheet">
-<link href="{{URL::asset('assets/plugins/ion-rangeslider/css/ion.rangeSlider.skinFlat.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/ion-rangeslider/css/ion.rangeSlider.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/ion-rangeslider/css/ion.rangeSlider.skinFlat.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -131,13 +131,13 @@
 @endsection
 @section('js')
 <!-- Moment js -->
-<script src="{{URL::asset('assets/plugins/raphael/raphael.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/raphael/raphael.min.js')}}"></script>
 <!-- Internal Piety js -->
-<script src="{{URL::asset('assets/plugins/peity/jquery.peity.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/peity/jquery.peity.min.js')}}"></script>
 <!--Internal Ion.rangeSlider.min js -->
-<script src="{{URL::asset('assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js')}}"></script>
 <!-- Internal Chart js -->
-<script src="{{URL::asset('assets/plugins/chart.js/Chart.bundle.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/chart.js/Chart.bundle.min.js')}}"></script>
 <!-- Internal  rangeslider js -->
-<script src="{{URL::asset('assets/js/rangeslider.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/rangeslider.js')}}"></script>
 @endsection

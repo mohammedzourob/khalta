@@ -22,6 +22,8 @@ class CreateInvoicesTable extends Migration
             $table->string('image', 500)->nullable();
             $table->date('date')->nullable();
             $table->string('publisher', 250)->nullable();
+            $table->integer('user_id')->unsigned()->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->enum('viewing_status', array('0', '1'));
             $table->enum('status', array('0', '1'));
             $table->timestamps();

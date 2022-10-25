@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('css')
 <!---Internal  Prism css-->
-<link href="{{URL::asset('assets/plugins/prism/prism.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/prism/prism.css')}}" rel="stylesheet">
 <!--- Custom-scroll -->
-<link href="{{URL::asset('assets/plugins/custom-scroll/jquery.mCustomScrollbar.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/custom-scroll/jquery.mCustomScrollbar.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -55,25 +55,25 @@
 									<div class="example">
 										<div class="demo-avatar-group">
 											<div class="main-img-user avatar-xs">
-												<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/2.jpg')}}">
+												<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/2.jpg')}}">
 											</div>
 											<div class="main-img-user avatar-sm">
-												<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/3.jpg')}}">
+												<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/3.jpg')}}">
 											</div>
 											<div class="main-img-user">
-												<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/4.jpg')}}">
+												<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/4.jpg')}}">
 											</div>
 											<div class="main-img-user avatar-md">
-												<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/5.jpg')}}">
+												<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/5.jpg')}}">
 											</div>
 											<div class="main-img-user avatar-lg">
-												<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/6.jpg')}}">
+												<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/6.jpg')}}">
 											</div>
 											<div class="main-img-user avatar-xl d-none d-sm-block">
-												<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/7.jpg')}}">
+												<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/7.jpg')}}">
 											</div>
 											<div class="main-img-user avatar-xxl d-none d-sm-block">
-												<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/8.jpg')}}">
+												<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/8.jpg')}}">
 											</div>
 										</div>
 									</div>
@@ -85,25 +85,25 @@
 <!-- Prism Precode -->
 <figure class="highlight clip-widget" id="avatar1"><pre><code class="language-markup"><script type="html-dashlead/script"><div class="demo-avatar-group">
 	<div class="main-img-user avatar-xs">
-		<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/2.jpg')}}">
+		<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/2.jpg')}}">
 	</div>
 	<div class="main-img-user avatar-sm">
-		<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/3.jpg')}}">
+		<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/3.jpg')}}">
 	</div>
 	<div class="main-img-user">
-		<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/4.jpg')}}">
+		<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/4.jpg')}}">
 	</div>
 	<div class="main-img-user avatar-md">
-		<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/5.jpg')}}">
+		<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/5.jpg')}}">
 	</div>
 	<div class="main-img-user avatar-lg">
-		<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/6.jpg')}}">
+		<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/6.jpg')}}">
 	</div>
 	<div class="main-img-user avatar-xl d-none d-sm-block">
-		<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/7.jpg')}}">
+		<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/7.jpg')}}">
 	</div>
 	<div class="main-img-user avatar-xxl d-none d-sm-block">
-		<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/8.jpg')}}">
+		<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/8.jpg')}}">
 	</div>
 </div></script></code></pre>
 <div class="clipboard-icon" data-clipboard-target="#avatar1"><i class="las la-clipboard"></i></div>
@@ -125,13 +125,13 @@
 									<div class="example">
 										<div class="demo-avatar-group">
 											<div class="main-img-user avatar-md">
-												<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/4.jpg')}}">
+												<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/4.jpg')}}">
 											</div>
 											<div class="main-img-user avatar-md">
-												<img alt="avatar" class="square" src="{{URL::asset('assets/img/faces/5.jpg')}}">
+												<img alt="avatar" class="square" src="{{URL::asset('public/assets/img/faces/5.jpg')}}">
 											</div>
 											<div class="main-img-user avatar-md">
-												<img alt="avatar" class="radius" src="{{URL::asset('assets/img/faces/6.jpg')}}">
+												<img alt="avatar" class="radius" src="{{URL::asset('public/assets/img/faces/6.jpg')}}">
 											</div>
 										</div>
 									</div>
@@ -143,13 +143,13 @@
 <!-- Prism Precode -->
 <figure class="highlight clip-widget" id="avatar2"><pre><code class="language-markup"><script type="html-dashlead/script"><div class="demo-avatar-group">
 	<div class="main-img-user avatar-md">
-		<img alt="avatar" class="rounded-circle" src="{{URL::asset('assets/img/faces/4.jpg')}}">
+		<img alt="avatar" class="rounded-circle" src="{{URL::asset('public/assets/img/faces/4.jpg')}}">
 	</div>
 	<div class="main-img-user avatar-md">
-		<img alt="avatar" class="square" src="{{URL::asset('assets/img/faces/5.jpg')}}">
+		<img alt="avatar" class="square" src="{{URL::asset('public/assets/img/faces/5.jpg')}}">
 	</div>
 	<div class="main-img-user avatar-md">
-		<img alt="avatar" class="radius" src="{{URL::asset('assets/img/faces/6.jpg')}}">
+		<img alt="avatar" class="radius" src="{{URL::asset('public/assets/img/faces/6.jpg')}}">
 	</div>
 </div></script></code></pre>
 <div class="clipboard-icon" data-clipboard-target="#avatar2"><i class="las la-clipboard"></i></div>
@@ -239,7 +239,7 @@
 										<div class="example">
 											<div class="demo-avatar-group">
 												<div class="main-avatar avatar online">
-													<img alt="avatar" class="rounded-circle avatar" src="{{URL::asset('assets/img/faces/9.jpg')}}">
+													<img alt="avatar" class="rounded-circle avatar" src="{{URL::asset('public/assets/img/faces/9.jpg')}}">
 												</div>
 												<div class="main-avatar avatar-md offline">
 													eb
@@ -254,7 +254,7 @@
 <!-- Prism Precode -->
 <figure class="highlight clip-widget" id="avatar4"><pre><code class="language-markup"><script type="html-dashlead/script"><div class="demo-avatar-group">
 	<div class="main-avatar avatar online">
-		<img alt="avatar" class="rounded-circle avatar" src="{{URL::asset('assets/img/faces/9.jpg')}}">
+		<img alt="avatar" class="rounded-circle avatar" src="{{URL::asset('public/assets/img/faces/9.jpg')}}">
 	</div>
 	<div class="main-avatar avatar-md offline">
 		eb
@@ -276,14 +276,14 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!-- Internal Jquery.mCustomScrollbar js-->
-<script src="{{URL::asset('assets/plugins/custom-scroll/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/custom-scroll/jquery.mCustomScrollbar.concat.min.js')}}"></script>
 <!--Internal  Clipboard js-->
-<script src="{{URL::asset('assets/plugins/clipboard/clipboard.min.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/clipboard/clipboard.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/clipboard/clipboard.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/clipboard/clipboard.js')}}"></script>
 <!-- Internal Prism js-->
-<script src="{{URL::asset('assets/plugins/prism/prism.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/prism/prism.js')}}"></script>
 @endsection

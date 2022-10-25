@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
 <!-- Internal  Prism css -->
-<link href="{{URL::asset('assets/plugins/prism/prism.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/prism/prism.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -49,7 +49,7 @@
 						<p class="mg-b-20">It is Very Easy to Customize and it uses in your website apllication.</p>
 						<div class="text-wrap">
 							<div class="example">
-								<div><img alt="Responsive image" class="img-fluid" src="{{URL::asset('assets/img/photos/1.jpg')}}"></div>
+								<div><img alt="Responsive image" class="img-fluid" src="{{URL::asset('public/assets/img/photos/1.jpg')}}"></div>
 							</div>
 						</div>
 						<ul class="nav nav-tabs html-source" id="html-source-code" role="tablist">
@@ -59,7 +59,7 @@
 						</ul>
 <!-- Prism Code -->
 <figure class="highlight clip-widget mb-0" id="image01"><pre><code class="language-markup"><script type="html-dashlead/script">
-<div><img alt="Responsive image" class="img-fluid" src="{{URL::asset('assets/img/photos/1.jpg')}}"></div></script></code></pre>
+<div><img alt="Responsive image" class="img-fluid" src="{{URL::asset('public/assets/img/photos/1.jpg')}}"></div></script></code></pre>
 <div class="clipboard-icon" data-clipboard-target="#image01"><i class="las la-clipboard"></i></div>
 </figure>
 <!-- End Prism Precode -->
@@ -76,7 +76,7 @@
 						<p class="mg-b-20">It is Very Easy to Customize and it uses in your website apllication.</p>
 						<div class="text-wrap">
 							<div class="example">
-								<img alt="Responsive image" class="img-thumbnail wd-100p wd-sm-200" src="{{URL::asset('assets/img/photos/1.jpg')}}">
+								<img alt="Responsive image" class="img-thumbnail wd-100p wd-sm-200" src="{{URL::asset('public/assets/img/photos/1.jpg')}}">
 							</div>
 						</div>
 						<ul class="nav nav-tabs html-source" id="html-source-code2" role="tablist">
@@ -86,7 +86,7 @@
 						</ul>
 <!-- Prism Code -->
 <figure class="highlight clip-widget mb-0" id="image02"><pre><code class="language-markup"><script type="html-dashlead/script">
-<img alt="Responsive image" class="img-thumbnail wd-100p wd-sm-200" src="{{URL::asset('assets/img/photos/1.jpg')}}"></script></code></pre>
+<img alt="Responsive image" class="img-thumbnail wd-100p wd-sm-200" src="{{URL::asset('public/assets/img/photos/1.jpg')}}"></script></code></pre>
 <div class="clipboard-icon" data-clipboard-target="#image02"><i class="las la-clipboard"></i></div>
 </figure>
 <!-- End Prism Precode -->
@@ -104,8 +104,8 @@
 							<div class="text-wrap">
 								<div class="example">
 									<div class="bd pd-20 clearfix">
-										<img alt="" class="rounded float-sm-left wd-100p wd-sm-200" src="{{URL::asset('assets/img/photos/1.jpg')}}">
-										<img alt="" class="rounded float-sm-right wd-100p wd-sm-200 mg-t-10 mg-sm-t-0" src="{{URL::asset('assets/img/photos/1.jpg')}}">
+										<img alt="" class="rounded float-sm-left wd-100p wd-sm-200" src="{{URL::asset('public/assets/img/photos/1.jpg')}}">
+										<img alt="" class="rounded float-sm-right wd-100p wd-sm-200 mg-t-10 mg-sm-t-0" src="{{URL::asset('public/assets/img/photos/1.jpg')}}">
 									</div>
 								</div>
 							</div>
@@ -116,8 +116,8 @@
 							</ul>
 <!-- Prism Precode -->
 <figure class="highlight clip-widget mb-0" id="image-3"><pre><code class="language-markup"><script type="html-dashlead/script"><div class="bd pd-20 clearfix">
-	<img alt="" class="rounded float-sm-left wd-100p wd-sm-200" src="{{URL::asset('assets/img/photos/1.jpg')}}">
-	<img alt="" class="rounded float-sm-right wd-100p wd-sm-200 mg-t-10 mg-sm-t-0" src="{{URL::asset('assets/img/photos/1.jpg')}}">
+	<img alt="" class="rounded float-sm-left wd-100p wd-sm-200" src="{{URL::asset('public/assets/img/photos/1.jpg')}}">
+	<img alt="" class="rounded float-sm-right wd-100p wd-sm-200 mg-t-10 mg-sm-t-0" src="{{URL::asset('public/assets/img/photos/1.jpg')}}">
 </div>
 </script></code></pre>
 	<div class="clipboard-icon" data-clipboard-target="#image-3"><i class="las la-clipboard"></i></div>
@@ -137,7 +137,7 @@
 						<div class="text-wrap">
 							<div class="example">
 								<figure class="pos-relative mg-b-0 wd-sm-80p wd-md-50p">
-									<img alt="Responsive image" class="img-fit-cover" src="{{URL::asset('assets/img/photos/1.jpg')}}">
+									<img alt="Responsive image" class="img-fit-cover" src="{{URL::asset('public/assets/img/photos/1.jpg')}}">
 									<figcaption class="pos-absolute a-0 pd-25 bg-black-5 tx-white-8">
 										<h6 class="tx-14 tx-sm-16 tx-white tx-semibold mg-b-15 mg-sm-b-20">What Does Royalty-Free Mean?</h6>
 										<p class="mg-b-0">Royalty free means you just need to pay for rights to use the item once per end product. You don't need to pay additional or ongoing fees for each person who sees or uses it.</p>
@@ -152,7 +152,7 @@
 						</ul>
 <!-- Prism Precode -->
 <figure class="highlight clip-widget mb-0" id="image-4"><pre><code class="language-markup"><script type="html-dashlead/script"><figure class="pos-relative mg-b-0 wd-sm-80p wd-md-50p">
-	<img alt="Responsive image" class="img-fit-cover" src="{{URL::asset('assets/img/photos/1.jpg')}}">
+	<img alt="Responsive image" class="img-fit-cover" src="{{URL::asset('public/assets/img/photos/1.jpg')}}">
 	<figcaption class="pos-absolute a-0 pd-25 bg-black-5 tx-white-8">
 		<h6 class="tx-14 tx-sm-16 tx-white tx-semibold mg-b-15 mg-sm-b-20">What Does Royalty-Free Mean?</h6>
 		<p class="mg-b-0">Royalty free means you just need to pay for rights to use the item once per end product. You dont need to pay additional or ongoing fees for each person who sees or uses it.</p>
@@ -170,10 +170,10 @@
 @endsection
 @section('js')
 <!-- Internal Jquery.mCustomScrollbar js-->
-<script src="{{URL::asset('assets/plugins/custom-scroll/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/custom-scroll/jquery.mCustomScrollbar.concat.min.js')}}"></script>
 <!--Internal  Clipboard js-->
-<script src="{{URL::asset('assets/plugins/clipboard/clipboard.min.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/clipboard/clipboard.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/clipboard/clipboard.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/clipboard/clipboard.js')}}"></script>
 <!-- Internal Prism js-->
-<script src="{{URL::asset('assets/plugins/prism/prism.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/prism/prism.js')}}"></script>
 @endsection

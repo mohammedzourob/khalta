@@ -46,7 +46,7 @@
 								<div class="pl-0">
 									<div class="main-profile-overview">
 										<div class="main-img-user profile-user">
-											<img alt="" src="{{URL::asset('assets/img/faces/6.jpg')}}"><a class="fas fa-camera profile-edit" href="JavaScript:void(0);"></a>
+											<img alt="" src="{{URL::asset('public/assets/img/faces/6.jpg')}}"><a class="fas fa-camera profile-edit" href="JavaScript:void(0);"></a>
 										</div>
 										<div class="d-flex justify-content-between mg-b-20">
 											<div>
@@ -235,7 +235,7 @@
 										<div class="row">
 											<div class="col-sm-4">
 												<div class="border p-1 card thumb">
-													<a href="#" class="image-popup" title="Screenshot-2"> <img src="{{URL::asset('assets/img/photos/7.jpg')}}" class="thumb-img" alt="work-thumbnail"> </a>
+													<a href="#" class="image-popup" title="Screenshot-2"> <img src="{{URL::asset('public/assets/img/photos/7.jpg')}}" class="thumb-img" alt="work-thumbnail"> </a>
 													<h4 class="text-center tx-14 mt-3 mb-0">Gallary Image</h4>
 													<div class="ga-border"></div>
 													<p class="text-muted text-center"><small>Photography</small></p>
@@ -243,7 +243,7 @@
 											</div>
 											<div class="col-sm-4">
 												<div class=" border p-1 card thumb">
-													<a href="#" class="image-popup" title="Screenshot-2"> <img src="{{URL::asset('assets/img/photos/8.jpg')}}" class="thumb-img" alt="work-thumbnail"> </a>
+													<a href="#" class="image-popup" title="Screenshot-2"> <img src="{{URL::asset('public/assets/img/photos/8.jpg')}}" class="thumb-img" alt="work-thumbnail"> </a>
 													<h4 class="text-center tx-14 mt-3 mb-0">Gallary Image</h4>
 													<div class="ga-border"></div>
 													<p class="text-muted text-center"><small>Photography</small></p>
@@ -251,7 +251,7 @@
 											</div>
 											<div class="col-sm-4">
 												<div class=" border p-1 card thumb">
-													<a href="#" class="image-popup" title="Screenshot-2"> <img src="{{URL::asset('assets/img/photos/9.jpg')}}" class="thumb-img" alt="work-thumbnail"> </a>
+													<a href="#" class="image-popup" title="Screenshot-2"> <img src="{{URL::asset('public/assets/img/photos/9.jpg')}}" class="thumb-img" alt="work-thumbnail"> </a>
 													<h4 class="text-center tx-14 mt-3 mb-0">Gallary Image</h4>
 													<div class="ga-border"></div>
 													<p class="text-muted text-center"><small>Photography</small></p>
@@ -259,7 +259,7 @@
 											</div>
 											<div class="col-sm-4">
 												<div class=" border p-1 card thumb  mb-xl-0">
-													<a href="#" class="image-popup" title="Screenshot-2"> <img src="{{URL::asset('assets/img/photos/10.jpg')}}" class="thumb-img" alt="work-thumbnail"> </a>
+													<a href="#" class="image-popup" title="Screenshot-2"> <img src="{{URL::asset('public/assets/img/photos/10.jpg')}}" class="thumb-img" alt="work-thumbnail"> </a>
 													<h4 class="text-center tx-14 mt-3 mb-0">Gallary Image</h4>
 													<div class="ga-border"></div>
 													<p class="text-muted text-center"><small>Photography</small></p>
@@ -267,7 +267,7 @@
 											</div>
 											<div class="col-sm-4">
 												<div class=" border p-1 card thumb  mb-xl-0">
-													<a href="#" class="image-popup" title="Screenshot-2"> <img src="{{URL::asset('assets/img/photos/6.jpg')}}" class="thumb-img" alt="work-thumbnail"> </a>
+													<a href="#" class="image-popup" title="Screenshot-2"> <img src="{{URL::asset('public/assets/img/photos/6.jpg')}}" class="thumb-img" alt="work-thumbnail"> </a>
 													<h4 class="text-center tx-14 mt-3 mb-0">Gallary Image</h4>
 													<div class="ga-border"></div>
 													<p class="text-muted text-center"><small>Photography</small></p>
@@ -275,7 +275,7 @@
 											</div>
 											<div class="col-sm-4">
 												<div class=" border p-1 card thumb  mb-xl-0">
-													<a href="#" class="image-popup" title="Screenshot-2"> <img src="{{URL::asset('assets/img/photos/5.jpg')}}" class="thumb-img" alt="work-thumbnail"> </a>
+													<a href="#" class="image-popup" title="Screenshot-2"> <img src="{{URL::asset('public/assets/img/photos/5.jpg')}}" class="thumb-img" alt="work-thumbnail"> </a>
 													<h4 class="text-center tx-14 mt-3 mb-0">Gallary Image</h4>
 													<div class="ga-border"></div>
 													<p class="text-muted text-center"><small>Photography</small></p>

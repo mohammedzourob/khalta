@@ -6,13 +6,15 @@ use App\Models\Contracts;
 use App\Models\Invoices;
 use App\Models\Notifications;
 use App\Models\Projects;
+use App\Models\User;
 use App\Models\Sections;
 use App\Models\Structural_drawing_image;
 use App\Models\Work_image;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
-use PDF;
+
 use App\Models\Token_firebase;
 
 class ContractsController extends Controller
@@ -27,7 +29,9 @@ class ContractsController extends Controller
   {
       $contracts =Contracts::orderBy('id', 'DESC')->get();
 
-      return view('contracts.contracts',compact('contracts'));
+      $supervisor=User::all();
+
+      return view('contracts.contracts',compact('contracts','supervisor'));
   }
 
   /**
@@ -44,34 +48,43 @@ class ContractsController extends Controller
         return view('contracts.add_price',compact('contracts'));
     }
 
+
+    public function updatesupervisor(Request $request)
+    {
+         $id=$request->id;
+        $contracts=Contracts::find($id);
+
+        $contracts['supervisor']=$request->supervisor;
+//        dd($contracts);
+        $contracts->update();
+
+        return back();
+
+    }
+
   public function updatePrice(Request $request)
   {
     // return $request->all();
       $user_id=Auth::user()->id;
       $contract_id = $request->id;
       $Contracts = Contracts::find($contract_id);
-      $project= $Contracts->project_id;
-      $construction_type= $Contracts->construction_type;
+
 
       $Contracts->update($request->all());
-      $pdf=Contracts::where('id',$Contracts->id)->with('user')->first();
-//      return $pdf;
-      if (($project == "1" or $project == "2" or $project == "3" or $project == "4")and ($construction_type == "2") ) {
-          $p = PDF::loadView('contract2.index2', compact('pdf'));
-      }elseif(($project == "1" or $project == "2" or $project == "3" or $project == "4")and ($construction_type == "1") ){
-          $p = PDF::loadView('contract3.index2', compact('pdf'));
-      }elseif(($project == "5" or $project == "6" ) ) {
-          $p = PDF::loadView('contract1.index2', compact('pdf'));
-      }elseif(($project == "7" ) ) {
-          $p = PDF::loadView('contract4.index2', compact('pdf'));
-      }
-      $path = 'api/final_contract/';
+//      dd($Contracts);
+//      $pdf=Contracts::where('id',$Contracts->id)->with('user')->first();
+////      return $pdf;
+//          $p = PDF::loadView('contract1.index1', compact('pdf'));
+//
+//      $path = 'public/api/final_contract';
+//
+//      $fileName =  time(). '.pdf' ;
+//      $p->save($path . '/' . $fileName);
+//
+//      $generated_pdf_link ='public/api/final_contract/'.$fileName;
+//      $pdf->final_contract = $generated_pdf_link;
+//      $pdf->update();
 
-      $fileName =  time().'.'. 'pdf' ;
-      $p->save($path . '/' . $fileName);
-      $generated_pdf_link ='api/final_contract/'.$fileName;
-      $pdf->final_contract = $generated_pdf_link;
-      $pdf->update();
 
 
 
@@ -86,7 +99,7 @@ class ContractsController extends Controller
               .$Contracts->price_details." إجمالي عرض السعر هو "
               .$Contracts->price."  ريال سعودي";
       }else {
-          $notification->message = "يرجى العلم بان عرض السعر المقدم من قبل مؤسسة خلطة للمقاولة العامة عقد رقم "
+          $notification->message = "يرجى العلم بان عرض السعر المقدم للعقد رقم "
               . $Contracts->code . " هو "
               . $Contracts->price . "  ريال ";
       }

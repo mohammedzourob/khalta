@@ -62,18 +62,24 @@ class InvoicesController extends Controller
         $invoices = new Invoices();
         $invoices->contract_id = request('contract_id');
         $invoices->name = request('name');
-//        $work->image = request('image');
+//        $invoices->image =request('image');
         $invoices->date = request('date');
 
         $invoices->publisher = Auth::User()->name;
+        $invoices->user_id = Auth::User()->id;
         $invoices->status = "0";
 
-        if ($request->image) {
+
+
+        if ($request->file('image') ) {
             $name = Str::random(12);
-            $path = $request->file('image')->move('api/invoices',
+            $path = $request->file('image')->move('public/api/invoices',
+
                 $name . time() . '.' . $request->file('image')->getClientOriginalExtension());
-            $invoices->image = $path;
+            $invoices->image= $path;
         }
+//        return parent::success(request('image'));
+
         $id=$invoices->contract_id;
 //        return $id;
 

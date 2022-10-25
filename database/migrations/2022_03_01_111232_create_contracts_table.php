@@ -21,6 +21,9 @@ class CreateContractsTable extends Migration
             $table->integer('section_id')->unsigned()->nullable();
             $table->foreign('section_id')->references('id')->on('sections')->onDelete('cascade');
 
+            $table->integer('supervisor')->unsigned()->nullable();
+            $table->foreign('supervisor')->references('id')->on('users')->onDelete('cascade');
+
             $table->integer('project_id')->unsigned()->nullable();
             $table->foreign('project_id')->references('id')->on('projects')->onDelete('cascade');
 

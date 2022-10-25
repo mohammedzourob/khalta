@@ -48,28 +48,28 @@
 									<label class="main-content-label main-content-label-sm">Active Contacts (5)</label>
 									<div class="main-chat-contacts" id="chatActiveContacts">
 										<div>
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/3.jpg')}}"></div><small>Adrian</small>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/3.jpg')}}"></div><small>Adrian</small>
 										</div>
 										<div>
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/12.jpg')}}"></div><small>John</small>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/12.jpg')}}"></div><small>John</small>
 										</div>
 										<div>
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/4.jpg')}}"></div><small>Daniel</small>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/4.jpg')}}"></div><small>Daniel</small>
 										</div>
 										<div>
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/13.jpg')}}"></div><small>Katherine</small>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/13.jpg')}}"></div><small>Katherine</small>
 										</div>
 										<div>
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/5.jpg')}}"></div><small>Raymart</small>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/5.jpg')}}"></div><small>Raymart</small>
 										</div>
 										<div>
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/14.jpg')}}"></div><small>Junrisk</small>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/14.jpg')}}"></div><small>Junrisk</small>
 										</div>
 										<div>
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/6.jpg')}}"></div><small>George</small>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/6.jpg')}}"></div><small>George</small>
 										</div>
 										<div>
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/15.jpg')}}"></div><small>Maryjane</small>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/15.jpg')}}"></div><small>Maryjane</small>
 										</div>
 										<div>
 											<div class="main-chat-contacts-more">
@@ -81,7 +81,7 @@
 								<div class="main-chat-list" id="ChatList">
 									<div class="media new">
 										<div class="main-img-user online">
-											<img alt="" src="{{URL::asset('assets/img/faces/5.jpg')}}"> <span>2</span>
+											<img alt="" src="{{URL::asset('public/assets/img/faces/5.jpg')}}"> <span>2</span>
 										</div>
 										<div class="media-body">
 											<div class="media-contact-name">
@@ -92,7 +92,7 @@
 									</div>
 									<div class="media new">
 										<div class="main-img-user">
-											<img alt="" src="{{URL::asset('assets/img/faces/6.jpg')}}"> <span>1</span>
+											<img alt="" src="{{URL::asset('public/assets/img/faces/6.jpg')}}"> <span>1</span>
 										</div>
 										<div class="media-body">
 											<div class="media-contact-name">
@@ -102,7 +102,7 @@
 										</div>
 									</div>
 									<div class="media selected">
-										<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/9.jpg')}}"></div>
+										<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/9.jpg')}}"></div>
 										<div class="media-body">
 											<div class="media-contact-name">
 												<span>Reynante Labares</span> <span>10 hours</span>
@@ -111,7 +111,7 @@
 										</div>
 									</div>
 									<div class="media">
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/11.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/11.jpg')}}"></div>
 										<div class="media-body">
 											<div class="media-contact-name">
 												<span>Joyce Chua</span> <span>2 days</span>
@@ -120,7 +120,7 @@
 										</div>
 									</div>
 									<div class="media">
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/4.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/4.jpg')}}"></div>
 										<div class="media-body">
 											<div class="media-contact-name">
 												<span>Rolando Paloso</span> <span>2 days</span>
@@ -130,7 +130,7 @@
 									</div>
 									<div class="media new">
 										<div class="main-img-user">
-											<img alt="" src="{{URL::asset('assets/img/faces/7.jpg')}}"> <span>1</span>
+											<img alt="" src="{{URL::asset('public/assets/img/faces/7.jpg')}}"> <span>1</span>
 										</div>
 										<div class="media-body">
 											<div class="media-contact-name">
@@ -140,7 +140,7 @@
 										</div>
 									</div>
 									<div class="media">
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/8.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/8.jpg')}}"></div>
 										<div class="media-body">
 											<div class="media-contact-name">
 												<span>Maricel Villalon</span> <span>4 days</span>
@@ -149,7 +149,7 @@
 										</div>
 									</div>
 									<div class="media">
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/12.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/12.jpg')}}"></div>
 										<div class="media-body">
 											<div class="media-contact-name">
 												<span>Maryjane Cruiser</span> <span>5 days</span>
@@ -158,7 +158,7 @@
 										</div>
 									</div>
 									<div class="media">
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/15.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/15.jpg')}}"></div>
 										<div class="media-body">
 											<div class="media-contact-name">
 												<span>Lovely Dela Cruz</span> <span>5 days</span>
@@ -167,7 +167,7 @@
 										</div>
 									</div>
 									<div class="media">
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/10.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/10.jpg')}}"></div>
 										<div class="media-body">
 											<div class="media-contact-name">
 												<span>Daniel Padilla</span> <span>5 days</span>
@@ -176,7 +176,7 @@
 										</div>
 									</div>
 									<div class="media">
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/3.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/3.jpg')}}"></div>
 										<div class="media-body">
 											<div class="media-contact-name">
 												<span>John Pratts</span> <span>6 days</span>
@@ -185,7 +185,7 @@
 										</div>
 									</div>
 									<div class="media">
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/7.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/7.jpg')}}"></div>
 										<div class="media-body">
 											<div class="media-contact-name">
 												<span>Raymart Santiago</span> <span>6 days</span>
@@ -194,7 +194,7 @@
 										</div>
 									</div>
 									<div class="media border-bottom-0">
-										<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/6.jpg')}}"></div>
+										<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/6.jpg')}}"></div>
 										<div class="media-body">
 											<div class="media-contact-name">
 												<span>Samuel Lerin</span> <span>7 days</span>
@@ -211,7 +211,7 @@
 							<a class="main-header-arrow" href="" id="ChatBodyHide"><i class="icon ion-md-arrow-back"></i></a>
 							<div class="main-content-body main-content-body-chat">
 								<div class="main-chat-header">
-									<div class="main-img-user"><img alt="" src="{{URL::asset('assets/img/faces/9.jpg')}}"></div>
+									<div class="main-img-user"><img alt="" src="{{URL::asset('public/assets/img/faces/9.jpg')}}"></div>
 									<div class="main-chat-msg-name">
 										<h6>Reynante Labares</h6><small>Last seen: 2 minutes ago</small>
 									</div>
@@ -223,7 +223,7 @@
 									<div class="content-inner">
 										<label class="main-chat-time"><span>3 days ago</span></label>
 										<div class="media flex-row-reverse">
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/9.jpg')}}"></div>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/9.jpg')}}"></div>
 											<div class="media-body">
 												<div class="main-msg-wrapper right">
 													Nulla consequat massa quis enim. Donec pede justo, fringilla vel...
@@ -231,14 +231,14 @@
 												<div class="main-msg-wrapper right">
 													rhoncus ut, imperdiet a, venenatis vitae, justo...
 												</div>
-												<div class="main-msg-wrapper pd-0"><img alt="" class="wd-100 ht-100" src="{{URL::asset('assets/img/ecommerce/01.jpg')}}"></div>
+												<div class="main-msg-wrapper pd-0"><img alt="" class="wd-100 ht-100" src="{{URL::asset('public/assets/img/ecommerce/01.jpg')}}"></div>
 												<div>
 													<span>9:48 am</span> <a href=""><i class="icon ion-android-more-horizontal"></i></a>
 												</div>
 											</div>
 										</div>
 										<div class="media">
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/6.jpg')}}"></div>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/6.jpg')}}"></div>
 											<div class="media-body">
 												<div class="main-msg-wrapper left">
 													Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
@@ -249,7 +249,7 @@
 											</div>
 										</div>
 										<div class="media flex-row-reverse">
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/9.jpg')}}"></div>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/9.jpg')}}"></div>
 											<div class="media-body">
 												<div class="main-msg-wrapper right">
 													Nullam dictum felis eu pede mollis pretium
@@ -260,7 +260,7 @@
 											</div>
 										</div><label class="main-chat-time"><span>Yesterday</span></label>
 										<div class="media">
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/6.jpg')}}"></div>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/6.jpg')}}"></div>
 											<div class="media-body">
 												<div class="main-msg-wrapper left">
 													Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
@@ -271,7 +271,7 @@
 											</div>
 										</div>
 										<div class="media flex-row-reverse">
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/9.jpg')}}"></div>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/9.jpg')}}"></div>
 											<div class="media-body">
 												<div class="main-msg-wrapper right">
 													Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
@@ -285,7 +285,7 @@
 											</div>
 										</div><label class="main-chat-time"><span>Today</span></label>
 										<div class="media">
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/6.jpg')}}"></div>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/6.jpg')}}"></div>
 											<div class="media-body">
 												<div class="main-msg-wrapper left">
 													Maecenas tempus, tellus eget condimentum rhoncus
@@ -299,7 +299,7 @@
 											</div>
 										</div>
 										<div class="media flex-row-reverse">
-											<div class="main-img-user online"><img alt="" src="{{URL::asset('assets/img/faces/9.jpg')}}"></div>
+											<div class="main-img-user online"><img alt="" src="{{URL::asset('public/assets/img/faces/9.jpg')}}"></div>
 											<div class="media-body">
 												<div class="main-msg-wrapper right">
 													Maecenas tempus, tellus eget condimentum rhoncus
@@ -331,7 +331,7 @@
 @endsection
 @section('js')
 <!--Internal  lightslider js -->
-<script src="{{URL::asset('assets/plugins/lightslider/js/lightslider.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/lightslider/js/lightslider.min.js')}}"></script>
 <!--Internal  Chat js -->
-<script src="{{URL::asset('assets/js/chat.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/chat.js')}}"></script>
 @endsection

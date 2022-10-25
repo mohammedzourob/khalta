@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('css')
 
-    <link href="{{URL::asset('assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet" />
+    <link href="{{URL::asset('public/assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet" />
 
-    <link href="{{URL::asset('assets/plugins/jqvmap/jqvmap.min.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('public/assets/plugins/jqvmap/jqvmap.min.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
     <!-- breadcrumb -->
@@ -275,54 +275,54 @@
 @section('js')
 
 
-    <script src="{{ URL::asset('assets/plugins/datatable/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/dataTables.dataTables.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/dataTables.responsive.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/responsive.dataTables.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/jquery.dataTables.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/dataTables.bootstrap4.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/dataTables.buttons.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/buttons.bootstrap4.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/jszip.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/pdfmake.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/vfs_fonts.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/buttons.html5.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/buttons.print.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/buttons.colVis.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/dataTables.responsive.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/plugins/datatable/js/responsive.bootstrap4.min.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/dataTables.dataTables.min.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/responsive.dataTables.min.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/jquery.dataTables.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/dataTables.bootstrap4.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/buttons.bootstrap4.min.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/jszip.min.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/pdfmake.min.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/vfs_fonts.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/buttons.html5.min.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/buttons.print.min.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/buttons.colVis.min.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/plugins/datatable/js/responsive.bootstrap4.min.js') }}"></script>
     <!--Internal  Datatable js -->
-    <script src="{{ URL::asset('assets/js/table-data.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/modal.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/js/table-data.js') }}"></script>
+    <script src="{{ URL::asset('public/assets/js/modal.js') }}"></script>
     <!--Internal  Chart.bundle js -->
-    <script src="{{URL::asset('assets/plugins/chart.js/Chart.bundle.min.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/chart.js/Chart.bundle.min.js')}}"></script>
     <!-- Moment js -->
-    <script src="{{URL::asset('assets/plugins/raphael/raphael.min.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/raphael/raphael.min.js')}}"></script>
     <!--Internal  Flot js-->
-    <script src="{{URL::asset('assets/plugins/jquery.flot/jquery.flot.js')}}"></script>
-    <script src="{{URL::asset('assets/plugins/jquery.flot/jquery.flot.pie.js')}}"></script>
-    <script src="{{URL::asset('assets/plugins/jquery.flot/jquery.flot.resize.js')}}"></script>
-    <script src="{{URL::asset('assets/plugins/jquery.flot/jquery.flot.categories.js')}}"></script>
-    <script src="{{URL::asset('assets/js/dashboard.sampledata.js')}}"></script>
-    <script src="{{URL::asset('assets/js/chart.flot.sampledata.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/jquery.flot/jquery.flot.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/jquery.flot/jquery.flot.pie.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/jquery.flot/jquery.flot.resize.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/jquery.flot/jquery.flot.categories.js')}}"></script>
+    <script src="{{URL::asset('public/assets/js/dashboard.sampledata.js')}}"></script>
+    <script src="{{URL::asset('public/assets/js/chart.flot.sampledata.js')}}"></script>
     <!--Internal Apexchart js-->
-    <script src="{{URL::asset('assets/js/apexcharts.js')}}"></script>
+    <script src="{{URL::asset('public/assets/js/apexcharts.js')}}"></script>
     <!-- Internal Map -->
-    <script src="{{URL::asset('assets/plugins/jqvmap/jquery.vmap.min.js')}}"></script>
-    <script src="{{URL::asset('assets/plugins/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
-    <script src="{{URL::asset('assets/js/modal-popup.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/jqvmap/jquery.vmap.min.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
+    <script src="{{URL::asset('public/assets/js/modal-popup.js')}}"></script>
     <!--Internal  index js -->
-    <script src="{{URL::asset('assets/js/index.js')}}"></script>
-    <script src="{{URL::asset('assets/js/jquery.vmap.sampledata.js')}}"></script>
+    <script src="{{URL::asset('public/assets/js/index.js')}}"></script>
+    <script src="{{URL::asset('public/assets/js/jquery.vmap.sampledata.js')}}"></script>
 
-    <script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
     <!-- Internal Select2 js-->
-    <script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
     <!--Internal  Morris js -->
-    <script src="{{URL::asset('assets/plugins/raphael/raphael.min.js')}}"></script>
-    <script src="{{URL::asset('assets/plugins/morris.js/morris.min.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/raphael/raphael.min.js')}}"></script>
+    <script src="{{URL::asset('public/assets/plugins/morris.js/morris.min.js')}}"></script>
     <!--Internal Chart Morris js -->
-    <script src="{{URL::asset('assets/js/chart.morris.js')}}"></script>
+    <script src="{{URL::asset('public/assets/js/chart.morris.js')}}"></script>
 
 
     <script>

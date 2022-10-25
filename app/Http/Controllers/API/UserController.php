@@ -25,10 +25,12 @@ class UserController extends Controller
     public function index(){
         $user_id=auth('api')->user()->id;
         $user = User::where('id',$user_id)->first();
-        // $user = User::orderBy('id', 'DESC')->select('id','name','email','type')->get();
-        // $user =User::latest('id')->get();
+        // $accessToken= $user->createToken('mobile')->accessToken;
 
-        return parent::success( $user);
+        return parent::success($user);
+
+     // return response()->json(['status' => true, 'code' => 200,'accessToken'=>$accessToken]);
+
     }
     public function indexuser(Request $request)
     {
@@ -46,6 +48,8 @@ class UserController extends Controller
         $request['password']= Hash::make($request->input('password'));
         $request['image']= 'users_image\user.jpg';
         $request['Status']= '1';
+        $request['type']= '3';
+
 
 
         $user = User::create($request->all());
@@ -55,10 +59,12 @@ class UserController extends Controller
             }
 
 
-        $token = $user->createToken('mobile')->accessToken;
-        $user['token']=$token ;
+        $accessToken = $user->createToken('mobile')->accessToken;
+        $user['accessToken']=$accessToken;
 
-        return parent::success( $user);
+        return response()->json(['status' => true, 'code' => 200,'accessToken'=>$accessToken]);
+
+        // return parent::success( $user);
 
     }
     public function editUser(Request $request){
@@ -107,6 +113,7 @@ class UserController extends Controller
 
         return parent::success( $users);
 
+
     }
 
 
@@ -126,6 +133,18 @@ class UserController extends Controller
 //                'message' => implode("\n", $validator->messages()->all())]);
         }
 
+        // if (Auth::attempt(['email' => $request->email, 'password' => $request->password]) ) {
+        //     $user = $request->user();
+        //     // return $user;
+
+
+        //     //user type in power
+        //     $type=$user->type;
+
+        //     //return token
+        //     $accessToken= $user->createToken('mobile')->accessToken;
+
+
         if (Auth::once(['email' => $email, 'password' => $password , 'Status' => '1']) ) {
             $user = Auth::user();
             // return $user;
@@ -141,27 +160,28 @@ class UserController extends Controller
 
 
 
-            if($user->Status == 0){
-                $message= __('api.complete_login');
-                return response()->json(['status' => true, 'code' => 200, 'message' => $message , 'user' => $user]);
-            }
 
             $message= __('api.ok');
 
+            // return response()->json(['status' => true, 'code' => 200, 'message' => $message,'type'=> $type,'accessToken'=>$accessToken]);
+
             return parent::success( $user);
-//
+
+
+
+
 
         } else {
             $EmailData = User::query()->where(['email' => $email])->first();
 
             if ($EmailData) {
-                $message= __('api.password_wrong');
+                $message= __('the password wrong');
                 return parent::error( $message);
-//                return response()->json(['status' => false, 'code' => 204, 'message' => $message]);
+                // return response()->json(['status' => false, 'code' => 204, 'message' => $message]);
             } else {
-                $message= __('api.email_not_found');
+                $message= __('the email not found');
                 return parent::error( $message);
-//                return response()->json(['status' => false, 'code' => 204, 'message' => $message]);
+                // return response()->json(['status' => false, 'code' => 204, 'message' => $message]);
             }
         }
     }

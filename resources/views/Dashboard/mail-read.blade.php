@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
 <!-- Internal Select2 css -->
-<link href="{{URL::asset('assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -77,7 +77,7 @@
 							<div class="card-body">
 								<div class="email-media">
 									<div class="mt-0 d-sm-flex">
-										<img class="ml-2 rounded-circle avatar-xl" src="{{URL::asset('assets/img/faces/6.jpg')}}" alt="avatar">
+										<img class="ml-2 rounded-circle avatar-xl" src="{{URL::asset('public/assets/img/faces/6.jpg')}}" alt="avatar">
 										<div class="media-body">
 											<div class="float-left d-none d-md-flex fs-15">
 												<span class="mr-3">Sep 13 , 2019 12:45 pm</span>
@@ -118,15 +118,15 @@
 										<div class="emai-img">
 											<div class="d-sm-flex">
 												<div class=" m-2">
-													<a href="#"><img class="wd-150 mb-2" src="{{URL::asset('assets/img/photos/1.jpg')}}" alt="placeholder image"></a>
+													<a href="#"><img class="wd-150 mb-2" src="{{URL::asset('public/assets/img/photos/1.jpg')}}" alt="placeholder image"></a>
 													<h6 class="mb-3 mb-lg-0">1.jpg <small class="text-muted">12kb</small></h6>
 												</div>
 												<div class="m-2">
-													<a href="#"><img class="wd-150 mb-2" src="{{URL::asset('assets/img/photos/2.jpg')}}" alt="placeholder image"></a>
+													<a href="#"><img class="wd-150 mb-2" src="{{URL::asset('public/assets/img/photos/2.jpg')}}" alt="placeholder image"></a>
 													<h6 class="mb-3 mb-lg-0">2.jpg <small class="text-muted">18kb</small></h6>
 												</div>
 												<div class="m-2">
-													<a href="#"><img class="wd-150 mb-2" src="{{URL::asset('assets/img/photos/3.jpg')}}" alt="placeholder image"></a>
+													<a href="#"><img class="wd-150 mb-2" src="{{URL::asset('public/assets/img/photos/3.jpg')}}" alt="placeholder image"></a>
 													<h6>3.jpg <small class="text-muted">21kb</small></h6>
 												</div>
 											</div>
@@ -149,8 +149,8 @@
 @endsection
 @section('js')
 <!-- Moment js -->
-<script src="{{URL::asset('assets/plugins/raphael/raphael.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/raphael/raphael.min.js')}}"></script>
 <!-- Internal Select2.min js -->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
-<script src="{{URL::asset('assets/js/select2.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/select2.js')}}"></script>
 @endsection

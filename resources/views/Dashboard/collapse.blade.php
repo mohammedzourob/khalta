@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('css')
 <!---Internal Owl Carousel css-->
-<link href="{{URL::asset('assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
 <!---Internal  Multislider css-->
-<link href="{{URL::asset('assets/plugins/multislider/multislider.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/multislider/multislider.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -104,12 +104,12 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!-- Internal Owl Carousel js-->
-<script src="{{URL::asset('assets/plugins/owl-carousel/owl.carousel.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/owl-carousel/owl.carousel.js')}}"></script>
 <!---Internal  Multislider js-->
-<script src="{{URL::asset('assets/plugins/multislider/multislider.js')}}"></script>
-<script src="{{URL::asset('assets/js/carousel.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/multislider/multislider.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/carousel.js')}}"></script>
 @endsection

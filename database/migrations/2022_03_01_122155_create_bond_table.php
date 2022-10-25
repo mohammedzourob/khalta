@@ -21,6 +21,8 @@ class CreateBondTable extends Migration
             $table->string('exchange_reason', 500)->nullable();
             $table->date('date_of_application')->nullable();
             $table->enum('viewing_status', array('0', '1'));
+            $table->integer('user_id')->unsigned()->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
 
         });

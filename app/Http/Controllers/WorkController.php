@@ -60,7 +60,9 @@ class WorkController extends Controller
 
         $Notifications->update();
         }
-        $token=Token_firebase::where('user_id', $Notifications ->receiver_id)->orderBy('id', 'DESC')->first();
+        $token=Token_firebase::where('user_id', $Notifications ->status)->orderBy('id', 'DESC')->first();
+        //$token=Token_firebase::where('user_id', $Notifications)->orderBy('id', 'DESC')->first();
+
         // return $token;
       if (!empty($token->fcm_token)){
       try {

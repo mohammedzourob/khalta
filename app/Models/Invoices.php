@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Invoices extends Model
 {
     protected $fillable = [
-        'contract_id','name','image','date','publisher','status','viewing_status'
+        'contract_id','name','image','date','publisher','user_id','status','viewing_status'
 
         ];
     protected $hidden = ['created_at','updated_at','status','publisher'];
@@ -16,12 +16,16 @@ class Invoices extends Model
 
 
     public static $rules = [
- 
+
 
 
     ];
     public function contract()
     {
         return $this->belongsTo('App\Models\Contracts','contract_id');
+    }
+    public function users()
+    {
+        return $this->belongsTo('App\Models\Users','user_id');
     }
 }

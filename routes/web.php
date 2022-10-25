@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +13,28 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/config-clear', function() {
+    Artisan::call('cache:clear');
+    return 'Config cache has been cleared';
+});
+Route::get('/view-clear', function() {
+    Artisan::call('view:clear');
+    return 'Config cache has been cleared';
+});
+Route::get('/route-clear', function() {
+    Artisan::call('route:clear');
+    return 'Config cache has been cleared';
+});
+Route::get('/updateapp', function()
+{
+    exec('composer dump-autoload');
+    echo 'composer dump-autoload complete';
+});
+
+Route::get('tete',function (){
+    return view('contract2.index2');
+});
 
 Route::get('/',  [App\Http\Controllers\HomeController::class,'index'])->name('dashboard');
 Route::group(['prefix' => 'dashboard',
@@ -42,11 +65,16 @@ Route::group(['prefix' => 'dashboard',
     Route::delete('answers/destroy', 'App\Http\Controllers\AnswersController@destroy')->name('answers.destroy');
 
     //==============================special_conditions============================
+
     Route::resource('contracts', 'App\Http\Controllers\ContractsController');
 
         Route::get('contracts/add_price/{id}', 'App\Http\Controllers\ContractsController@add_price');
 
             Route::patch('contracts/add_price/updatePrice', 'App\Http\Controllers\ContractsController@updatePrice');
+
+    Route::patch('updatesupervisor', 'App\Http\Controllers\ContractsController@updatesupervisor');
+
+  //  Route::post('updatesupervisor',[App\Http\Controllers\ContractsController::class,'updatesupervisor'])->name('updatesupervisor');
 
 
     Route::patch('Completion_project', 'App\Http\Controllers\ContractsController@Completion_project');

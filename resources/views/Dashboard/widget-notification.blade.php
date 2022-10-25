@@ -212,7 +212,7 @@
 					<div class="col-lg-4 col-md-4">
 						<div class="card mg-b-20 text-center">
 							<div class="card-body">
-								<img src="{{URL::asset('assets/img/svgicons/no-data.svg')}}" alt="" class="wd-35p">
+								<img src="{{URL::asset('public/assets/img/svgicons/no-data.svg')}}" alt="" class="wd-35p">
 								<h5 class="mg-b-10 mg-t-15 tx-18">Items Not Found</h5>
 								<a href="#" class="text-muted">Check The Settings</a>
 							</div>
@@ -221,7 +221,7 @@
 					<div class="col-lg-4 col-md-4">
 						<div class="card mg-b-20 text-center">
 							<div class="card-body">
-								<img src="{{URL::asset('assets/img/svgicons/note_taking.svg')}}" alt="" class="wd-35p">
+								<img src="{{URL::asset('public/assets/img/svgicons/note_taking.svg')}}" alt="" class="wd-35p">
 								<h5 class="mg-b-10 mg-t-15 tx-18">Its Empty In Here</h5>
 								<a href="#" class="text-muted">Check The Settings</a>
 							</div>
@@ -230,7 +230,7 @@
 					<div class="col-lg-4 col-md-4">
 						<div class="card mg-b-20 text-center">
 							<div class="card-body">
-								<img src="{{URL::asset('assets/img/svgicons/imac.svg')}}" alt="" class="wd-40p">
+								<img src="{{URL::asset('public/assets/img/svgicons/imac.svg')}}" alt="" class="wd-40p">
 								<h5 class="mg-b-10 mg-t-15 tx-18">No Site Selected</h5>
 								<a href="#" class="text-muted">Check The Settings</a>
 							</div>
@@ -245,5 +245,5 @@
 @endsection
 @section('js')
 <!-- Internal Chart js -->
-<script src="{{URL::asset('assets/plugins/chart.js/Chart.bundle.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/chart.js/Chart.bundle.min.js')}}"></script>
 @endsection

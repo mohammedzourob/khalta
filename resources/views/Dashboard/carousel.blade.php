@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('css')
 <!---Internal  Owl Carousel css-->
-<link href="{{URL::asset('assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
 <!---Internal  Multislider css-->
-<link href="{{URL::asset('assets/plugins/multislider/multislider.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/multislider/multislider.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -55,13 +55,13 @@
 									<div class="carousel slide" data-ride="carousel" id="carouselExampleSlidesOnly">
 										<div class="carousel-inner">
 											<div class="carousel-item active">
-												<img alt="img" class="d-block w-100" src="{{URL::asset('assets/img/photos/8.jpg')}}">
+												<img alt="img" class="d-block w-100" src="{{URL::asset('public/assets/img/photos/8.jpg')}}">
 											</div>
 											<div class="carousel-item">
-												<img alt="img" class="d-block w-100" src="{{URL::asset('assets/img/photos/9.jpg')}}">
+												<img alt="img" class="d-block w-100" src="{{URL::asset('public/assets/img/photos/9.jpg')}}">
 											</div>
 											<div class="carousel-item">
-												<img alt="img" class="d-block w-100" src="{{URL::asset('assets/img/photos/10.jpg')}}">
+												<img alt="img" class="d-block w-100" src="{{URL::asset('public/assets/img/photos/10.jpg')}}">
 											</div>
 										</div>
 									</div>
@@ -80,13 +80,13 @@
 									<div class="carousel slide" data-ride="carousel" id="carouselExample2">
 										<div class="carousel-inner">
 											<div class="carousel-item active">
-												<img alt="img" class="d-block w-100" src="{{URL::asset('assets/img/photos/18.jpg')}}">
+												<img alt="img" class="d-block w-100" src="{{URL::asset('public/assets/img/photos/18.jpg')}}">
 											</div>
 											<div class="carousel-item">
-												<img alt="img" class="d-block w-100" src="{{URL::asset('assets/img/photos/12.jpg')}}">
+												<img alt="img" class="d-block w-100" src="{{URL::asset('public/assets/img/photos/12.jpg')}}">
 											</div>
 											<div class="carousel-item">
-												<img alt="img" class="d-block w-100" src="{{URL::asset('assets/img/photos/13.jpg')}}">
+												<img alt="img" class="d-block w-100" src="{{URL::asset('public/assets/img/photos/13.jpg')}}">
 											</div>
 										</div>
 										<a class="carousel-control-prev" href="#carouselExample2" role="button" data-slide="prev">
@@ -116,13 +116,13 @@
 										</ol>
 										<div class="carousel-inner">
 											<div class="carousel-item active">
-												<img alt="img" class="d-block w-100" src="{{URL::asset('assets/img/photos/14.jpg')}}">
+												<img alt="img" class="d-block w-100" src="{{URL::asset('public/assets/img/photos/14.jpg')}}">
 											</div>
 											<div class="carousel-item">
-												<img alt="img" class="d-block w-100" src="{{URL::asset('assets/img/photos/15.jpg')}}">
+												<img alt="img" class="d-block w-100" src="{{URL::asset('public/assets/img/photos/15.jpg')}}">
 											</div>
 											<div class="carousel-item">
-												<img alt="img" class="d-block w-100" src="{{URL::asset('assets/img/photos/16.jpg')}}">
+												<img alt="img" class="d-block w-100" src="{{URL::asset('public/assets/img/photos/16.jpg')}}">
 											</div>
 										</div>
 									</div>
@@ -146,21 +146,21 @@
 										</ol>
 										<div class="carousel-inner bg-dark">
 											<div class="carousel-item active">
-												<img alt="img" class="d-block w-100 op-3" src="{{URL::asset('assets/img/photos/17.jpg')}}">
+												<img alt="img" class="d-block w-100 op-3" src="{{URL::asset('public/assets/img/photos/17.jpg')}}">
 												<div class="carousel-caption d-none d-md-block">
 													<h5>First Slide</h5>
 													<p class="tx-14">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
 												</div>
 											</div>
 											<div class="carousel-item">
-												<img alt="img" class="d-block w-100 op-3" src="{{URL::asset('assets/img/photos/18.jpg')}}">
+												<img alt="img" class="d-block w-100 op-3" src="{{URL::asset('public/assets/img/photos/18.jpg')}}">
 												<div class="carousel-caption d-none d-md-block">
 													<h5>Second Slide</h5>
 													<p class="tx-14">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
 												</div>
 											</div>
 											<div class="carousel-item">
-												<img alt="img" class="d-block w-100 op-3" src="{{URL::asset('assets/img/photos/19.jpg')}}">
+												<img alt="img" class="d-block w-100 op-3" src="{{URL::asset('public/assets/img/photos/19.jpg')}}">
 												<div class="carousel-caption d-none d-md-block">
 													<h5>Third Slide</h5>
 													<p class="tx-14">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -188,13 +188,13 @@
 										</ol>
 										<div class="carousel-inner bg-dark">
 											<div class="carousel-item active">
-												<img alt="img" class="d-block w-100" src="{{URL::asset('assets/img/photos/20.jpg')}}">
+												<img alt="img" class="d-block w-100" src="{{URL::asset('public/assets/img/photos/20.jpg')}}">
 											</div>
 											<div class="carousel-item">
-												<img alt="img" class="d-block w-100" src="{{URL::asset('assets/img/photos/1.jpg')}}">
+												<img alt="img" class="d-block w-100" src="{{URL::asset('public/assets/img/photos/1.jpg')}}">
 											</div>
 											<div class="carousel-item">
-												<img alt="img" class="d-block w-100" src="{{URL::asset('assets/img/photos/2.jpg')}}">
+												<img alt="img" class="d-block w-100" src="{{URL::asset('public/assets/img/photos/2.jpg')}}">
 											</div>
 										</div>
 									</div>
@@ -212,14 +212,14 @@
 								<div class="carousel-slider">
 									<div id="carousel" class="carousel slide" data-ride="carousel">
 										<div class="carousel-inner">
-											<div class="carousel-item active"><img src="{{URL::asset('assets/img/photos/1.jpg')}}" alt="img"> </div>
-											<div class="carousel-item"> <img src="{{URL::asset('assets/img/photos/2.jpg')}}" alt="img"> </div>
-											<div class="carousel-item"> <img src="{{URL::asset('assets/img/photos/3.jpg')}}" alt="img"> </div>
-											<div class="carousel-item"> <img src="{{URL::asset('assets/img/photos/4.jpg')}}" alt="img"> </div>
-											<div class="carousel-item"> <img src="{{URL::asset('assets/img/photos/5.jpg')}}" alt="img"> </div>
-											<div class="carousel-item"> <img src="{{URL::asset('assets/img/photos/6.jpg')}}" alt="img"> </div>
-											<div class="carousel-item"> <img src="{{URL::asset('assets/img/photos/7.jpg')}}" alt="img"> </div>
-											<div class="carousel-item"> <img src="{{URL::asset('assets/img/photos/8.jpg')}}" alt="img"> </div>
+											<div class="carousel-item active"><img src="{{URL::asset('public/assets/img/photos/1.jpg')}}" alt="img"> </div>
+											<div class="carousel-item"> <img src="{{URL::asset('public/assets/img/photos/2.jpg')}}" alt="img"> </div>
+											<div class="carousel-item"> <img src="{{URL::asset('public/assets/img/photos/3.jpg')}}" alt="img"> </div>
+											<div class="carousel-item"> <img src="{{URL::asset('public/assets/img/photos/4.jpg')}}" alt="img"> </div>
+											<div class="carousel-item"> <img src="{{URL::asset('public/assets/img/photos/5.jpg')}}" alt="img"> </div>
+											<div class="carousel-item"> <img src="{{URL::asset('public/assets/img/photos/6.jpg')}}" alt="img"> </div>
+											<div class="carousel-item"> <img src="{{URL::asset('public/assets/img/photos/7.jpg')}}" alt="img"> </div>
+											<div class="carousel-item"> <img src="{{URL::asset('public/assets/img/photos/8.jpg')}}" alt="img"> </div>
 										</div>
 										<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
 											<i class="fa fa-angle-left fs-30" aria-hidden="true"></i>
@@ -232,16 +232,16 @@
 										<div id="thumbcarousel" class="carousel slide" data-interval="false">
 											<div class="carousel-inner">
 												<div class="carousel-item active">
-													<div data-target="#carousel" data-slide-to="0" class="thumb"><img src="{{URL::asset('assets/img/photos/1.jpg')}}" alt="img"></div>
-													<div data-target="#carousel" data-slide-to="1" class="thumb"><img src="{{URL::asset('assets/img/photos/2.jpg')}}" alt="img"></div>
-													<div data-target="#carousel" data-slide-to="2" class="thumb"><img src="{{URL::asset('assets/img/photos/3.jpg')}}" alt="img"></div>
-													<div data-target="#carousel" data-slide-to="3" class="thumb"><img src="{{URL::asset('assets/img/photos/4.jpg')}}" alt="img"></div>
+													<div data-target="#carousel" data-slide-to="0" class="thumb"><img src="{{URL::asset('public/assets/img/photos/1.jpg')}}" alt="img"></div>
+													<div data-target="#carousel" data-slide-to="1" class="thumb"><img src="{{URL::asset('public/assets/img/photos/2.jpg')}}" alt="img"></div>
+													<div data-target="#carousel" data-slide-to="2" class="thumb"><img src="{{URL::asset('public/assets/img/photos/3.jpg')}}" alt="img"></div>
+													<div data-target="#carousel" data-slide-to="3" class="thumb"><img src="{{URL::asset('public/assets/img/photos/4.jpg')}}" alt="img"></div>
 												</div>
 												<div class="carousel-item">
-													<div data-target="#carousel" data-slide-to="4" class="thumb"><img src="{{URL::asset('assets/img/photos/5.jpg')}}" alt="img"></div>
-													<div data-target="#carousel" data-slide-to="5" class="thumb"><img src="{{URL::asset('assets/img/photos/6.jpg')}}" alt="img"></div>
-													<div data-target="#carousel" data-slide-to="6" class="thumb"><img src="{{URL::asset('assets/img/photos/7.jpg')}}" alt="img"></div>
-													<div data-target="#carousel" data-slide-to="7" class="thumb"><img src="{{URL::asset('assets/img/photos/8.jpg')}}" alt="img"></div>
+													<div data-target="#carousel" data-slide-to="4" class="thumb"><img src="{{URL::asset('public/assets/img/photos/5.jpg')}}" alt="img"></div>
+													<div data-target="#carousel" data-slide-to="5" class="thumb"><img src="{{URL::asset('public/assets/img/photos/6.jpg')}}" alt="img"></div>
+													<div data-target="#carousel" data-slide-to="6" class="thumb"><img src="{{URL::asset('public/assets/img/photos/7.jpg')}}" alt="img"></div>
+													<div data-target="#carousel" data-slide-to="7" class="thumb"><img src="{{URL::asset('public/assets/img/photos/8.jpg')}}" alt="img"></div>
 												</div>
 											</div>
 											<a class="carousel-control-prev" href="#thumbcarousel" role="button" data-slide="prev">
@@ -266,37 +266,37 @@
 								<div id="basicSlider">
 									<div class="MS-content">
 										<div class="item">
-											<a href="#" target="_blank"> <img src="{{URL::asset('assets/img/photos/1.jpg')}}" alt="" /> </a>
+											<a href="#" target="_blank"> <img src="{{URL::asset('public/assets/img/photos/1.jpg')}}" alt="" /> </a>
 										</div>
 										<div class="item">
-											<a href="#" target="_blank"> <img src="{{URL::asset('assets/img/photos/2.jpg')}}" alt="" /> </a>
+											<a href="#" target="_blank"> <img src="{{URL::asset('public/assets/img/photos/2.jpg')}}" alt="" /> </a>
 										</div>
 										<div class="item">
-											<a href="#" target="_blank"> <img src="{{URL::asset('assets/img/photos/3.jpg')}}" alt="" /> </a>
+											<a href="#" target="_blank"> <img src="{{URL::asset('public/assets/img/photos/3.jpg')}}" alt="" /> </a>
 										</div>
 										<div class="item">
-											<a href="#" target="_blank"> <img src="{{URL::asset('assets/img/photos/4.jpg')}}" alt="" /> </a>
+											<a href="#" target="_blank"> <img src="{{URL::asset('public/assets/img/photos/4.jpg')}}" alt="" /> </a>
 										</div>
 										<div class="item">
-											<a href="#" target="_blank"> <img src="{{URL::asset('assets/img/photos/5.jpg')}}" alt="" /> </a>
+											<a href="#" target="_blank"> <img src="{{URL::asset('public/assets/img/photos/5.jpg')}}" alt="" /> </a>
 										</div>
 										<div class="item">
-											<a href="#" target="_blank"> <img src="{{URL::asset('assets/img/photos/6.jpg')}}" alt="" /> </a>
+											<a href="#" target="_blank"> <img src="{{URL::asset('public/assets/img/photos/6.jpg')}}" alt="" /> </a>
 										</div>
 										<div class="item">
-											<a href="#" target="_blank"> <img src="{{URL::asset('assets/img/photos/7.jpg')}}" alt="" /> </a>
+											<a href="#" target="_blank"> <img src="{{URL::asset('public/assets/img/photos/7.jpg')}}" alt="" /> </a>
 										</div>
 										<div class="item">
-											<a href="#" target="_blank"> <img src="{{URL::asset('assets/img/photos/8.jpg')}}" alt="" /> </a>
+											<a href="#" target="_blank"> <img src="{{URL::asset('public/assets/img/photos/8.jpg')}}" alt="" /> </a>
 										</div>
 										<div class="item">
-											<a href="#" target="_blank"> <img src="{{URL::asset('assets/img/photos/9.jpg')}}" alt="" /> </a>
+											<a href="#" target="_blank"> <img src="{{URL::asset('public/assets/img/photos/9.jpg')}}" alt="" /> </a>
 										</div>
 										<div class="item">
-											<a href="#" target="_blank"> <img src="{{URL::asset('assets/img/photos/10.jpg')}}" alt="" /> </a>
+											<a href="#" target="_blank"> <img src="{{URL::asset('public/assets/img/photos/10.jpg')}}" alt="" /> </a>
 										</div>
 										<div class="item">
-											<a href="#" target="_blank"> <img src="{{URL::asset('assets/img/photos/11.jpg')}}" alt="" /> </a>
+											<a href="#" target="_blank"> <img src="{{URL::asset('public/assets/img/photos/11.jpg')}}" alt="" /> </a>
 										</div>
 									</div>
 								</div>
@@ -312,12 +312,12 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!-- Internal Owl Carousel js-->
-<script src="{{URL::asset('assets/plugins/owl-carousel/owl.carousel.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/owl-carousel/owl.carousel.js')}}"></script>
 <!---Internal  Multislider js-->
-<script src="{{URL::asset('assets/plugins/multislider/multislider.js')}}"></script>
-<script src="{{URL::asset('assets/js/carousel.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/multislider/multislider.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/carousel.js')}}"></script>
 @endsection

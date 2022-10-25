@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
 <!-- Internal  leaflet-map css -->
-<link href="{{URL::asset('assets/plugins/leaflet/leaflet.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/leaflet/leaflet.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -89,6 +89,6 @@
 @endsection
 @section('js')
 <!--Internal  Leaflet-maps js -->
-<script src="{{URL::asset('assets/plugins/leaflet/leaflet.js')}}"></script>
-<script src="{{URL::asset('assets/js/map-leafleft.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/leaflet/leaflet.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/map-leafleft.js')}}"></script>
 @endsection

@@ -65,7 +65,7 @@
 										<tbody>
 											<tr>
 												<td>
-													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('assets/img/faces/1.jpg')}}">
+													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('public/assets/img/faces/1.jpg')}}">
 												</td>
 												<td>Megan Peters</td>
 												<td>
@@ -91,7 +91,7 @@
 											</tr>
 											<tr>
 												<td>
-													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('assets/img/faces/2.jpg')}}">
+													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('public/assets/img/faces/2.jpg')}}">
 												</td>
 												<td>George Clooney</td>
 												<td>
@@ -117,7 +117,7 @@
 											</tr>
 											<tr>
 												<td>
-													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('assets/img/faces/13.jpg')}}">
+													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('public/assets/img/faces/13.jpg')}}">
 												</td>
 												<td>Ryan Gossling</td>
 												<td>
@@ -143,7 +143,7 @@
 											</tr>
 											<tr>
 												<td>
-													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('assets/img/faces/1.jpg')}}">
+													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('public/assets/img/faces/1.jpg')}}">
 												</td>
 												<td> Emma Watson</td>
 												<td>
@@ -169,7 +169,7 @@
 											</tr>
 											<tr>
 												<td>
-													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('assets/img/faces/12.jpg')}}">
+													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('public/assets/img/faces/12.jpg')}}">
 												</td>
 												<td>Mila Kunis</td>
 												<td>
@@ -195,7 +195,7 @@
 											</tr>
 											<tr>
 												<td>
-													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('assets/img/faces/4.jpg')}}">
+													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('public/assets/img/faces/4.jpg')}}">
 												</td>
 												<td>Phil Watson</td>
 												<td>
@@ -221,7 +221,7 @@
 											</tr>
 											<tr>
 												<td>
-													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('assets/img/faces/5.jpg')}}">
+													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('public/assets/img/faces/5.jpg')}}">
 												</td>
 												<td>Sonia Robertson</td>
 												<td>
@@ -247,7 +247,7 @@
 											</tr>
 											<tr>
 												<td>
-													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('assets/img/faces/7.jpg')}}">
+													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('public/assets/img/faces/7.jpg')}}">
 												</td>
 												<td>Adam Hamilton</td>
 												<td>
@@ -273,7 +273,7 @@
 											</tr>
 											<tr>
 												<td>
-													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('assets/img/faces/9.jpg')}}">
+													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('public/assets/img/faces/9.jpg')}}">
 												</td>
 												<td>Leah Morgan</td>
 												<td>
@@ -299,7 +299,7 @@
 											</tr>
 											<tr>
 												<td>
-													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('assets/img/faces/11.jpg')}}">
+													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('public/assets/img/faces/11.jpg')}}">
 												</td>
 												<td>Amelia McDonald</td>
 												<td>
@@ -325,7 +325,7 @@
 											</tr>
 											<tr>
 												<td>
-													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('assets/img/faces/17.jpg')}}">
+													<img alt="avatar" class="rounded-circle avatar-md mr-2" src="{{URL::asset('public/assets/img/faces/17.jpg')}}">
 												</td>
 												<td>Paul Molive</td>
 												<td>
@@ -377,7 +377,7 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 @endsection

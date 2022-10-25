@@ -162,39 +162,39 @@
 								<p class="mg-b-20">It is Very Easy to Customize and it uses in website apllication.</p>
 								<div class="d-flex flex-wrap">
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-white-1"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-white-2"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-white-3"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-white-4"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-white-5"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-white-6"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-white-7"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-white-8"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-white-9"></div>
 									</div>
 								</div>
@@ -225,39 +225,39 @@
 								<p class="mg-b-20">It is Very Easy to Customize and it uses in website apllication.</p>
 								<div class="d-flex flex-wrap">
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-black-1"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-black-2"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-black-3"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-black-4"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-black-5"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-black-6"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-black-7"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-black-8"></div>
 									</div>
 									<div class="flex-1 pos-relative">
-										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('assets/img/photos/5.jpg')}}">
+										<img alt="" class="wd-100p ht-100p object-fit-cover" src="{{URL::asset('public/assets/img/photos/5.jpg')}}">
 										<div class="pos-absolute a-0 bg-black-9"></div>
 									</div>
 								</div>

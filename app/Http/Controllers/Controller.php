@@ -18,6 +18,7 @@ class Controller extends BaseController
     {
         return response()->json(['status' => 'success','errors'=> 0 ,'code' => $status, 'data' => $message],$status)->header('Content-type','application/json');
     }
+
     public static function error($message , $status = 400)
     {
         $messageCount = 1;

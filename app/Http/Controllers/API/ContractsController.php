@@ -7,13 +7,14 @@ use App\Models\Contracts;
 use App\Models\Notifications;
 use App\Models\Structural_drawing_image;
 use App\Models\User;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
-use PDF;
+
 
 class ContractsController extends Controller
 {
@@ -64,7 +65,7 @@ class ContractsController extends Controller
 
     public function contract_Status($id){
 
-        $contracts = Contracts::where('id', $id)->select('id','code','status','contract_file','final_contract')->first();
+        $contracts = Contracts::where('id', $id)->select('id','code','status','contract_file','final_contract')->get();
         return parent::success($contracts);
     }
     public function StatusUpdate(Request $request){
@@ -105,7 +106,7 @@ class ContractsController extends Controller
     }
 
         public function finalcLearanceUpdate(Request $request , $id){
-
+            $contracts = Contracts::where('id', $id)->select('id','code','approval')->first();
 
         $projects = Contracts::find($id);
 
@@ -113,7 +114,7 @@ class ContractsController extends Controller
         $projects['clearance_status_admin'] = "0";
 
         $projects->update($request->all());
-        $contracts = Contracts::where('id', $id)->select('id','code','approval')->first();
+
 
             return parent::success($contracts);
         }
@@ -205,21 +206,21 @@ class ContractsController extends Controller
 
         if ($request->file('status_card_image') ) {
             $name = Str::random(12);
-            $path = $request->file('status_card_image')->move('api/status_card_image',
+            $path = $request->file('status_card_image')->move('public/api/status_card_image',
                 $name . time() . '.' . $request->file('status_card_image')->getClientOriginalExtension());
             $contracts->status_card_image= $path;
         }
 
         if ($request->file('Instrument_image') ) {
             $name = Str::random(12);
-            $path = $request->file('Instrument_image')->move('api/Instrument_image',
+            $path = $request->file('Instrument_image')->move('public/api/Instrument_image',
                 $name . time() . '.' . $request->file('Instrument_image')->getClientOriginalExtension());
             $contracts->Instrument_image= $path;
         }
 
         if ($request->file('license_image') ) {
             $name = Str::random(12);
-            $path = $request->file('license_image')->move('api/license_image',
+            $path = $request->file('license_image')->move('public/api/license_image',
                 $name . time() . '.' . $request->file('license_image')->getClientOriginalExtension());
             $contracts->license_image= $path;
         }
@@ -232,7 +233,7 @@ class ContractsController extends Controller
 //        }
         if ($request->file('website_image') ) {
             $name = Str::random(12);
-            $path = $request->file('website_image')->move('api/website_image',
+            $path = $request->file('website_image')->move('public/api/website_image',
                 $name . time() . '.' . $request->file('website_image')->getClientOriginalExtension());
             $contracts->website_image= $path;
         }
@@ -247,7 +248,7 @@ class ContractsController extends Controller
                 $img = new Structural_drawing_image();
                 $img->contract_id = $contracts->id;
                 $name = Str::random(12);
-                $path = $file->move('api/starch_chart_image', $name . time() . '.' . $file->getClientOriginalExtension());
+                $path = $file->move('public/api/starch_chart_image', $name . time() . '.' . $file->getClientOriginalExtension());
                 $img->image = $path;
                 $img->save();
             }
@@ -262,23 +263,15 @@ class ContractsController extends Controller
       $notification->status = "0";
         $notification->save();
 
-
         $pdf=Contracts::where('id',$contracts->id)->with('user:id,name')->first();
-
-        if (($project == "1" or $project == "2" or $project == "3" or $project == "4")and ($construction_type == "2") ) {
-            $p = PDF::loadView('contract2.index1', compact('pdf'));
-        }elseif(($project == "1" or $project == "2" or $project == "3" or $project == "4")and ($construction_type == "1") ){
-            $p = PDF::loadView('contract3.index1', compact('pdf'));
-        }elseif(($project == "5" or $project == "6" ) ) {
             $p = PDF::loadView('contract1.index1', compact('pdf'));
-        }elseif(($project == "7" ) ) {
-            $p = PDF::loadView('contract4.index1', compact('pdf'));
-        }
-        $path = 'api/contract_file/';
 
-        $fileName =  time().'.'. 'pdf' ;
-        $p->save($path . '/' . $fileName);
-        $generated_pdf_link ='api/contract_file/'.$fileName;
+
+        $path = 'public/api/contract_file/';
+        $fileName =  time(). '.pdf' ;
+
+        $p->save($path . $fileName);
+        $generated_pdf_link ='public/api/contract_file/'.$fileName;
         $pdf->contract_file = $generated_pdf_link;
         $pdf->update();
         $pdf->refresh();

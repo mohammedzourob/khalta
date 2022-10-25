@@ -8,7 +8,7 @@ class Bond extends Model
 {
 
     protected $fillable = [
-        'contract_number','supervisor_name','exchange_amount','exchange_reason','date_of_application','viewing_status'
+        'contract_number','supervisor_name','exchange_amount','user_id','exchange_reason','date_of_application','viewing_status'
 
     ];
     protected $table = 'bond';
@@ -19,4 +19,8 @@ class Bond extends Model
         'contract_number' => 'required',
 
     ];
+    public function users()
+    {
+        return $this->belongsTo('App\Models\Users','user_id');
+    }
 }

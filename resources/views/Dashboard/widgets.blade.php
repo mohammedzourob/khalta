@@ -203,7 +203,7 @@
 								<h5 class="widget-user-desc">Founder &amp; CEO</h5>
 							</div>
 							<div class="widget-user-image">
-								<img src="{{URL::asset('assets/img/faces/17.jpg')}}" class="brround" alt="User Avatar">
+								<img src="{{URL::asset('public/assets/img/faces/17.jpg')}}" class="brround" alt="User Avatar">
 							</div>
 							<div class="user-wideget-footer">
 								<div class="row">
@@ -236,7 +236,7 @@
 								<h5 class="widget-user-desc">Founder &amp; CEO</h5>
 							</div>
 							<div class="widget-user-image">
-								<img src="{{URL::asset('assets/img/faces/12.jpg')}}" class="brround" alt="User Avatar">
+								<img src="{{URL::asset('public/assets/img/faces/12.jpg')}}" class="brround" alt="User Avatar">
 							</div>
 							<div class="user-wideget-footer">
 								<div class="row">
@@ -269,7 +269,7 @@
 								<h5 class="widget-user-desc">Founder &amp; CEO</h5>
 							</div>
 							<div class="widget-user-image">
-								<img src="{{URL::asset('assets/img/faces/5.jpg')}}" class="brround" alt="User Avatar">
+								<img src="{{URL::asset('public/assets/img/faces/5.jpg')}}" class="brround" alt="User Avatar">
 							</div>
 							<div class="user-wideget-footer">
 								<div class="row">
@@ -834,7 +834,7 @@
 								</div>
 								<p class="card-description mb-1">What're people doing right now</p>
 								<div class="list d-flex align-items-center border-bottom py-3">
-									<div class="avatar brround d-block cover-image" data-image-src="{{URL::asset('assets/img/faces/5.jpg')}}">
+									<div class="avatar brround d-block cover-image" data-image-src="{{URL::asset('public/assets/img/faces/5.jpg')}}">
 										<span class="avatar-status bg-green"></span>
 									</div>
 									<div class="wrapper w-100 mr-3">
@@ -850,7 +850,7 @@
 									</div>
 								</div>
 								<div class="list d-flex align-items-center border-bottom py-3">
-									<div class="avatar brround d-block cover-image" data-image-src="{{URL::asset('assets/img/faces/1.jpg')}}">
+									<div class="avatar brround d-block cover-image" data-image-src="{{URL::asset('public/assets/img/faces/1.jpg')}}">
 										<span class="avatar-status bg-green"></span>
 									</div>
 									<div class="wrapper w-100 mr-3">
@@ -866,7 +866,7 @@
 									</div>
 								</div>
 								<div class="list d-flex align-items-center border-bottom py-3">
-									<div class="avatar brround d-block cover-image" data-image-src="{{URL::asset('assets/img/faces/14.jpg')}}">
+									<div class="avatar brround d-block cover-image" data-image-src="{{URL::asset('public/assets/img/faces/14.jpg')}}">
 										<span class="avatar-status bg-green"></span>
 									</div>
 									<div class="wrapper w-100 mr-3">
@@ -882,7 +882,7 @@
 									</div>
 								</div>
 								<div class="list d-flex align-items-center pt-3">
-									<div class="avatar brround d-block cover-image" data-image-src="{{URL::asset('assets/img/faces/4.jpg')}}">
+									<div class="avatar brround d-block cover-image" data-image-src="{{URL::asset('public/assets/img/faces/4.jpg')}}">
 										<span class="avatar-status bg-green"></span>
 									</div>
 									<div class="wrapper w-100 mr-3">
@@ -910,7 +910,7 @@
 									<div class="chips">
 										<div class="team">
 											<a href="javascript:void(0)" class="chip">
-												<span class="avatar cover-image" data-image-src="{{URL::asset('assets/img/faces/2.jpg')}}"></span> Victoria
+												<span class="avatar cover-image" data-image-src="{{URL::asset('public/assets/img/faces/2.jpg')}}"></span> Victoria
 											</a>
 											<i class="fab fa-facebook text-primary" aria-hidden="true"></i>
 											<i class="fab fa-twitter text-primary" aria-hidden="true"></i>
@@ -919,7 +919,7 @@
 										</div>
 										<div class="team">
 											<a href="javascript:void(0)" class="chip">
-												<span class="avatar cover-image" data-image-src="{{URL::asset('assets/img/faces/3.jpg')}}"></span> Nathan
+												<span class="avatar cover-image" data-image-src="{{URL::asset('public/assets/img/faces/3.jpg')}}"></span> Nathan
 											</a>
 											<i class="fab fa-facebook text-primary" aria-hidden="true"></i>
 											<i class="fab fa-twitter text-primary" aria-hidden="true"></i>
@@ -928,7 +928,7 @@
 										</div>
 										<div class="team">
 											<a href="javascript:void(0)" class="chip">
-												<span class="avatar cover-image" data-image-src="{{URL::asset('assets/img/faces/4.jpg')}}"></span> Alice
+												<span class="avatar cover-image" data-image-src="{{URL::asset('public/assets/img/faces/4.jpg')}}"></span> Alice
 											</a>
 											<i class="fab fa-facebook text-primary" aria-hidden="true"></i>
 											<i class="fab fa-twitter text-primary" aria-hidden="true"></i>
@@ -949,7 +949,7 @@
 								<table class="table card-table country-table mb-0">
 									<tbody>
 										<tr>
-											<td class="w-1"><img src="{{URL::asset('assets/img/flags/us_flag.jpg')}}" alt="flags" class="flag wd-30 ht-20 flag-us mt-1"></i></td>
+											<td class="w-1"><img src="{{URL::asset('public/assets/img/flags/us_flag.jpg')}}" alt="flags" class="flag wd-30 ht-20 flag-us mt-1"></i></td>
 											<td>USA
 												<div class="progress progress-sm mt-1">
 													<div class="progress-bar bg-primary wd-80"></div>
@@ -958,7 +958,7 @@
 											<td class="w-1 text-left"><span class="text-muted">$5235</span></td>
 										</tr>
 										<tr>
-											<td class="w-1"><img src="{{URL::asset('assets/img/flags/spain_flag.jpg')}}" alt="flags" class="flag wd-30 ht-20 flag-us mt-1"></i></td>
+											<td class="w-1"><img src="{{URL::asset('public/assets/img/flags/spain_flag.jpg')}}" alt="flags" class="flag wd-30 ht-20 flag-us mt-1"></i></td>
 											<td>Spain
 												<div class="progress progress-sm mt-1">
 													<div class="progress-bar bg-pink wd-60"></div>
@@ -967,7 +967,7 @@
 											<td class="text-left"><span class="text-muted">$3214</span></td>
 										</tr>
 										<tr>
-											<td class="w-1"><img src="{{URL::asset('assets/img/flags/germany_flag.jpg')}}" alt="flags" class="flag wd-30 ht-20 flag-us mt-1"></i></td>
+											<td class="w-1"><img src="{{URL::asset('public/assets/img/flags/germany_flag.jpg')}}" alt="flags" class="flag wd-30 ht-20 flag-us mt-1"></i></td>
 											<td>Germany
 												<div class="progress progress-sm mt-1">
 													<div class="progress-bar bg-success wd-30"></div>
@@ -976,7 +976,7 @@
 											<td class="text-left"><span class="text-muted">$4123</span></td>
 										</tr>
 										<tr>
-											<td class="w-1"><img src="{{URL::asset('assets/img/flags/russia_flag.jpg')}}" alt="flags" class="flag wd-30 ht-20 flag-us mt-1"></i></td>
+											<td class="w-1"><img src="{{URL::asset('public/assets/img/flags/russia_flag.jpg')}}" alt="flags" class="flag wd-30 ht-20 flag-us mt-1"></i></td>
 											<td>Russia
 												<div class="progress progress-sm mt-1">
 													<div class="progress-bar bg-warning wd-50"></div>
@@ -985,7 +985,7 @@
 											<td class="text-left"><span class="text-muted">$1543</span></td>
 										</tr>
 										<tr>
-											<td class="w-1"><img src="{{URL::asset('assets/img/flags/italy_flag.jpg')}}" alt="flags" class="flag wd-30 ht-20 flag-us mt-1"></i></td>
+											<td class="w-1"><img src="{{URL::asset('public/assets/img/flags/italy_flag.jpg')}}" alt="flags" class="flag wd-30 ht-20 flag-us mt-1"></i></td>
 											<td>Italy
 												<div class="progress progress-sm mt-1">
 													<div class="progress-bar bg-teal wd-40"></div>
@@ -994,7 +994,7 @@
 											<td class="text-left"><span class="text-muted ">$1543</span></td>
 										</tr>
 										<tr>
-											<td class="w-1"><img src="{{URL::asset('assets/img/flags/french_flag.jpg')}}" alt="flags" class="flag wd-30 ht-20 flag-us mt-1"></i></td>
+											<td class="w-1"><img src="{{URL::asset('public/assets/img/flags/french_flag.jpg')}}" alt="flags" class="flag wd-30 ht-20 flag-us mt-1"></i></td>
 											<td>French
 												<div class="progress progress-sm mt-1">
 													<div class="progress-bar bg-teal wd-40"></div>
@@ -1082,12 +1082,12 @@
 									</tbody>
 								</table>
 								<div class="wrapper d-flex justify-content-center image-group pb-3">
-									<img src="{{URL::asset('assets/img/faces/1.jpg')}}" alt="profile" class="img-xs rounded-circle">
-									<img src="{{URL::asset('assets/img/faces/2.jpg')}}" alt="profile" class="img-xs rounded-circle">
-									<img src="{{URL::asset('assets/img/faces/13.jpg')}}" alt="profile" class="img-xs rounded-circle">
-									<img src="{{URL::asset('assets/img/faces/14.jpg')}}" alt="profile" class="img-xs rounded-circle">
-									<img src="{{URL::asset('assets/img/faces/5.jpg')}}" alt="profile" class="img-xs rounded-circle">
-									<img src="{{URL::asset('assets/img/faces/16.jpg')}}" alt="profile" class="img-xs rounded-circle">
+									<img src="{{URL::asset('public/assets/img/faces/1.jpg')}}" alt="profile" class="img-xs rounded-circle">
+									<img src="{{URL::asset('public/assets/img/faces/2.jpg')}}" alt="profile" class="img-xs rounded-circle">
+									<img src="{{URL::asset('public/assets/img/faces/13.jpg')}}" alt="profile" class="img-xs rounded-circle">
+									<img src="{{URL::asset('public/assets/img/faces/14.jpg')}}" alt="profile" class="img-xs rounded-circle">
+									<img src="{{URL::asset('public/assets/img/faces/5.jpg')}}" alt="profile" class="img-xs rounded-circle">
+									<img src="{{URL::asset('public/assets/img/faces/16.jpg')}}" alt="profile" class="img-xs rounded-circle">
 								</div>
 							</div><!-- card-body -->
 						</div>
@@ -1102,58 +1102,58 @@
 								<p class="tx-12 tx-gray-500 mb-3">Order Activity is ecommerce platforms to track the orders placed on their stores <a href="">Learn more</a></p>
 								<ul class="list list-noborders pb-0 mb-0">
 									<li class="list-item">
-										<img class="img-sm rounded-circle bg-warning d-flex align-items-center justify-content-center text-white" src="{{URL::asset('assets/img/faces/3.jpg')}}" alt="Profile Image">
+										<img class="img-sm rounded-circle bg-warning d-flex align-items-center justify-content-center text-white" src="{{URL::asset('public/assets/img/faces/3.jpg')}}" alt="Profile Image">
 										<div class=" mr-3">
 											<h6 class="mb-1 font-weight-medium">Lottie Arnold</h6>
 											<p class="mb-0 text-muted tx-13">#PRD-10250</p>
 										</div>
 										<div class="mr-auto d-flex">
-											<img class="img-sm ml-1" src="{{URL::asset('assets/img/ecommerce/03.jpg')}}" alt="thumb images">
-											<img class="img-sm" src="{{URL::asset('assets/img/ecommerce/08.jpg')}}" alt="thumb images">
+											<img class="img-sm ml-1" src="{{URL::asset('public/assets/img/ecommerce/03.jpg')}}" alt="thumb images">
+											<img class="img-sm" src="{{URL::asset('public/assets/img/ecommerce/08.jpg')}}" alt="thumb images">
 										</div>
 									</li>
 									<li class="list-item">
-										<img class="img-sm rounded-circle bg-warning d-flex align-items-center justify-content-center text-white" src="{{URL::asset('assets/img/faces/9.jpg')}}" alt="Profile Image">
+										<img class="img-sm rounded-circle bg-warning d-flex align-items-center justify-content-center text-white" src="{{URL::asset('public/assets/img/faces/9.jpg')}}" alt="Profile Image">
 										<div class=" mr-3">
 											<h6 class="mb-1 font-weight-medium">Alan Macedo</h6>
 											<p class="mb-0 tx-13 text-muted">#PRD-10251</p>
 										</div>
 										<div class="mr-auto d-flex">
-											<img class="img-sm ml-1" src="{{URL::asset('assets/img/ecommerce/04.jpg')}}" alt="thumb images">
-											<img class="img-sm" src="{{URL::asset('assets/img/ecommerce/05.jpg')}}" alt="thumb images">
+											<img class="img-sm ml-1" src="{{URL::asset('public/assets/img/ecommerce/04.jpg')}}" alt="thumb images">
+											<img class="img-sm" src="{{URL::asset('public/assets/img/ecommerce/05.jpg')}}" alt="thumb images">
 										</div>
 									</li>
 									<li class="list-item">
-										<img class="img-sm rounded-circle bg-warning d-flex align-items-center justify-content-center text-white" src="{{URL::asset('assets/img/faces/5.jpg')}}" alt="Profile Image">
+										<img class="img-sm rounded-circle bg-warning d-flex align-items-center justify-content-center text-white" src="{{URL::asset('public/assets/img/faces/5.jpg')}}" alt="Profile Image">
 										<div class=" mr-3">
 											<h6 class="mb-1 font-weight-medium">Bruce Tran</h6>
 											<p class="mb-0 text-muted tx-13">#PRD-10252</p>
 										</div>
 										<div class="mr-auto d-flex">
-											<img class="img-sm ml-1" src="{{URL::asset('assets/img/ecommerce/06.jpg')}}" alt="thumb images">
-											<img class="img-sm" src="{{URL::asset('assets/img/ecommerce/07.jpg')}}" alt="thumb images">
+											<img class="img-sm ml-1" src="{{URL::asset('public/assets/img/ecommerce/06.jpg')}}" alt="thumb images">
+											<img class="img-sm" src="{{URL::asset('public/assets/img/ecommerce/07.jpg')}}" alt="thumb images">
 										</div>
 									</li>
 									<li class="list-item">
-										<img class="img-sm rounded-circle bg-warning d-flex align-items-center justify-content-center text-white" src="{{URL::asset('assets/img/faces/12.jpg')}}" alt="Profile Image">
+										<img class="img-sm rounded-circle bg-warning d-flex align-items-center justify-content-center text-white" src="{{URL::asset('public/assets/img/faces/12.jpg')}}" alt="Profile Image">
 										<div class=" mr-3">
 											<h6 class="mb-1 font-weight-medium">Mina Harper</h6>
 											<p class="mb-0 text-muted tx-13">#PRD-10253</p>
 										</div>
 										<div class="mr-auto d-flex">
-											<img class="img-sm ml-1" src="{{URL::asset('assets/img/ecommerce/08.jpg')}}" alt="thumb images">
-											<img class="img-sm" src="{{URL::asset('assets/img/ecommerce/09.jpg')}}" alt="thumb images">
+											<img class="img-sm ml-1" src="{{URL::asset('public/assets/img/ecommerce/08.jpg')}}" alt="thumb images">
+											<img class="img-sm" src="{{URL::asset('public/assets/img/ecommerce/09.jpg')}}" alt="thumb images">
 										</div>
 									</li>
 									<li class="list-item pb-0 mb-0">
-										<img class="img-sm rounded-circle bg-warning d-flex align-items-center justify-content-center text-white" src="{{URL::asset('assets/img/faces/8.jpg')}}" alt="Profile Image">
+										<img class="img-sm rounded-circle bg-warning d-flex align-items-center justify-content-center text-white" src="{{URL::asset('public/assets/img/faces/8.jpg')}}" alt="Profile Image">
 										<div class=" mr-3">
 											<h6 class="mb-1 font-weight-medium">Maria Quinn</h6>
 											<p class="mb-0 text-muted tx-13">#PRD-10254</p>
 										</div>
 										<div class="mr-auto d-flex">
-											<img class="img-sm ml-1" src="{{URL::asset('assets/img/ecommerce/02.jpg')}}" alt="thumb images">
-											<img class="img-sm" src="{{URL::asset('assets/img/ecommerce/01.jpg')}}" alt="thumb images">
+											<img class="img-sm ml-1" src="{{URL::asset('public/assets/img/ecommerce/02.jpg')}}" alt="thumb images">
+											<img class="img-sm" src="{{URL::asset('public/assets/img/ecommerce/01.jpg')}}" alt="thumb images">
 										</div>
 									</li>
 								</ul>
@@ -1445,7 +1445,7 @@
 									<div class="media mt-0">
 										<div class="d-flex ml-3">
 											<a href="#">
-												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('assets/img/faces/5.jpg')}}">
+												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('public/assets/img/faces/5.jpg')}}">
 											</a>
 										</div>
 										<div class="media-body">
@@ -1471,7 +1471,7 @@
 									<div class="media mt-0">
 										<div class="d-flex ml-3">
 											<a href="#">
-												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('assets/img/faces/9.jpg')}}">
+												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('public/assets/img/faces/9.jpg')}}">
 											</a>
 										</div>
 										<div class="media-body">
@@ -1496,7 +1496,7 @@
 									<div class="media mt-0">
 										<div class="d-flex ml-3">
 											<a href="#">
-												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('assets/img/faces/4.jpg')}}">
+												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('public/assets/img/faces/4.jpg')}}">
 											</a>
 										</div>
 										<div class="media-body">
@@ -1522,7 +1522,7 @@
 									<div class="media mt-0">
 										<div class="d-flex ml-3">
 											<a href="#">
-												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('assets/img/faces/7.jpg')}}">
+												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('public/assets/img/faces/7.jpg')}}">
 											</a>
 										</div>
 										<div class="media-body">
@@ -1548,7 +1548,7 @@
 									<div class="media mt-0">
 										<div class="d-flex ml-3">
 											<a href="#">
-												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('assets/img/faces/12.jpg')}}">
+												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('public/assets/img/faces/12.jpg')}}">
 											</a>
 										</div>
 										<div class="media-body">
@@ -1574,7 +1574,7 @@
 									<div class="media mt-0">
 										<div class="d-flex ml-3">
 											<a href="#">
-												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('assets/img/faces/13.jpg')}}">
+												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('public/assets/img/faces/13.jpg')}}">
 											</a>
 										</div>
 										<div class="media-body">
@@ -1600,7 +1600,7 @@
 									<div class="media mt-0">
 										<div class="d-flex ml-3">
 											<a href="#">
-												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('assets/img/faces/2.jpg')}}">
+												<img class="media-object avatar brround w-7 h-7" alt="64x64" src="{{URL::asset('public/assets/img/faces/2.jpg')}}">
 											</a>
 										</div>
 										<div class="media-body">
@@ -1707,7 +1707,7 @@
 								<div class="browser-stats">
 									<div class="d-flex align-items-center item  border-bottom">
 										<div class="d-flex">
-											<img src="{{URL::asset('assets/img/svgicons/chrome.svg')}}" alt="img" class="ht-30 wd-30 ml-2">
+											<img src="{{URL::asset('public/assets/img/svgicons/chrome.svg')}}" alt="img" class="ht-30 wd-30 ml-2">
 											<div class="">
 												<h6 class="">Chrome</h6>
 												<span class="sub-text">Mozilla Foundation, Inc.</span>
@@ -1722,7 +1722,7 @@
 									</div>
 									<div class="d-flex align-items-center item  border-bottom">
 										<div class="d-flex">
-											<img src="{{URL::asset('assets/img/svgicons/opera.svg')}}" alt="img" class="ht-30 wd-30 ml-2">
+											<img src="{{URL::asset('public/assets/img/svgicons/opera.svg')}}" alt="img" class="ht-30 wd-30 ml-2">
 											<div class="">
 												<h6 class="">Opera</h6>
 												<span class="sub-text">Mozilla Foundation, Inc.</span>
@@ -1737,7 +1737,7 @@
 									</div>
 									<div class="d-flex align-items-center item  border-bottom">
 										<div class="d-flex">
-											<img src="{{URL::asset('assets/img/svgicons/edge.svg')}}" alt="img" class="ht-30 wd-30 ml-2">
+											<img src="{{URL::asset('public/assets/img/svgicons/edge.svg')}}" alt="img" class="ht-30 wd-30 ml-2">
 											<div class="">
 												<h6 class="">Edge</h6>
 												<span class="sub-text">Mozilla Foundation, Inc.</span>
@@ -1752,7 +1752,7 @@
 									</div>
 									<div class="d-flex align-items-center item  border-bottom">
 										<div class="d-flex">
-											<img src="{{URL::asset('assets/img/svgicons/firefox.svg')}}" alt="img" class="ht-30 wd-30 ml-2">
+											<img src="{{URL::asset('public/assets/img/svgicons/firefox.svg')}}" alt="img" class="ht-30 wd-30 ml-2">
 											<div class="">
 												<h6 class="">Firefox</h6>
 												<span class="sub-text">Mozilla Foundation, Inc.</span>
@@ -1767,7 +1767,7 @@
 									</div>
 									<div class="d-flex align-items-center item border-bottom">
 										<div class="d-flex">
-											<img src="{{URL::asset('assets/img/svgicons/uc-browser.svg')}}" alt="img" class="ht-30 wd-30 ml-2">
+											<img src="{{URL::asset('public/assets/img/svgicons/uc-browser.svg')}}" alt="img" class="ht-30 wd-30 ml-2">
 											<div class="">
 												<h6 class="">Ucbrowser</h6>
 												<span class="sub-text">Mozilla Foundation, Inc.</span>
@@ -1782,7 +1782,7 @@
 									</div>
 									<div class="d-flex align-items-center item">
 										<div class="d-flex">
-											<img src="{{URL::asset('assets/img/svgicons/safari.svg')}}" alt="img" class="ht-30 wd-30 ml-2">
+											<img src="{{URL::asset('public/assets/img/svgicons/safari.svg')}}" alt="img" class="ht-30 wd-30 ml-2">
 											<div class="">
 												<h6 class="">Safari</h6>
 												<span class="sub-text">Mozilla Foundation, Inc.</span>
@@ -1807,9 +1807,9 @@
 @endsection
 @section('js')
 <!-- Moment js -->
-<script src="{{URL::asset('assets/plugins/raphael/raphael.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/raphael/raphael.min.js')}}"></script>
 <!-- Internal Piety js -->
-<script src="{{URL::asset('assets/plugins/peity/jquery.peity.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/peity/jquery.peity.min.js')}}"></script>
 <!-- Internal Chart js -->
-<script src="{{URL::asset('assets/plugins/chart.js/Chart.bundle.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/chart.js/Chart.bundle.min.js')}}"></script>
 @endsection

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
 <!-- Interenal Accordion Css -->
-<link href="{{URL::asset('assets/plugins/accordion/accordion.css')}}" rel="stylesheet" />
+<link href="{{URL::asset('public/assets/plugins/accordion/accordion.css')}}" rel="stylesheet" />
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -164,16 +164,16 @@
 											<div class="border p-3">
 												<div class="row">
 													<div class="col-lg-3 col-md-6">
-														<img class="img-fluid rounded" src="{{URL::asset('assets/img/photos/8.jpg')}}" alt="banner image">
+														<img class="img-fluid rounded" src="{{URL::asset('public/assets/img/photos/8.jpg')}}" alt="banner image">
 													</div>
 													<div class="col-lg-3 col-md-6">
-														<img class="img-fluid rounded" src="{{URL::asset('assets/img/photos/10.jpg')}}" alt="banner image ">
+														<img class="img-fluid rounded" src="{{URL::asset('public/assets/img/photos/10.jpg')}}" alt="banner image ">
 													</div>
 													<div class="col-lg-3 col-md-6">
-														<img class="img-fluid rounded" src="{{URL::asset('assets/img/photos/11.jpg')}}" alt="banner image ">
+														<img class="img-fluid rounded" src="{{URL::asset('public/assets/img/photos/11.jpg')}}" alt="banner image ">
 													</div>
 													<div class="col-lg-3 col-md-6">
-														<img class="img-fluid rounded " src="{{URL::asset('assets/img/photos/12.jpg')}}" alt="banner image ">
+														<img class="img-fluid rounded " src="{{URL::asset('public/assets/img/photos/12.jpg')}}" alt="banner image ">
 													</div>
 												</div>
 											</div>
@@ -298,10 +298,10 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>	
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!--- Internal Accordion Js -->
-<script src="{{URL::asset('assets/plugins/accordion/accordion.min.js')}}"></script>
-<script src="{{URL::asset('assets/js/accordion.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/accordion/accordion.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/accordion.js')}}"></script>
 @endsection

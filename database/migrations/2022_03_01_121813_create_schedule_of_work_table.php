@@ -23,6 +23,10 @@ class CreateScheduleOfWorkTable extends Migration
             $table->date('date')->nullable();
             $table->string('email')->nullable();
             $table->string('publisher')->nullable();
+            $table->integer('user_id')->unsigned()->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
+
             $table->enum('status', array('0', '1'));
             $table->enum('viewing_status', array('0', '1'));
             $table->timestamps();

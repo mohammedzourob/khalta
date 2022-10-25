@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
 <!-- Internal Images-Comparsion css -->
-<link href="{{URL::asset('assets/plugins/images-comparsion/twentytwenty.css')}}" rel="stylesheet" />
+<link href="{{URL::asset('public/assets/plugins/images-comparsion/twentytwenty.css')}}" rel="stylesheet" />
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -49,8 +49,8 @@
 								</div>
 								<p class="mg-b-20">Example of Redash Horizontal Image Comparision.</p>
 								<div class="twentytwenty-container">
-									<img src="{{URL::asset('assets/img/photos/compare1.jpg')}}" alt="img" />
-									<img src="{{URL::asset('assets/img/photos/compare2.jpg')}}" alt="img" />
+									<img src="{{URL::asset('public/assets/img/photos/compare1.jpg')}}" alt="img" />
+									<img src="{{URL::asset('public/assets/img/photos/compare2.jpg')}}" alt="img" />
 								</div>
 							</div>
 						</div>
@@ -64,8 +64,8 @@
 								</div>
 								<p class="mg-b-20">Example of Redash Vertical Image Comparision.</p>
 								<div class="twentytwenty-container" data-orientation="vertical">
-									<img src="{{URL::asset('assets/img/photos/compare1.jpg')}}" alt="img" />
-									<img src="{{URL::asset('assets/img/photos/compare2.jpg')}}" alt="img" />
+									<img src="{{URL::asset('public/assets/img/photos/compare1.jpg')}}" alt="img" />
+									<img src="{{URL::asset('public/assets/img/photos/compare2.jpg')}}" alt="img" />
 								</div>
 							</div>
 						</div>
@@ -78,11 +78,11 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 <!--Internal  Images-Comparsion js -->
-<script src="{{URL::asset('assets/plugins/images-comparsion/jquery.twentytwenty.js')}}"></script>
-<script src="{{URL::asset('assets/plugins/images-comparsion/jquery.event.move.js')}}"></script>
-<script src="{{URL::asset('assets/js/image-comparision.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/images-comparsion/jquery.twentytwenty.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/images-comparsion/jquery.event.move.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/image-comparision.js')}}"></script>
 @endsection

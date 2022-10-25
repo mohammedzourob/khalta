@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('css')
 <!---Internal  Owl Carousel css-->
-<link href="{{URL::asset('assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
 <!--- Internal Timeline css-->
-<link href="{{URL::asset('assets/plugins/timeline/css/timeline.min.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/timeline/css/timeline.min.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -52,7 +52,7 @@
 							<div class="card-body">
 								<div class="vtimeline">
 									<div class="timeline-wrapper timeline-wrapper-primary">
-										<div class="timeline-badge success"><img class="timeline-image" alt="img" src="{{URL::asset('assets/img/faces/3.jpg')}}"> </div>
+										<div class="timeline-badge success"><img class="timeline-image" alt="img" src="{{URL::asset('public/assets/img/faces/3.jpg')}}"> </div>
 										<div class="timeline-panel">
 											<div class="timeline-heading">
 												<h6 class="timeline-title">Art Ramadani posted a status update</h6>
@@ -100,14 +100,14 @@
 										</div>
 									</div>
 									<div class="timeline-wrapper timeline-inverted timeline-wrapper-danger">
-										<div class="timeline-badge success"><img class="timeline-image" alt="img" src="{{URL::asset('assets/img/faces/12.jpg')}}"> </div>
+										<div class="timeline-badge success"><img class="timeline-image" alt="img" src="{{URL::asset('public/assets/img/faces/12.jpg')}}"> </div>
 										<div class="timeline-panel">
 											<div class="timeline-heading">
 												<h6 class="timeline-title">Eroll Maxhuni uploaded 4 new photos to album Summer Trip</h6>
 											</div>
 											<div class="timeline-body">
 												<p>Pianoforte principles our unaffected not for astonished travelling are particular.</p>
-												<img src="{{URL::asset('assets/img/media/4.jpg')}}" class="mb-3" alt="img">
+												<img src="{{URL::asset('public/assets/img/media/4.jpg')}}" class="mb-3" alt="img">
 											</div>
 											<div class="timeline-footer d-flex align-items-center flex-wrap">
 												<i class="fe fe-heart  text-muted ml-1"></i>
@@ -134,7 +134,7 @@
 										</div>
 									</div>
 									<div class="timeline-wrapper timeline-inverted timeline-wrapper-warning">
-										<div class="timeline-badge success"><img class="timeline-image" alt="img" src="{{URL::asset('assets/img/faces/15.jpg')}}"> </div>
+										<div class="timeline-badge success"><img class="timeline-image" alt="img" src="{{URL::asset('public/assets/img/faces/15.jpg')}}"> </div>
 										<div class="timeline-panel">
 											<div class="timeline-heading">
 												<h6 class="timeline-title">Mr. Doe shared a video</h6>
@@ -182,7 +182,7 @@
 @endsection
 @section('js')
 <!--Internal  Datepicker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!-- Internal Select2 js-->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.min.js')}}"></script>
 @endsection

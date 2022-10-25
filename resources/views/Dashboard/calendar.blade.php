@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
 <!-- Internal fullcalendar Css-->
-<link href="{{URL::asset('assets/plugins/fullcalendar/fullcalendar.min.css')}}" rel="stylesheet">
+<link href="{{URL::asset('public/assets/plugins/fullcalendar/fullcalendar.min.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
 				<!-- breadcrumb -->
@@ -46,7 +46,7 @@
 								<div class="p-4 border-bottom">
 									<h2 class="main-content-title mg-b-15 tx-16">My Calendar</h2>
 									<div class="text-center mx-auto">
-										<img src="{{URL::asset('assets/img/media/calendar.png')}}" alt="calendar" class="ht-80p wd-80p">
+										<img src="{{URL::asset('public/assets/img/media/calendar.png')}}" alt="calendar" class="ht-80p wd-80p">
 									</div>
 								</div>
 								<div class=" card p-4 mb-0 pb-0 pl-4 pr-4 pt-4">
@@ -90,14 +90,14 @@
 @endsection
 @section('js')
 <!-- moomet min js -->
-<script src="{{URL::asset('assets/plugins/moment/min/moment.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/moment/min/moment.min.js')}}"></script>
 <!--Internal  Date picker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
 <!--Internal  Fullcalendar js -->
-<script src="{{URL::asset('assets/plugins/fullcalendar/fullcalendar.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/fullcalendar/fullcalendar.min.js')}}"></script>
 <!-- Internal Select2.full.min js -->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.full.min.js')}}"></script>
+<script src="{{URL::asset('public/assets/plugins/select2/js/select2.full.min.js')}}"></script>
 <!--Internal App calendar js -->
-<script src="{{URL::asset('assets/js/app-calendar-events.js')}}"></script>
-<script src="{{URL::asset('assets/js/app-calendar.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/app-calendar-events.js')}}"></script>
+<script src="{{URL::asset('public/assets/js/app-calendar.js')}}"></script>
 @endsection
