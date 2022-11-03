@@ -27,7 +27,7 @@ return [
     'watermark_image_position' => 'P',
     'custom_font_dir'          => '',
     'custom_font_data'         => [],
-    'auto_language_detection'  => true,
+    'auto_language_detection'  => false,
     'temp_dir'                 => rtrim(sys_get_temp_dir(), DIRECTORY_SEPARATOR),
     'pdfa'                     => false,
     'pdfaauto'                 => false,

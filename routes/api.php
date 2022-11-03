@@ -41,10 +41,6 @@ Route::get('about_us',[App\Http\Controllers\API\About_usController::class,'index
 
 Route::group(['middleware' => ['auth:api']],function (){
 
-//    Route::middleware(isSupervisorMiddleware::class)->namespace('\App\Http\Controllers\Api')->group(function(){
-//
-//
-//    });
     Route::post('logout', [UserController::class, 'logout']);
     Route::post('reset-password', [UserController::class, 'resetPassword']);
     Route::post('user/update',[App\Http\Controllers\API\UserController::class,'editUser']);
@@ -66,9 +62,9 @@ Route::group(['middleware' => ['auth:api']],function (){
         Route::post('bond/store',[App\Http\Controllers\API\BondController::class,'store']);
 
     });
-    Route::middleware(isUserMiddleware::class)->namespace('\App\Http\Controllers\Api')->group(function(){
+//    Route::middleware(isUserMiddleware::class)->namespace('\App\Http\Controllers\Api')->group(function(){
 
-//    Route::group(['middleware' => ['isUserMiddleware']], function () {
+    Route::group(['middleware' => ['isUserMiddleware']], function () {
 
 
         Route::get('contracts/show',[App\Http\Controllers\API\ContractsController::class,'show']);

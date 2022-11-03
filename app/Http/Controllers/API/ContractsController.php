@@ -7,13 +7,14 @@ use App\Models\Contracts;
 use App\Models\Notifications;
 use App\Models\Structural_drawing_image;
 use App\Models\User;
-use Barryvdh\DomPDF\Facade\Pdf;
+
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
+use niklasravnsborg\LaravelPdf\Facades\Pdf;
 
 
 class ContractsController extends Controller
@@ -65,7 +66,7 @@ class ContractsController extends Controller
 
     public function contract_Status($id){
 
-        $contracts = Contracts::where('id', $id)->select('id','code','status','contract_file','final_contract')->get();
+        $contracts = Contracts::where('id', $id)->select('id','code','status','contract_file','price','id_card_number','final_contract')->get();
         return parent::success($contracts);
     }
     public function StatusUpdate(Request $request){
@@ -79,6 +80,7 @@ class ContractsController extends Controller
         $projects = Contracts::find($contract_id);
         $projects->status = request('status');
         $projects->reason_review = request('reason_review');
+        $projects->Clearance_viewing_status = '0';
 
         $projects->update();
 
@@ -99,7 +101,7 @@ class ContractsController extends Controller
 //        $projects->status = "6";
 
 //        $projects->update();
-        $contracts = Contracts::where('id', $id)->with('user:id,name')->select('id','code','id_card_number','user_id','clearance_status_admin')->first();
+        $contracts = Contracts::where('id', $id)->with('user:id,name')->select('id','code','id_card_number','user_id','clearance_status_admin','approval')->first();
 
         return parent::success($contracts);
 
@@ -112,8 +114,12 @@ class ContractsController extends Controller
 
         $projects['Clearance_viewing_status'] = "0";
         $projects['clearance_status_admin'] = "0";
+        $projects->approval = "1";
 
-        $projects->update($request->all());
+
+
+
+            $projects->update($request->all());
 
 
             return parent::success($contracts);
@@ -156,11 +162,12 @@ class ContractsController extends Controller
         if ($validation->fails()){
             return parent::error( $validation->errors());
         }
+
 //        return $request->all();
         $contracts = new Contracts();
-        $contracts->user_id = $user->id;
-        $contracts->section_id = $request->section_id;
+        $contracts->user_id = Auth::user()->id;
         $contracts->project_id = $request->project_id;
+        $contracts->section_id = $request->section_id;
         $contracts->construction_type = $request->construction_type;
 
         //الكود
@@ -170,30 +177,21 @@ class ContractsController extends Controller
         }else{
             $contracts->code = "02".$code;
         }
-        $project =  $request->project_id;
-        //ملف المشروع
-        $project =  $request->project_id;
-        $construction_type=  $request->construction_type;
-
 
         $contracts->id_card_number = request('id_card_number');
         $contracts->id_card_date = request('id_card_date');
         $contracts->status_card_issuer = request('status_card_issuer');
-//        $contracts->status_card_image = request('status_card_image');//image
 
         $contracts->Instrument_no = request('Instrument_no');
         $contracts->Instrument_date = request('Instrument_date');
-//        $contracts->Instrument_image = request('Instrument_image');//image
 
 
         $contracts->building_permit_number = request('building_permit_number');
         $contracts->license_date = request('license_date');
-//        $contracts->license_image = request('license_image');//image
 
         $contracts->engineering_office_name = request('engineering_office_name');
         $contracts->engineer_name = request('engineer_name');
         $contracts->engineer_phone_email = request('engineer_phone_email');
-        //        $contracts->starch_chart_image = request('starch_chart_image');//image
 
         //مشاريع مقترحة(اخرى)
         $contracts->suggested_projects = request('suggested_projects');
@@ -203,6 +201,50 @@ class ContractsController extends Controller
         $contracts->status = "0";
         $contracts->viewing_status = "0";
 
+        ///// uplode file for charts ///////
+
+        ///المخطط الانشائي////
+        if ($request->file('structural_plan') ) {
+            $name = Str::random(12);
+            $path = $request->file('structural_plan')->move('public/api/structural_plan',
+                $name . time() . '.' . $request->file('structural_plan')->getClientOriginalExtension());
+            $contracts->structural_plan= $path;
+        }
+
+        ///المخطط المعماري////
+        if ($request->file('architectural_plan') ) {
+            $name = Str::random(12);
+            $path = $request->file('architectural_plan')->move('public/api/architectural_plan',
+                $name . time() . '.' . $request->file('architectural_plan')->getClientOriginalExtension());
+            $contracts->architectural_plan= $path;
+        }
+
+        ///المخطط الكهربي////
+        if ($request->file('electrical_diagram') ) {
+            $name = Str::random(12);
+            $path = $request->file('electrical_diagram')->move('public/api/electrical_diagram',
+                $name . time() . '.' . $request->file('electrical_diagram')->getClientOriginalExtension());
+            $contracts->electrical_diagram= $path;
+        }
+
+        ///المخطط الميكانيكي////
+        if ($request->file('mechanical_diagram') ) {
+            $name = Str::random(12);
+            $path = $request->file('mechanical_diagram')->move('public/api/mechanical_diagram',
+                $name . time() . '.' . $request->file('mechanical_diagram')->getClientOriginalExtension());
+            $contracts->mechanical_diagram= $path;
+        }
+
+
+
+
+
+        //// end uplode file for charts//////
+
+
+
+
+
 
         if ($request->file('status_card_image') ) {
             $name = Str::random(12);
@@ -210,6 +252,7 @@ class ContractsController extends Controller
                 $name . time() . '.' . $request->file('status_card_image')->getClientOriginalExtension());
             $contracts->status_card_image= $path;
         }
+
 
         if ($request->file('Instrument_image') ) {
             $name = Str::random(12);
@@ -227,7 +270,7 @@ class ContractsController extends Controller
 
 //        if ($request->file('starch_chart_image') ) {
 //            $name = Str::random(12);
-//            $path = $request->file('starch_chart_image')->move('api\starch_chart_image',
+//            $path = $request->file('starch_chart_image')->move('public/api/starch_chart_image',
 //                $name . time() . '.' . $request->file('starch_chart_image')->getClientOriginalExtension());
 //            $contracts->starch_chart_image= $path;
 //        }
@@ -242,39 +285,37 @@ class ContractsController extends Controller
 
 
 
-        $files = $request->file('starch_chart_image');
-        if (!empty($files)) {
-            foreach ($files as $file) {
-                $img = new Structural_drawing_image();
-                $img->contract_id = $contracts->id;
-                $name = Str::random(12);
-                $path = $file->move('public/api/starch_chart_image', $name . time() . '.' . $file->getClientOriginalExtension());
-                $img->image = $path;
-                $img->save();
-            }
-        }
+//        $files = $request->file('starch_chart_image');
+//        if (!empty($files)) {
+//            foreach ($files as $file) {
+//                $img = new Structural_drawing_image();
+//                $img->contract_id = $contracts->id;
+//                $name = Str::random(12);
+//                $path = $file->move('public/api/starch_chart_image', $name . time() . '.' . $file->getClientOriginalExtension());
+//                $img->image = $path;
+//                $img->save();
+//            }
+//        }
         $notification = new Notifications();
         $notification->sender_id = $user->id ;
         $notification->receiver_id = "1" ;
         $notification->contract_id = $contracts->id;
         $notification->message = " قام ".$user->name . "بأضافة عقد جديد";
 
-       $notification->message_type = "1";
+       $notification->message_type = "0";
       $notification->status = "0";
         $notification->save();
 
         $pdf=Contracts::where('id',$contracts->id)->with('user:id,name')->first();
             $p = PDF::loadView('contract1.index1', compact('pdf'));
 
+        //$path = 'public/api/contract_file/';
+        $fileName = 'api/'. time(). '.pdf' ;
 
-        $path = 'public/api/contract_file/';
-        $fileName =  time(). '.pdf' ;
-
-        $p->save($path . $fileName);
-        $generated_pdf_link ='public/api/contract_file/'.$fileName;
+        $p->save($fileName);
+        $generated_pdf_link =$fileName;
         $pdf->contract_file = $generated_pdf_link;
         $pdf->update();
-        $pdf->refresh();
 
 //        return response()->json($generated_pdf_link);
         return parent::success($pdf);

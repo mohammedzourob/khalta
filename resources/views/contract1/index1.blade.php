@@ -5,11 +5,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    \
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
     <style>
@@ -67,53 +62,58 @@
 </head>
 
 <body>
+
+
+
 <div class="container">
     <div class="navs">
         <p><strong>بسم الله الرحمن الرحيم</strong></p>
     </div>
     <div style="text-align: center;">
-        <h5>عقد تنفيذ فيلا عظم &quot;مصنعية بالمواد&quot;</h5>
+        <h5>عقد تنفيذ {{$pdf->section['name']}} عظم "مصنعية بالمواد"</h5>
         <p style="padding-top: 10px;"><strong>الحمد لله والصلاة والسلام على رسول الله، وبعد.</strong></p>
 
         <p>بعون من الله وتوفيق منه واستناداً لقوله تعالى &quot;يا أيها الذين آمنوا أوفوا بالعقود&quot; وقوله تعالى
             &quot;يا
             أيها الذين آمنوا</p>
-        <p>لا تأكلوا أموالكم بينكم بالباطل&quot; اآليتين 92(،)1 من سورتي المائدة والنساء.</p>
+        <p>لا تأكلوا أموالكم بينكم بالباطل&quot; الايتين 92(،)1 من سورتي المائدة والنساء.</p>
 
     </div>
     <div class="texts">
         <div class="">
             <p><strong>فإنه بتاريخ
-                    2022 /االخميس الموافق 08 / 00
+                  {{$pdf->created_at->format('Y-m-d')}}
 
                     تم االتفاق في مدينة: الرياض بين كل من:
 
                 </strong></p>
         </div>
         <div>
-            <p>(أ)<strong> الطرف الاول</strong> خالد سعد الغامدى
+            <p>(أ)<strong> الطرف الاول</strong> {{$pdf->user->name}}
                 هوية رقم
-                1010013310
+                {{$pdf->id_card_number}}
                 هاتف جوال
-                2171112301
+                {{$pdf->user->phone}}
 
             </p>
         </div>
         <div>
-            <p>صاحب الارض قطعة رقة 538
-                من مخطط رقم 689
-                رخصة رقم 1443
-                تاريخها 1444-01-24 هجري
+            <p class="fw-normal fs-5">
+                1- السيد/{{$pdf->user->name}} بطاقة رقم {{$pdf->id_card_number}}
+                مصدرها {{$pdf->status_card_issuer}} تاريخها {{$pdf->id_card_date}} وهو مالك
+                الأرض ذات الصك رقم {{$pdf->Instrument_no}} في تاريخ
+                {{$pdf->Instrument_date}} الواقعة بحي ..................... ويسمى
+                المالك ( الطرف الأول ).
             </p>
-            </p>
+
             <p>الواقعة بمحافظة الرياض حى السلمانيه ,
 
         </div>
         <div>
-            <strong>(ب) الطرف الثاني</strong> : مؤسسة شرفةالمعمارية
-            سجل تجاري رقم 2121300311 تاريخها 2007-10-10هجري
-            <p> مصدرها الرياض وعنوانه النظيم 1،02 - .20127 وبريدها الالكتروني ........................ هاتف جوال
-                1071000301</p>
+            <strong>(ب) الطرف الثاني</strong> : مؤسسة شرفة المعمارية
+            سجل تجاري رقم 2121300311 تاريخها 1443-04-06 هجري
+            <p> مصدرها الرياض وعنوانه النظيم 4190 - 14813 وبريدها الالكتروني ............................................... هاتف جوال
+                0538666742</p>
             <p>ويمثلها فى التوقيع على هذا العقد السيد/ ابراهيم محمد عبار العنزى بصفته صاحب المؤسسة</p>
 
         </div>
@@ -319,7 +319,7 @@
                 مسؤول في ذلك.
 
 
-                </p>
+
                 <p>
                     22-الديكورات المعمارية في
                     الواجهات
@@ -788,11 +788,11 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h6>الفريق الاول</h6>
-                    <p>الاسم -:  خالد سعد الغامدي</p>
+                    <p>الاسم -: {{$pdf->user->name}}</p>
                     <p>التوقيع</p>
 
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" style="text-align: left">
                     <h6>الفريق الثاني</h6>
                     <p>مؤسسة / شرفة المعمار للمقاوالت المعماريه	</p>
                     <p> االسم :- ابراهيم محمد عبار العنزى
@@ -808,10 +808,11 @@
 
 
 
-        </div>
+        </div>    </div>
+</div>
 
 
-    </div>
+
 </body>
 
 </html>

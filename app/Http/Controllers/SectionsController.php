@@ -41,7 +41,7 @@ class SectionsController extends Controller
   public function store(Request $request)
   {
 //        return $request->all();
-      $validated = $request->validate(Sections::$rules,Sections::$message);
+      $validated = $request->validate(Sections::$message);
 
       Sections::create($request->all());
 

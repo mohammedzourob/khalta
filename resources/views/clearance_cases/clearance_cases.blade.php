@@ -95,65 +95,106 @@
 {{--                                <th class="border-bottom-0">{{trans('occupation.Profession_name')}}</th>--}}
                                 <th class="border-bottom-0">كود العقد</th>
                                 <th class="border-bottom-0">اسم العميل</th>
+                                <th class="border-bottom-0">بطاقة الاحوال</th>
+                                <th class="border-bottom-0">المشروع</th>
+                                <th class="border-bottom-0">قسم المشروع</th>
+                                <th class="border-bottom-0">نوع البناء</th>
                                 <th class="border-bottom-0"> حالة المخالصة</th>
-                                <th class="border-bottom-0"> حالة الموافقة </th>
                                 <th class="border-bottom-0"> حالة المشاهدة</th>
+
 {{--                                <th class="border-bottom-0">{{trans('occupation.Processes')}}</th>--}}
                             </tr>
                             </thead>
                             <tbody>
                             <?php $i = 0; ?>
                             @foreach ($clearance as $x)
-                                <?php $i++; ?>
+                                    <?php $i++; ?>
                                 <tr>
                                     <td>{{ $i }}</td>
 
+                                    {{--                                    <td><img src="{{url('').$x->icon}}"></td>--}}
                                     <td>{{ $x->code }}</td>
+
                                     <td>{{ $x->user->name }}</td>
-
-
-
                                     <td style="">
-                                        @if ($x->approval == 1)
-
-{{--                                            <button class="btn btn-success-gradient btn-block">فعال</button>--}}
-                                            <a class="modal-effect btn btn-success-gradient btn-block" data-effect="effect-scale"
-                                               data-id="{{ $x->id }}" data-name="{{ $x->name }}"
-                                                 data-status="{{ $x->status }}"
-                                               data-type_project="{{$x->name}}"
-                                               data-id_project="{{$x->id}}"
-                                               data-description="" data-toggle="modal"
-                                               href="#" title="تعديل"> تمت الموافقة
-                                                @else
-                                                    <a class="modal-effect btn btn-danger-gradient btn-block" data-effect="effect-scale"
-                                                       data-id="{{ $x->id }}"
-                                                       data-status="{{ $x->status }}"
-                                                       data-type_project="{{$x->name}}"
-                                                       data-id_project="{{$x->id}}"
-                                                       data-description="" data-toggle="modal"
-                                                       href="#" title="تعديل">لم تتم الموافقة
-                                        @endif
+                                        {{ $x->id_card_number }}
                                     </td>
                                     <td style="">
-                                        @if ($x->clearance_status_admin == 1)
+                                        {{ !empty($x->project->name) ?  $x->project->name : 'لا يوجد'}}
+                                    </td>
+                                    <td style="">
+                                        {{ !empty($x->section->name) ?  $x->section->name : 'لا يوجد'}}
+                                    </td>
 
-                                            {{--                                            <button class="btn btn-success-gradient btn-block">فعال</button>--}}
-                                            <a class="modal-effect btn btn-success-gradient btn-block" data-effect="effect-scale"
-                                               data-id="{{ $x->id }}" data-name="{{ $x->name }}"
-                                               data-clearance_status_admin="{{ $x->clearance_status_admin }}"
-                                               data-type_project="{{$x->name}}"
-                                               data-id_project="{{$x->id}}"
 
-                                               data-description="" data-toggle="modal"
-                                               href="#exampleModal2" title="تعديل"> نشر
-                                                @else
-                                                    <a class="modal-effect btn btn-danger-gradient btn-block" data-effect="effect-scale"
-                                                       data-id="{{ $x->id }}"
-                                                       data-clearance_status_admin="{{ $x->clearance_status_admin }}"
-                                                       data-type_project="{{$x->name}}"
-                                                       data-id_project="{{$x->id}}"
-                                                       data-description="" data-toggle="modal"
-                                                       href="#exampleModal2" title="تعديل">عدم النشر
+                                    <td style="">
+                                        @if ($x->construction_type == 1)
+
+                                            <p> البناء بمواد</p>
+
+                                        @else
+                                            <p> البناء بدون بمواد</p>
+                                            {{--                                            <button class="btn btn-danger-gradient btn-block">البناء بدون مواد</button>--}}
+                                        @endif
+                                    </td>
+
+
+
+
+                                    <td style="">
+                                        @if ($x->status == 0)
+
+
+                                            <a class="btn btn-danger-gradient btn-block" href="contracts/add_price/{{$x->id}}"
+                                               style=" color: beige;" data-id="{{ $x->id }}" data-name="{{ $x->user->name }}"
+                                               data-status="{{$x->status}}">قيد المراجعة</a>
+
+                                            {{--                                            <button class="btn btn-danger-gradient btn-block">قيد المراجعة</button>--}}
+
+                                        @elseif ($x->status == 1)
+                                            <button class="btn btn-warning btn-block" style=" color: black;"> معتمد من قبل
+                                                الادارة
+
+                                            </button>
+                                        @elseif($x->status == 2)
+
+                                            <button class="btn btn-success-gradient btn-block">
+                                                <a data-effect="effect-scale" href="#modaldemo16" data-toggle="modal"
+                                                   style=" color: beige;" data-id="{{ $x->id }}"
+                                                   data-name="{{ $x->user->name }}" data-status="{{$x->status}}">
+                                                    معتمد من قبل العميل
+                                                </a>
+                                            </button>
+                                        @elseif($x->status == 3)
+
+                                            <a class="btn btn-danger-gradient btn-block" href="contracts/add_price/{{$x->id}}"
+                                               style=" color: beige;" data-id="{{ $x->id }}" data-name="{{ $x->user->name }}"
+                                               data-review="{{ $x->reason_review }}" data-status="{{$x->status}}">
+                                                مراجعة
+                                            </a>
+
+                                        @elseif($x->status == 4)
+                                            <button class="btn btn-danger btn-block">
+                                                مرفوض<i class="las la-frown"></i>
+                                            </button>
+                                        @elseif($x->status == 5)
+
+                                            <button class="btn btn-success-gradient btn-block">
+                                                <a data-effect="effect-scale" href="#modaldemo15" data-toggle="modal"
+                                                   style=" color: beige;" data-id="{{ $x->id }}"
+                                                   data-name="{{ $x->user->name }}" data-status="{{$x->status}}">
+                                                    معتمد نهائي
+                                                </a>
+                                            </button>
+                                        @elseif($x->status == 6)
+                                            <button class="btn btn-success btn-block">
+                                                {{--                                                <a data-effect="effect-scale"  href="#exampleModal2" data-toggle="modal" style=" color: beige;"--}}
+                                                {{--                                                   data-id="{{ $x->id }}"
+                                                data-name="{{ $x->user->name }}"--}}
+                                                {{--                                                   data-status="{{$x->status}}">--}}
+                                                مكتمل<i class="las la-grin-beam"></i>
+                                                {{--                                                </a>--}}
+                                            </button>
                                         @endif
                                     </td>
                                     <td id="dynamic_field_{{$x->id}}" style="">

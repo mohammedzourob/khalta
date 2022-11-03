@@ -164,7 +164,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
         Meneses\LaravelMpdf\LaravelMpdfServiceProvider::class,
-
+        niklasravnsborg\LaravelPdf\PdfServiceProvider::class,
 
 
 
@@ -238,7 +238,8 @@ return [
         'Form'=> Collective\Html\FormFacade::class,
         'Html'=> Collective\Html\HtmlFacade::class,
 //        'PDF' => Barryvdh\DomPDF\Facade::class,
-        'PDF' => Meneses\LaravelMpdf\Facades\LaravelMpdf::class
+      //  'PDF' => Meneses\LaravelMpdf\Facades\LaravelMpdf::class,
+        'PDF' => niklasravnsborg\LaravelPdf\Facades\Pdf::class
 
 
 

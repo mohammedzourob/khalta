@@ -37,6 +37,7 @@ class UserController extends Controller
       $data=User::all();
       return parent::success( $data);
     }
+
     public function register(Request $request)
     {
 
@@ -47,24 +48,22 @@ class UserController extends Controller
         }
         $request['password']= Hash::make($request->input('password'));
         $request['image']= 'users_image\user.jpg';
-        $request['Status']= '1';
-        $request['type']= '3';
 
+        $request['type']= 3;
+        $request['Status']= "1";
 
 
         $user = User::create($request->all());
 
-         if ($request->has('fcm_token')) {
-                Token_firebase::create(['fcm_token' => $request->get('fcm_token'),'user_id' => $user->id]);
-            }
+        if ($request->has('fcm_token')) {
+            Token_firebase::create(['fcm_token' => $request->get('fcm_token'),'user_id' => $user->id]);
+        }
 
 
-        $accessToken = $user->createToken('mobile')->accessToken;
-        $user['accessToken']=$accessToken;
+        $token = $user->createToken('mobile')->accessToken;
+        $user['token']=$token ;
 
-        return response()->json(['status' => true, 'code' => 200,'accessToken'=>$accessToken]);
-
-        // return parent::success( $user);
+        return parent::success( $user);
 
     }
     public function editUser(Request $request){

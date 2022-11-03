@@ -115,7 +115,7 @@
 
                                 {{--                                    <td><img src="{{url('').$x->icon}}"></td>--}}
                                 <td>{{ $x->code }}</td>
-                                </td>
+
                                 <td>{{ $x->user->name }}</td>
                                 <td style="">
                                     {{ $x->id_card_number }}
@@ -454,10 +454,10 @@
 
 
                             <div class="text-center col-md-12" style=" margin-top: 20px;">
-                                <h5>صور المخطط الانشائي المعماري وتقارير التربة :</h5>
+                                <h5>ملفات المخطط الانشائي المعماري :</h5>
                                 <button class="btn btn-dark-gradient btn-block">
                                     <a href="" style="font-weight: bold; color: beige; " id="starch_chart_image">عرض
-                                        الصور</a>
+                                        الملفات</a>
                                 </button>
                             </div>
 
@@ -579,10 +579,10 @@
 
                                 <select data-toggle="dropdown" class="btn form-control btn-block " name="supervisor">
                                     @foreach($supervisor as $users)
-                                        @if($users->type==2)
+
 
                                             <option value="{{$users->id}}">{{$users->name}}</option>
-                                        @endif
+
                                     @endforeach
                                 </select>
 

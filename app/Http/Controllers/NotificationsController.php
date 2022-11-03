@@ -62,8 +62,8 @@ class NotificationsController extends Controller
       $Notifications->message_type = "0";
 
       $Notifications->save();
-      
-        
+
+
           $token=Token_firebase::where('user_id', request('receiver_id'))->orderBy('id', 'DESC')->first();
         // return $token;
       if (!empty($token->fcm_token)){
@@ -76,12 +76,12 @@ class NotificationsController extends Controller
 
       $data=[
           "data" => [
-              "title" => 'مؤسسة خلطة للمقاولات',
+              "title" => 'مؤسسة للمقاولات',
               "body" => $request->message,
           ],
           "notification" => [
               'type' => "notify",
-              "title" => 'مؤسسة خلطة للمقاولات',
+              "title" => 'مؤسسة للمقاولات',
               "body" => $request->message,
           ],
 

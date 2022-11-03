@@ -20,125 +20,125 @@ class ProjectTableSeeder extends Seeder
         Projects::create([
             "name"=> "المشاريع السكنية",
             "icon"=> "logo\Group3292.png",
-            "type" => 1,
+            "type" => "1",
             "Status" => "1",
 
         ]);
         Projects::create([
             "name"=> "المشاريع التجارية",
             "icon"=> "logo\Group3291.png",
-            "type" => 1,
+            "type" => "1",
             "Status" => "1",
 
         ]);
         Projects::create([
             "name"=> "المشاريع الفندقية",
             "icon"=> "logo\Group3290.png",
-            "type" => 1,
+            "type" => "1",
             "Status" => "1",
 
         ]);
         Projects::create([
             "name"=> "المشاريع الاخرى",
             "icon"=> "logo\Group3289.png",
-            "type" => 1,
+            "type" => "1",
             "Status" => "1",
 
         ]);
         Projects::create([
             "name"=> "اللياسة",
             "icon"=> "logo\Group3293.png",
-            "type" => 2,
+            "type" => "2",
             "Status" => "1",
 
         ]);
         Projects::create([
             "name"=> "البلاط",
             "icon"=> "logo\Group3294.png",
-            "type" => 2,
+            "type" => "2",
             "Status" => "1",
 
         ]);
         Projects::create([
             "name"=> "الدهان",
             "icon"=> "logo\Group3295.png",
-            "type" => 2,
+            "type" => "2",
             "Status" => "1",
 
         ]);
         Projects::create([
             "name"=> "الجبس بورد",
             "icon"=> "logo\Group3296.png",
-            "type" => 2,
+            "type" => "2",
             "Status" => "1",
 
         ]);
 
         Sections::create([
-            "project_id"=> 1,
+            "project_id"=> "1",
             "name"=> "فيلا",
             "status" => "1",
 
         ]);
         Sections::create([
-            "project_id"=> 1,
+            "project_id"=> "1",
             "name"=> "دور ارضي",
             "status" => "1",
 
         ]);
         Sections::create([
-            "project_id"=> 1,
+            "project_id"=> "1",
             "name"=> "عمارة",
             "status" => "1",
 
         ]);
         Sections::create([
-            "project_id"=> 1,
+            "project_id"=> "1",
             "name"=> "دوبليكس",
             "status" => "1",
 
         ]);
         Sections::create([
-            "project_id"=> 1,
+            "project_id"=> "1",
             "name"=> "شاليهات",
             "status" => "1",
 
         ]);
         Sections::create([
-            "project_id"=> 1,
+            "project_id"=> "1",
             "name"=> "استراحات",
             "status" => "1",
 
         ]);
 //مشاريع تجارية
         Sections::create([
-            "project_id"=> 2,
+            "project_id"=> "2",
             "name"=> "صالة تجارية",
             "status" => "1",
 
         ]);
         Sections::create([
-            "project_id"=> 2,
+            "project_id"=> "2",
             "name"=> "مجمع تجاري",
             "status" => "1",
 
         ]);
         Sections::create([
-            "project_id"=> 2,
+            "project_id"=> "2",
             "name"=> "مستودع",
             "status" => "1",
 
         ]);
 //مشاريع فندقية
         Sections::create([
-            "project_id"=> 3,
+            "project_id"=> "3",
             "name"=> "فنادق",
             "status" => "1",
 
         ]);
 
         Sections::create([
-            "project_id"=> 3,
+            "project_id"=> "3",
             "name"=> "شقق فندقية",
             "status" => "1",
 

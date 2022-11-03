@@ -66,11 +66,46 @@
         <div class="card">
             <div class="card-body">
                 <data class="row">
-                @foreach($work as $x)
-                    <div class="column">
-                <img src="{{url("/")."/".$x->image}} "alt="..." style="width:100% ">
+
+                    <div class="col-3">
+                        <lable>المخطط المعماري</lable>
+
+                        <a href="{{url("/")."/".$work->architectural_plan}}" target="_blank">
+                            <img class="side-menu__icon" style=" width: 70px; height: 70px;"
+                                 src="{{url("https://img.icons8.com/3d-fluency/94/000000/pdf.png")}}"/>
+                        </a>
                     </div>
-                @endforeach
+
+
+                    <div class="col-3">
+
+                        <lable>المخطط الانشائي</lable>
+                        <a href="{{url("/")."/".$work->structural_plan}}" target="_blank">
+                            <img class="side-menu__icon" style=" width: 70px; height: 70px;"
+                                 src="{{url("https://img.icons8.com/3d-fluency/94/000000/pdf.png")}}"/>
+                        </a>
+                    </div>
+
+                    <div class="col-3">
+
+                        <lable>المخطط الكهربي</lable >
+                        <a href="{{url("/")."/".$work->electrical_diagram}}" target="_blank">
+                            <img class="side-menu__icon" style=" width: 70px; height: 70px;"
+                                 src="{{url("https://img.icons8.com/3d-fluency/94/000000/pdf.png")}}"/>
+                        </a>
+                    </div>
+
+                    <div class="col-3">
+
+                        <lable>المخطط الميكانيكي</lable>
+                        <a href="{{url("/")."/".$work->mechanical_diagram}}" target="_blank">
+                            <img class="side-menu__icon" style=" width: 70px; height: 70px;"
+                                 src="{{url("https://img.icons8.com/3d-fluency/94/000000/pdf.png")}}"/>
+                        </a>
+                    </div>
+
+
+
                 </data>
             </div>
         </div>

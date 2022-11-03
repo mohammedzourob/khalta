@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Contracts extends Model
 {
+    /**
+     * @var array|\Illuminate\Contracts\Foundation\Application|\Illuminate\Http\Request|mixed|string|null
+     */
+
     protected $fillable = [
         'user_id','section_id','project_id','construction_type','code','id_card_number',
         'id_card_date','status_card_issuer','status_card_image','Instrument_no','Instrument_date',

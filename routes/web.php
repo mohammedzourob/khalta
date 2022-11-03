@@ -18,8 +18,14 @@ Route::get('/config-clear', function() {
     Artisan::call('cache:clear');
     return 'Config cache has been cleared';
 });
+
+
 Route::get('/view-clear', function() {
     Artisan::call('view:clear');
+    return 'Config cache has been cleared';
+});
+Route::get('/optimize', function() {
+    Artisan::call('optimize:clear');
     return 'Config cache has been cleared';
 });
 Route::get('/route-clear', function() {

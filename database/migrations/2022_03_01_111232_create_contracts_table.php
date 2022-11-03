@@ -61,6 +61,11 @@ class CreateContractsTable extends Migration
             $table->enum('Clearance_viewing_status', array(0, 1))->nullable();
             $table->enum('clearance_status_admin', array(0, 1))->nullable();
 
+            $table->string('architectural_plan')->nullable();
+            $table->string('structural_plan')->nullable();
+            $table->string('electrical_diagram')->nullable();
+            $table->string('mechanical_diagram')->nullable();
+
 
             $table->integer('duration_project')->nullable();
             $table->integer('Work_guarantee_period')->nullable();

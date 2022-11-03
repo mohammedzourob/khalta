@@ -29,7 +29,7 @@ class ContractsController extends Controller
   {
       $contracts =Contracts::orderBy('id', 'DESC')->get();
 
-      $supervisor=User::all();
+      $supervisor=User::where('type',2)->get();
 
       return view('contracts.contracts',compact('contracts','supervisor'));
   }
@@ -55,7 +55,7 @@ class ContractsController extends Controller
         $contracts=Contracts::find($id);
 
         $contracts['supervisor']=$request->supervisor;
-//        dd($contracts);
+
         $contracts->update();
 
         return back();
@@ -104,7 +104,7 @@ class ContractsController extends Controller
               . $Contracts->price . "  ريال ";
       }
 //      return $notification->message ;
-      $notification->message_type = "1";
+      $notification->message_type = "0";
       $notification->status = "0";
       $notification->save();
 
@@ -155,6 +155,7 @@ class ContractsController extends Controller
   }
     public function updateviewing(Request $request)
     {
+
         $id = $request->id;
         $projects = Contracts::find($id);
         $projects->viewing_status = request('viewing_status');
@@ -169,7 +170,7 @@ class ContractsController extends Controller
     public function view_images($id)
     {
 
-        $work =Structural_drawing_image::where('contract_id',$id)->get();
+        $work =Contracts::find($id);
 
         return view('contracts.view_images',compact('work'));
     }
@@ -223,7 +224,9 @@ class ContractsController extends Controller
     public function clearance_cases()
     {
 
-        $clearance = Contracts::where('approval' , '!=',NULL)->get();
+
+
+        $clearance = Contracts::where('status' , '6')->get();
         return view('clearance_cases.clearance_cases',compact('clearance'));
 
     }
